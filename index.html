@@ -224,13 +224,96 @@
         </section>
 
          <section id="character">
-          <h1>Charakter</h1> 
+          <h1>Charakters</h1> 
           <article>
-            <h2>Headline 1</h2>
-            <p>Content</p> 
+			<h2>Floaties</h2>
+			<div>
+				<div>
+					<div class="container-fluid">
+						<div class="panel-group collapse in" id="B0x4r1Ir8ayy6h">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#B0x4r1Ir8ayy6h" href="#WSlLxzsEnzdqFhp" class="collapsed">Sakurai Sensei</a>
+									</h4>
+								</div>
+								<div id="WSlLxzsEnzdqFhp" class="panel-collapse collapse" style="height: 0px;">
+									<div class="panel-body"> 
+										<table class="table table-reponsive">
+											<tbody>
+												<tr>
+													<td rowspan="3">
+														<img title="Sakurai Sensei" alt="Sakurai Sensei" src="src/images/SAKURAAAAAAAI.jpg" class="img-responsive" />
+													</td>
+													<td>Aus Spiel:</td>
+													<td>Super Mario</td>
+												</tr>
+												<tr>
+													<td>Freigeschaltet durch:</td>
+													<td>Bei Spielstart verfügbar</td>
+												</tr>	
+												<tr>
+													<td>Eigenschaften:</td>
+													<td>Die totale Bosshaftigkeit</td>
+												</tr>														
+											</tbody>
+										</table>
+										<div class="panel-group" id="sakurei_accordion">
+											<div class="panel panel-default" id="sakurei_neutral_special">
+												<div class="panel-heading">
+													 <h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#sakurei_accordion" data-target="#sakurei_neutral_special_content" href="#collapseOne">Neutral Special</a>
+													</h4>
+												</div>
+												<div id="sakurei_neutral_special_content" class="panel-collapse collapse">
+													<div class="panel-body">Video/Erklärung</div>
+												</div>
+											</div>
+											<div class="panel panel-default" id="sakurei_up_special">
+												<div class="panel-heading">
+													 <h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#sakurei_accordion" data-target="#sakurei_up_special_content" href="#collapseOne">Up Special</a>
+													</h4>
+												</div>
+												<div id="sakurei_up_special_content" class="panel-collapse collapse">
+													<div class="panel-body">Video/Erklärung</div>
+												</div>
+											</div>
+											<div class="panel panel-default" id="sakurei_down_special">
+												<div class="panel-heading">
+													 <h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#sakurei_accordion" data-target="#sakurei_down_special_content" href="#collapseOne">Down Special</a>
+													</h4>
+												</div>
+												<div id="sakurei_down_special_content" class="panel-collapse collapse">
+													<div class="panel-body">Video/Erklärung</div>
+												</div>
+											</div>
+											<div class="panel panel-default" id="sakurei_slide_special">
+												<div class="panel-heading">
+													 <h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#sakurei_accordion" data-target="#sakurei_slide_special_content" href="#collapseOne">Slide Special</a>
+													</h4>
+												</div>
+												<div id="sakurei_slide_special_content" class="panel-collapse collapse">
+													<div class="panel-body">Video/Erklärung</div>
+												</div>
+											</div>
+										</div>									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </article>
+          <article>
+            <h2>Mid Weight</h2>
+            <p>Content 2</p>
           </article>
           <article>
-            <h2>Headline 2</h2>
+            <h2>Heavy Weight</h2>
             <p>Content 2</p>
           </article>
         </section>
@@ -344,5 +427,15 @@
         </div>
     </div>
 </div>
+<script>
+	document.addEventListener('DOMContentLoaded', function(){
+			var vids = this.getElementsByTagName('video');
+			Array.prototype.forEach.call (vids, function (vid) {
+
+				vid.pause();
+
+			} );
+	}, false);	
+</script>
 </body>
 </html>
