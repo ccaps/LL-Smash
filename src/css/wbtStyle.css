@@ -51,3 +51,12 @@ body{
 @media(min-width:1200px){
 
 }
+
+
+/*
+	control image settings
+*/
+.img-inline
+{
+	display: inline;
+}
