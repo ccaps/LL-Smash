@@ -19,12 +19,3 @@ ul, li	{ list-style-type:none; padding:0px; margin:0px; }
 .solutions > ul > li div:first-child { border:#666 dashed 1px; background-color:#DEF3E6; }
 .solutions > ul > li div:last-child { border:#666 solid 1px;  background-color:#CEE3D0; }
 
-.panel-heading a:after {
-    font-family:'Glyphicons Halflings';
-    content:"\e114";
-    float: right;
-    color: grey;
-}
-.panel-heading a.collapsed:after {
-    content:"\e080";
-}

@@ -1,4 +1,16 @@
 @charset "utf-8";
+@font-face{
+	font-family: smashFont;
+	src: url(../fonts/smash.ttf);
+}
+/*
+Font-Ideen:
+Source Sans Pro
+*/
+body{
+	background-color: #F7F7F7;
+}
+
 /* CSS Document */
 ul, li	{ list-style-type:none; padding:0px; margin:0px; }
 .clear { clear:both; }
