@@ -410,10 +410,6 @@
 			Zunächst wird der Unterschied zwischen den Gewichtsklassen erklärt.
 			Anschließend kannst du die Herkunft, Eigenschaften und Specials aller Charaktere im Detail betrachten.
 		  </p>
-		  <p>
-			Alternativ kannst Du hier den Charakter auswählen, über den Du etwas lernen möchtest:
-		  </p>
-		  <img class="img-responsive" src="src/images/chars_cut.jpg" alt="Character Select Screen"/>
 		  <article>
 			<h2>Gewichtsklassen</h2>
 			<img class="img-responsive" src="src/images/pummel.png" alt="Pummeluff" style="float:left" width='40%'/>
@@ -430,6 +426,10 @@
 		  </article>
           <article>
 			<h2>Floaties</h2>
+			<p class="rosterP">
+				<span style="font-weight:bolder">Wähle einen Charakter</span>
+				<img class="img-responsive charRoster" src="src/images/chars_cut.jpg" alt="Character Select Screen"/>
+		    </p>
 			<div>
 				<div>
 					<div class="container-fluid">
@@ -449,7 +449,7 @@
 														<img title="Sakurai Sensei" alt="Sakurai Sensei" src="src/images/SAKURAAAAAAAI.jpg" class="img-responsive" />
 													</td>
 													<td>Aus Spiel:</td>
-													<td>Super Mario</td>
+													<td>Takeshis Castle</td>
 												</tr>
 												<tr>
 													<td>Freigeschaltet durch:</td>
@@ -545,10 +545,18 @@
 		  </article>
           <article>
             <h2>Mid Weight</h2>
+			<p class="rosterP">
+				<span style="font-weight:bolder">Wähle einen Charakter</span>
+				<img class="img-responsive charRoster" src="src/images/chars_cut.jpg" alt="Character Select Screen"/>
+		    </p>
             <p>Content 2</p>
           </article>
           <article>
             <h2>Heavy Weight</h2>
+			<p class="rosterP">
+				<span style="font-weight:bolder">Wähle einen Charakter</span>
+				<img class="img-responsive charRoster" src="src/images/chars_cut.jpg" alt="Character Select Screen"/>
+		    </p>
             <p>Content 2</p>
           </article>
 		  <article>
@@ -578,6 +586,10 @@
           </article>
           <article>
             <h2>Tournament legal</h2>
+			<p class="rosterP">
+				<span style="font-weight:bolder">Wähle eine Stage</span>
+				<img class="img-responsive charRoster" src="src/images/stages.png" alt="Stages Select Screen"/>
+		    </p>
             <div class="module accordion">
 				<p data-title="Dreamland N64" align="center" class="embed-responsive embed-responsive-16by9"> 
 					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
@@ -617,6 +629,10 @@
           </article>
 		  <article>
 			<h2>Tournament illegal</h2>
+			<p class="rosterP">
+				<span style="font-weight:bolder">Wähle eine Stage</span>
+				<img class="img-responsive charRoster" src="src/images/stages.png" alt="Stages Select Screen"/>
+		    </p>
 			<div class="module accordion">
 				<p data-title="Big Blue" align="center" class="embed-responsive embed-responsive-16by9"> 
 					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
@@ -707,6 +723,16 @@
         <!-- Accordion with video -->
         <section id="examples">
           <h1>Beispiele</h1> 
+          <article>
+            <h2>Schriften</h2>
+            <div>
+              <p> 
+				<span class="smashFont">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span><span> (fan made Smash Bros Font)</span><br/>
+				<span class="sansProFont">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span><span> (Source Sans Pro)</span><br/>
+				<span class="sansProFont">abcdefghijklmnopqrstuvwxyz</span>
+              </p>
+            </div> 
+          </article>
           <article>
             <h2>Modul Accordion inklusive Video</h2>
             <div class="module accordion">
@@ -801,6 +827,12 @@
 				vid.setAttribute("controls","controls");
 
 			} );
+			var stages = this.getElementsByClassName('panel-collapse');
+			Array.prototype.forEach.call (stages, function (stg) {
+				if(stg.classList.contains('in')){
+					stg.classList.remove('in');
+				}
+			} );			
 	}, false);	
 </script>
 </body>

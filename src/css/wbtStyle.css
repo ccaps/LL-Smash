@@ -7,10 +7,30 @@
 Font-Ideen:
 Source Sans Pro
 */
-body{
+/*body{
 	background-color: #F7F7F7;
+}*/
+
+.smashFont{
+		font-family: smashFont;
+		font-weight: bold;
+		font-size: 38px;
 }
 
+.sansProFont{
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: bold;
+		font-size: 38px;
+}
+
+.charRoster{
+	width: 100%;
+}
+
+.rosterP{
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
 .clear { clear:both; }
 * {border:none;}
