@@ -60,3 +60,9 @@ body{
 {
 	display: inline;
 }
+
+/** Character Page **/
+.choose_character
+{
+	width: 100%;
+}
