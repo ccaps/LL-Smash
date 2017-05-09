@@ -80,3 +80,19 @@ Source Sans Pro
 {
 	display: inline;
 }
+
+
+/** Characters **/
+.chars_overview
+{
+	width: 100%;
+}
+
+
+/** LEts smash **/
+.banner_lets-smash
+{
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top:50px;
+}
