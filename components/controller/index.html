@@ -1,0 +1,124 @@
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Controller example</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/controller.css"/>
+</head>
+
+<div id="controller_container">
+    <img src="img/controller.png" alt="" class="controller">
+    <img src="img/A.png" alt="" class="key button button_a" data-key="a">
+    <img src="img/B.png" alt="" class="key button button_b" data-key="b">
+    <img src="img/X.png" alt="" class="key button button_x" data-key="x">
+    <img src="img/Y.png" alt="" class="key button button_y" data-key="y">
+    <img src="img/stick.png" alt="" class="stick">
+    <div class="key stick__cta stick__cta--left" data-key="left"></div>
+    <div class="key stick__cta stick__cta--right" data-key="right"></div>
+    <div class="key stick__cta stick__cta--up" data-key="up"></div>
+    <div class="key stick__cta stick__cta--down" data-key="down"></div>
+</div>
+
+<div class="controller_icons" hidden="true">
+    <img data-key="a" class="img-responsive" src="../../src/images/controler/a.png" alt="A-Button" width='100%'/>
+    <img data-key="b" class="img-responsive" src="../../src/images/controler/b.png" alt="A-Button" width='100%'/>
+    <img data-key="x" class="img-responsive" src="../../src/images/controler/x.png" alt="A-Button" width='100%'/>
+    <img data-key="y" class="img-responsive" src="../../src/images/controler/y.png" alt="A-Button" width='100%'/>
+    <img data-key="left" class="img-responsive" src="../../src/images/controler/left.png" alt="A-Button" width='100%'/>
+    <img data-key="right" class="img-responsive" src="../../src/images/controler/right.png" alt="A-Button" width="100%"/>
+    <img data-key="up" class="img-responsive" src="../../src/images/controler/up.png" alt="A-Button" width='100%'/>
+    <img data-key="down" class="img-responsive" src="../../src/images/controler/down.png" alt="A-Button" width='100%'/>
+</div>
+
+<div id="display_container">
+    <span class="display__field field_one"></span>
+    <span class="display__field field_two"></span>
+    <span class="display__field field_three"></span>
+</div>
+
+
+
+<script>
+    window.addEventListener('keydown', function(e){
+        console.log(e);
+    });
+
+    var key = document.getElementsByClassName("key");
+
+    var clickButton = function() {
+        var data_key = this.getAttribute("data-key");
+        var key_img = document.querySelector('.controller_icons>img[data-key="'+data_key+'"]');
+        key_img = key_img.outerHTML;
+
+        var field_one = document.querySelector('.field_one');
+        var field_two = document.querySelector('.field_two');
+        var field_three = document.querySelector('.field_three');
+
+        if(!field_one.innerHTML){
+            field_one.innerHTML = key_img;
+        } else if (!field_two.innerHTML){
+            field_two.innerHTML = key_img;
+        } else if (!field_three.innerHTML) {
+            field_three.innerHTML = key_img;
+        }
+        console.log(key_img);
+    };
+
+    for (var i = 0; i < key.length; i++) {
+        key[i].addEventListener('click', clickButton, false);
+    }
+
+</script>
+
+
+
+
+<script>
+    var stick = document.getElementsByClassName("stick")[0];
+    var stick_boxes = document.getElementsByClassName("stick__cta");
+    var stick_left = document.getElementsByClassName("stick__cta--left")[0];
+    var stick_right = document.getElementsByClassName("stick__cta--right")[0];
+    var stick_up = document.getElementsByClassName("stick__cta--up")[0];
+    var stick_down = document.getElementsByClassName("stick__cta--down")[0];
+    console.log(stick_boxes);
+
+    stick_left.onmouseover = function(){
+        moveStick(stick, "x", -10 )
+    };
+    stick_right.onmouseover = function(){
+        moveStick(stick, "x", 10 )
+    };
+    stick_up.onmouseover = function(){
+        moveStick(stick, "y", -10 )
+    };
+    stick_down.onmouseover = function(){
+        moveStick(stick, "y", 10 )
+    };
+
+    for (index = 0; index < stick_boxes.length; ++index) {
+        stick_boxes[index].onmouseout = function(){
+            stick.style.transform = "translateX(0)"
+        }
+    }
+
+//    stick_boxes.forEach(function(entry) {
+//        entry.onmouseout = function(){
+//            console.log("out");
+//            stick.style.transform = "translateX(0)"
+//        }
+//    });
+
+//    stick_boxes.onmouseout = function(){
+//        console.log("out")
+//        stick.style.transform = "translateX(0)"
+//    };
+
+
+    function moveStick(stick, axis, translation){
+        stick.style.transform = "translate" + axis.toUpperCase() + "(" + translation + "px)";
+
+
+    }
+</script>
