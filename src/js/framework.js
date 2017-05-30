@@ -706,7 +706,7 @@ App.NavigationManager = {
         this.mainNavigation = navigation;
 
         // add some important attributes
-        navigation.addClass("navbar navbar-default");
+        navigation.addClass("navbar navbar-default navbarStylable");
         navigation.attr("role","navigation");
 
         // generate an ID for this navbar

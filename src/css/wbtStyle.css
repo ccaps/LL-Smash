@@ -96,3 +96,73 @@ Source Sans Pro
 	margin-bottom: 30px;
 	margin-top: -50px;
 }
+
+/** Navigation Styling **/
+.navbarStylable {
+	
+	background: black;
+	height: 75px;
+	
+}
+
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a {
+	
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	position: relative;
+	top: 50%;
+	transform: translateY(20%);
+	border-right: 1px solid #666;
+	
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #000;
+}
+
+.dropdown-menu {
+	
+	background: #000;
+
+}
+
+.dropdown-menu > li > a {
+	
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+/** Sidebar Styling **/
+
+
+.subNavigation > .list-group-item {
+	
+	background: black;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
+
+.subNavigation > .active {
+	
+	background: white;
+	color: black;
+	
+}
+
+.subNavigation > a:hover,
+.subNavigation > a:focus {
+	
+	background: white;
+	color: black;
+}
+
+
+
