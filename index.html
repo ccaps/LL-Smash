@@ -40,31 +40,15 @@
         <div class="col-md-9">
 
 		<section id="start">
-			
 			<h1>Willkommen</h1>
 			<p><img class="img-responsive" src="src/images/header_smashbrosmelee.jpg" alt="Alle Charaktere als Header"/></p>
-				
 			<article>
 			<h2>Zu diesem WBT</h2>
-				<p>
-					Smash Bros Melee ist ein beliebtes Spiel sowohl im freundschaftlichen Kontext, auf Parties als auch auf professioneller E-Sport Ebene. 
-				</p>
-				<p>
-					Dabei kann der Grad der Frustration sehr hoch werden, wenn man gegen Menschen spielt, die viel Erfahrung in dem Spiel haben und sich dadurch mit den Charakteren,
-					Stages und Spielkonzepten deutlich besser auskennen.
-				</p>
-				<p>
-					Das WBT richtet sich also an alle, die Interesse daran haben, Smash Bros Melee kennen zu lernen. 
-					Eine Einschränkung durch Alter oder mangelndes Vorwissen ist nicht gegeben.
-				</p>
-				<p>
-					Nach dem Durcharbeiten des WBTs bist Du in der Lage, die Charaktere und deren Eigenschaften sowie die Stages zu kennen und die Steuerung des Spiels zu beherrschen. 
-					Darüber hinaus werden auch fortgeschrittene Techniken und Strategien erläutert. 
-					Außerdem eigenst Du Dir auch ein gewisses Fachvokabular an, welches Dir ermöglicht, das kompetitive Spiel in z.B. Livestreams besser zu verstehen. 
-				</p>
-				<p>
-					Das WBT konzentriert sich hierbei auf den im professionellen Spiel festgelegten Spielmodus (4 Leben, keine Items). 
-				</p>	
+				<div id="welcome">
+					<script>
+							$( "#welcome" ).load( "content/welcome.html" );
+					</script>
+				</div>
 			</article>
 		</section>
 
@@ -72,88 +56,34 @@
         <section id="introduction">
           <h1>Einleitung</h1> 
           <p>In diesem Abschnitt lernst Du, was das Super Smash Bros. Melee genau ist, und wie das Spielprinzip im Detail funktioniert.</p>
-          <article>
+          
+		  <article>
             <h2>Die Smash Bros. Serie</h2>
-			<div class="col-md-4">
-				<figure style="float:left; margin-right:20px; display:table" width='30'>
-					<img class="figure-img img-responsive" src="src/images/SAKURAAAAAAAI.jpg"/ alt="Masahiro Sakurai">
-					<figcaption class="figure-caption">Masahiro Sakurai</figcaption>
-				</figure>
-				
-			</div>
-			<p>
-				Die Super Smash Bros. Serie fand ihren Anfang im Jahr 1999, als Nintendo "Super Smash Bros." für den N64 veröffentlichte. Entwickelt wurde das Spiel von dem Studio HAL Laboratory. 
-				Es handelt sich hierbei, wie bei allen späteren Teilen, um ein familienfreundliches Prügelspiel, das zwölf verschiedene Charaktere aus dem Nintendo Universum gegeneinander antreten lässt.
-				Alle dargestellten Elemente wie Charaktere und Stages sind in 3D gerendert, das Spiel spielt sich allerdings auf einer 2D Ebene ab.
-				Der Kopf hinter der gesamten Serie, Masahiro Sakurai, betreut das Projekt schon seit dem ersten Teil bis heute.
-			</p>
-				
-			<p>
-				2001 erschien "Super Smash Bros. Melee" für den Nintendo GameCube. Auch dieser Teil wurde noch von Hal Laboratory entwickelt.
-				Die Anzahl der Charaktere wurde auf 26 vergrößert, die ebenfalls alle aus diversen Nintendo Spielen stammen, zusammen mit weiterem Inhalt wie Trophäen, Spielmodi und Stages.
-				Mit dieser Iteration der Serie entwickelte sich eine große E-Sport Szene, die bis heute beständig wächst.
-				Spieler entdeckten viele Techniken, die zu einem großen Teil nie vom Entwickler vorgesehen wurde.
-				Anfangs wehrte sich Sakurai stark gegen den Einsatz des Spiels in Turnieren, da er wollte, dass das Spiel so gespielt wird, wie von ihm vorgesehen: Als Spaß für die ganze Familie.
-			</p>
-			<p>
-				Die Auswirkungen seiner anfänglichen Ablehnung des E-Sports bekamen die Fans mit dem nächsten Teil der Serie zu spüren. 
-				Im Jahr 2008 erschien das vom Studio Sora entwickelte "Super Smash Bros. Brawl" für die Nintendo Wii.
-				Zusammen mit anderem Inhalt wurde der Umfang der Charaktere wieder erhöht. Diesmal stehen 35 Charaktere zur Auswahl, teilweise auch aus Marken anderer Publisher wie zum Beispiel Snake aus der Metal Gear Reihe.
-				Hier führte Sakurai eine neue Mechanik ein, die das Spiel in Turnieren unspielbar macht: "Tripping". Während eines Matches kann jeder Charakter bei dem Versuch zu Laufen zufällig stolpern und für kurze Zeit bewegungsunfähig bleiben.
-				Dadurch wird viel des Ergebnisses eines Matches durch Glück und nicht mehr rein durch Können entschieden.
-			</p>
-			<p>
-				Mit dem neusten Teil der Serie "Super Smash Bros. for Nintendo 3DS / for Wii U", welches vom Studio Sora zusammen mit Bandai Namco entwickelt wurde und 2014 erschien, wurde auch das "Tripping" wieder entfernt.
-				Der Umfang wurde wieder um einiges vergrößert.
-				So tummeln sich hier 58 Charaktere auf dem Schlachtfeld, sowohl aus dem Nintendo Universum, als auch aus anderen Spielen.
-			</p>
-			<p>
-				Mittlerweile hat sich Sakurai und damit auch Nintendo von seiner E-Sport feindlichen Haltung entfernt - Nintendo ist sogar als Sponsor auf vielen Turnieren zu finden.
-			</p>
+			<div id="smash_series">
+				<script>
+					$( "#smash_series" ).load( "content/smash_series.html" );
+				</script>
+			</div>	
           </article>
-          <article>
+          
+		  <article>
             <h2>Das Spielprinzip</h2>
-			<figure style="float:right; margin-left:20px; margin-bottom:20px; display:table; width:50%">
-				<img class="img-responsive" src="src/images/blastzones.png" alt="Darstellung der blastzones anhand der Stage Final Destination"/>
-				<figcaption class="figure-caption">Berührt ein Spieler den eingezeichneten Bereich, verliert er ein Leben.</figcaption>
-			</figure>
-			
-            <p>
-				Super Smash Bros. Melee lässt sich dem Genre der Fighting games zuordnen. Fighting games sind als Spiele definiert, in dem ein Spieler einen Charakter steuert und sich im Nahkampf mit einem Gegner misst. 
-				Dabei findet ein Kampf typischerweise in einer Arena statt und besteht aus mehreren Runden.
-				Jeder Charakter verfügt über eine Vielzahl verschiedener Angriffe und Spezialaktionen.
-				Üblicherweise spielen sich Fighting games auf einer 2D Ebene ab.
-			</p>
-			<p>
-				Bei anderen großen Genrevertretern wie zum Beispiel Street Fighter gewinnt der Spieler, der den Lebensbalken des Gegners als erster auf null reduziert.
-				In der Smash Bros. Serie hingegen ist das Ziel, den Gegner von der Arena, hier Stage genannt, zu schlagen.
-				Wer den Bildschirm verlässt - egal ob nach oben, unten, oder seitlich - verliert einen Stock (Leben).
-				Verliert ein Spieler vier Leben, so hat er die Runde verloren.
-			</p>
-			<p>
-				Um das zu verhindern stehen den Charakteren viele Mobilitätsoptionen zur Verfügung, um die Stage wieder zu erreichen, nachdem sie von ihrem Gegner von selbiger befördert wurden.
-				Jeder Charakter verfügt über mindestens zwei Sprünge, von denen einer in der Luft ausgeführt wurden kann.
-				Außerdem besitzt jeder Charakter eine Rettungsfähigkeit, um schnell an Höhe zu gewinnen (Diese werden in späteren Kapiteln noch näher erläutert).
-			</p>
+			<div id="prinzip">
+				<script>
+					$( "#prinzip" ).load( "content/prinzip.html" );
+				</script>
+			</div>
 		  </article>
+		
 		<article>
 			<h2>Prozente vs Lebensbalken</h2>
-			<img class="img-responsive" src="src/images/life_vs_percent.png" style="float:left; margin-bottom: 20px; margin-right: 20px" alt="Lebensbalken vs Prozentanzeige"/>
-			<p>
-				Bei klassischen Fighting games befindet sich über den Charakteren ein Lebensbalken. Fällt dieser auf null, so hat der Spieler des zugehörigen Lebensbalkens verloren.
-			</p>
-			<p>
-				Da in der Smash Bros. Serie der Spieler verliert, der den Bildschirm verlässt, wird hier kein Lebensbalken benötigt. Stattdessen wird sich hier einer Prozentanzeige bedient. 
-				Mit jedem Treffer, den ein Spieler einsteckt, erhöht sich die Prozentzahl.
-			</p>
-			<p>
-				Die Prozente beschreiben einen Multiplikator des Rückstoßes. Je höher die Zahl, desto weiter fliegt ein Charakter bei einem Treffer. 
-			</p>
-			<p>
-				Wichtig ist hierbei, dass die Prozentzahl nur sehr bedingt etwas über die momentane Führung eines Spielers aussagt. 
-				Ein Spieler mit 300% kann immer noch seinen Gegner, der sich bei 20% befindet, durch geschicktes Spiel von der Stage befördern.
-			</p>
+			<div id="percent">
+				<script>
+					$( "#percent" ).load( "content/percent.html" );
+				</script>
+			</div>
 		</article>
+		
 		<article>
 			<h2>Quiz</h2>
 			<p>
@@ -167,362 +97,51 @@
          <section id="basics">
           <h1>Basics</h1>
 		  <p>In diesem Kapitel lernst Du die grundlegende Steuerung des Spiels kennen.</p>
-          <article>
+          
+		  <article>
             <h2>Tastenbelegung</h2>
             <p><img class="img-responsive" src="src/images/controller.png" alt="Gamecube Controller"/></p> 
           </article>
+		  
 		  <article>
 			<h2>Legende</h2>
-			<p>Um die Kommunikation der Tasteneingaben einfacher zu gestalten, werden diese im folgenden nur noch durch Icons dargestellt. Hier eine Übersicht der Icons:</p>
-			<table class="table table-reponsive">
-				<tbody>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/a.png" alt="A-Button" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							A-Button
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/b.png" alt="B-Button" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							B-Button
-						</td>
-					</tr>	
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/x.png" alt="X-Button" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							X-Button
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/y.png" alt="Y-Button" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							Y-Button
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/z.png" alt="Z-Button" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							Z-Button
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/l.png" alt="L-Button" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							L-Button
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/r.png" alt="R-Button" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							R-Button
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/n.png" alt="Linker Stick neutral" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							Linker Stick hneutral
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/up.png" alt="Linker Stick hoch" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							Linker Stick hoch
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/down.png" alt="Linker Stick runter" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							Linker Stick runter
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/left.png" alt="Linker Stick nach links" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							Linker Stick nach links
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							Linker Stick nach rechts
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/c_neutral.png" alt="C-Stick neutral" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							C-Stick neutral
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/c_up.png" alt="C-Stick hoch" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							C-Stick hoch
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/c_down.png" alt="C-Stick runter" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							C-Stick runter
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/c_left.png" alt="C-Stick nach links" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							C-Stick nach links
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img class="img-responsive" src="src/images/controler/c_right.png" alt="C-Stick nach rechts" width='10%'/>
-						</td>
-						<td style="text-align:center; vertical-align:middle">
-							C-Stick nach rechts
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			<p>Soweit zu den einzelnen Tasten. Es gibt noch einige Sonderregeln der Darstellung im folgenden zu beachten:</p>
-			<ul>
-				<li>
-					Die Tasten: <img class="img-responsive img-inline" src="src/images/controler/x.png" alt="X-Button" width='3%'/>, <img class="img-responsive img-inline" src="src/images/controler/y.png" alt="Y-Button" width='5%'/> und 
-					<img class="img-responsive img-inline" src="src/images/controler/up.png" alt="Linker Stick hoch" width='5%'/> stellen alle den Befehl zu Springen dar. Es wird nur noch <img class="img-responsive img-inline" src="src/images/controler/y.png" alt="Y-Button" width='5%'/>
-					benutzt, um den Befehl zu beschreiben.
-				</li>
-				<li>
-					Sollen Tasten gleichzeitig gedrückt werden, wird das durch ein "+" dargestellt. Beispiel: <img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='5%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/a.png" alt="A-Button" width='3%'/>
-				</li>
-				<li>
-					Sprinten wird durch <img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='5%'/> <img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='5%'/> beschrieben, laufen nur durch <img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='5%'/> 
-				</li>
-			</ul>
+			<div id="legend">
+				<script>
+					$( "#legend" ).load( "content/legend.html" );
+				</script>
+			</div>
 		  </article>
-          <article>
-            <h2>Bewegung</h2>
-			<div class="module accordion">
-              <p data-title="Laufen vs Sprinten" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Video eines laufenden Charakters" width='49.5%'>
-                  <source src="src/videos/controls/walking.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<video autoplay loop class="embed-responsive-item"  alt="Video eines sprintenden Charakters" width='49.5%'>
-                  <source src="src/videos/controls/dashing_and_dashattack.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<span style="display:block">
-					Führe <img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/> oder <img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/> aus, um mit deinem Charakter zu laufen.
-					Dafür musst du den Stick nur leicht und nicht bis an den Rand bewegen. 
-					Um zu sprinten (dashen) drückst du <img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/><img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/> bzw. <img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/><img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/>.
-					Dafür drückst du den Stick fest und bis an den Rand.
-				</span>
-				<span style="display:block">
-					Aus dem Sprint kannst du durch das Drücken von <img class="img-responsive img-inline" src="src/images/controler/a.png" alt="A-Button" width='2%'/> einen Angriff ausführen, die so genannte Dash Attack.
-					Sowohl aus dem Laufen als auch aus dem Sprinten kannst du Springen, Blocken, Rollen und einen Spotdodge durchführen (siehe Verteidigung).
-					Während aus dem Sprint nur eine Dash Attack möglich ist, kannst du beim Laufen auch Tilts durchführen (siehe Angriff).
-				</span>
-              </p>
-			  <p data-title="Double Jump" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Video des Doppelsprungs" width='100%'>
-                  <source src="src/videos/controls/doublejump.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				Jeder Charakter verfügt über mindestens zwei Sprünge. Drücke zum Springen <img class="img-responsive img-inline" src="src/images/controler/y.png" alt="Y-Button" width='3%'/> und in der Luft noch einmal <img class="img-responsive img-inline" src="src/images/controler/y.png" alt="Y-Button" width='3%'/>.
-				Dies ist besonders wichtig, um wieder zur Stage zurück zu kommen, aber auch um Deinen Gegner durch einen plötzlichen Richtungswechsel zu verwirren.
-              </p>
-			  <p data-title="Full hop vs short hop" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Video des Full hops" width='49.5%'>
-                  <source src="src/videos/controls/full_hop.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<video autoplay loop class="embed-responsive-item"  alt="Video des short hops" width='49.5%'>
-                  <source src="src/videos/controls/shorthop.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				Du kannst die Höhe deiner Sprünge variieren, je nachdem wie lange du <img class="img-responsive img-inline" src="src/images/controler/y.png" alt="Y-Button" width='3%'/> drückst. 
-				Ein kurzer Sprung kann von Vorteil sein, um Deinen Gegner mit einem schnellen Luftangriff zu überraschen (siehe Aerials).
-              </p>
-            </div> 
+          
+		  <article id="movement">
+				<script>
+					$( "#movement" ).load( "content/movement.html" );
+				</script>
           </article>
-		  <article>
-			<h2>Angriff</h2>
-			<div class="module accordion">
-              <p data-title="Jab" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Ausführung eines Jabs" width='100%'>
-                  <source src="src/videos/controls/jab.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				Ein Jab ist eine schnelle Schlagabfolge. Drücke dafür mehrmals <img class="img-responsive img-inline" src="src/images/controler/a.png" alt="A-Button" width='2%'/> während sich der linke Stick in der <img class="img-responsive img-inline" src="src/images/controler/n.png" alt="Linker Stick neutral" width='3%'/> Position befindet.
-              </p>
-			  <p data-title="Smashes vs tilts" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Ausführung aller Smash Angriffe" width='49.5%'>
-                  <source src="src/videos/controls/all_smashes.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<video autoplay loop class="embed-responsive-item"  alt="Ausführung aller Tilt Angriffe" width='49.5%'>
-                  <source src="src/videos/controls/all_tilts.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<span style="display:block">
-					Smashes sind starke Angriffe, die einen Gegner weit zurückschlagen und aufgeladen werden können. Aber vorsicht: Führst Du einen Smash aus, bist Du danach für kurze Zeit handlungsunfähig.
-					Drücke um einen Smash auszuführen <img class="img-responsive img-inline" src="src/images/controler/up.png" alt="Linker Stick nach oben" width='3%'/><img class="img-responsive img-inline" src="src/images/controler/up.png" alt="Linker Stick nach oben" width='3%'/>, 
-					<img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='3%'/><img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='3%'/>, 
-					<img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/><img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/> 
-					oder <img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/><img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/a.png" alt="A-Button" width='2%'/>.
-				</span>
-				<span style="display:block">
-					Bei Tilts handelt es sich um schnelle Angriffe, die zwar nicht viel Rückstoß verursachen, aber gut geignet sind, um dem Gegner ein paar mehr Prozente zu verpassen. Außerdem eignen Tilts sich gut, um den Gegner mehrmals zu treffen.
-					Einen Tilt führst du durch  <img class="img-responsive img-inline" src="src/images/controler/up.png" alt="Linker Stick nach oben" width='3%'/>, 
-					<img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='3%'/>, 
-					<img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/> oder 
-					<img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/> und dem Drücken von <img class="img-responsive img-inline" src="src/images/controler/a.png" alt="A-Button" width='2%'/> aus, während Du die Richtung hältst.
-				</span>
-				<span style="display:block">
-					Die Videos zeigen die Angriffe in der Reihenfolge: Oben, unten, rechts, links.
-				</span>
-			  </p>
-			  <p data-title="Aerials" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Ausführung aller Aerials" width='100%'>
-                  <source src="src/videos/controls/aerials.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<span style="display:block">
-				Um Luftangriffe - sogennante Aerials - durchzuführen, drücke in der Luft einfach <img class="img-responsive img-inline" src="src/images/controler/n.png" alt="Linker Stick neutral" width='2%'/>, 
-				<img class="img-responsive img-inline" src="src/images/controler/up.png" alt="Linker Stick nach oben" width='3%'/>, 
-				<img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='3%'/>, 
-				<img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/> oder 
-				<img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/> und <img class="img-responsive img-inline" src="src/images/controler/a.png" alt="A-Button" width='2%'/>.
-				</span>
-				<span style="display:block">
-				Da sich der Charakter mitten im Sprung nicht umdrehen kann, sind die seitlichen Angriffe je nach Blickrichtung unterschiedlich. Einen Angriff in Blickrichtung nennt man Forward Air, einen entgegen der Blickrichtung Back Air.
-				</span>
-				<span style="display:block">
-				Das Video zeigt die Aerials in der Reihenfolge: Neutral Air, Up Air, Down Air, Forward Air und Back Air.
-				</span>
-			  </p>
-			  <p data-title="Throws" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Ausführung aller throws" width='100%'>
-                  <source src="src/videos/controls/all_throws.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<span style="display:block"> 
-					Drücke <img class="img-responsive img-inline" src="src/images/controler/z.png" alt="Z-B-Button" width='3%'/>, um einen Charakter zu greifen. 
-					Durch mehrfaches Drücken von <img class="img-responsive img-inline" src="src/images/controler/a.png" alt="A-Button" width='2%'/> kannst du den gegriffenen Gegner schlagen, um mehr Schaden zu verursachen.
-					Danach kannst Du mithilfe von <img class="img-responsive img-inline" src="src/images/controler/up.png" alt="Linker Stick nach oben" width='3%'/>, 
-					<img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='3%'/>, 
-					<img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/> oder 
-					<img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/> den Gegner in die entsprechende Richtung werfen.
-				</span>
-				<span style="display:block">
-					Im Video werden die Würfe in der Reihenfolge Up Throw, Down Throw, Forward Throw und Back Throw gezeigt.
-				</span>
-              </p>
-			</div>
+		  
+		  <article id="attack">
+			<script>
+					$( "#attack" ).load( "content/attack.html" );
+			</script>
 		  </article>
-		  <article>
-			<h2>Verteidigung</h2>
-			<div class="module accordion">
-              <p data-title="Blocken" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Blockender Charakter" width='100%'>
-                  <source src="src/videos/controls/blocking.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<span style="display:block">
-					Mit  <img class="img-responsive img-inline" src="src/images/controler/l.png" alt="L-Button" width='3%'/> oder <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/> kannst Du gegnerische Angriffe mit einem Schild blocken.
-				</span>
-				<span style="display:block">
-					Das Schild wird kleiner, je länger Du blockst. Auch Attacken auf das Schild verkleinern es. 
-					Bedeckt das Schild nicht mehr den gesamten Charakter, so können auch Teile Deines Charakters getroffen werden, die nicht mehr innerhalb des Schildes liegen. 
-					Wird es zu klein, so zerbricht es und du bist für lange Zeit handlungsunfähig, was in der Regel zum Verlust eines Stocks führt.
-					Das Schild regeneriert sich automatisch, wenn du es nicht benutzt.
-				</span>
-				<span style="display:block">
-					Vorsicht: Während Du blockst kannst du immer noch gegriffen und geworfen werden.
-				</span>
-              </p>
-			  <p data-title="Spotdodge" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Charakter während eines spotdodges" width='100%'>
-                  <source src="src/videos/controls/spotdodge.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<span style="display:block">
-					Drücke <img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='3%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/l.png" alt="L-Button" width='3%'/> oder <img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='3%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/> um einen Spotdodge durchführen.
-				</span> 
-				<span style="display:block">
-					Du bleibst dabei auf der Stelle stehen, wirst aber kurz unverwundbar. Dies ist besonders hilfreich, um Griffen auszuweichen. Durch die kurze Dauer kannst Du immer noch von Angriffen getroffen werden, deren Hitbox länger aktiv ist.
-					Außerdem ist ein Gegner in der Lage, dich am Ende Deines Spotdodges zu treffen.
-				</span> 				
-			  </p>
-			  <p data-title="Rollen" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Rollender Charakter" width='100%'>
-                  <source src="src/videos/controls/rolling.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<span style="display:block">
-					Eine Rolle wird durch <img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/>/<img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/l.png" alt="L-Button" width='3%'/> oder <img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/>/<img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/> ausgeführt.
-				</span>
-				<span style="display:block">
-					Dadurch kannst Du Dich schnell in eine Richtung bewegen, während Du unverwundbar bist. Allerdings kann ein Gegner, der mit einer Rolle rechnet, Dich am Ende deiner Rolle abfangen und angreifen.
-				</span>
-              </p>
-			  <p data-title="Airdodge" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item"  alt="Charakter während eines Airdodges" width='100%'>
-                  <source src="src/videos/controls/airdodge.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<span style="display:block">
-					Durch das Betätigen von <img class="img-responsive img-inline" src="src/images/controler/l.png" alt="L-Button" width='3%'/> oder <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/> in der Luft kannst Du für einen kurzen Moment unverwundbar werden.
-				</span>
-				<span style="display:block">
-					Hier ist allerdings besondere Vorsicht geboten: Nachdem Du einen Airdodge durchgeführt hast, kannst du keine weitere Aktion ausführen, bevor du den Boden berührst und fällst wehrlos nach unten. Setze diese Technik mit Bedacht ein.
-				</span>
-				</p>
-			</div>
+		  
+		  <article id="defense">
+			<script>
+					$( "#defense" ).load( "content/defense.html" );
+			</script>
 		  </article>
-		  <article>
-			<h2>Specials</h2>
-			<p>Jeder Charakter verfügt über verschiedene Specials. Diese werden durch <img class="img-responsive img-inline" src="src/images/controler/b.png" alt="B-Button" width='2%'/> und der Eingabe einer Richtung auf dem Analogstick durchgeführt.</p>
-			<p>Die Specials aller Charaktere unterscheiden sich stark voneinander. Daher wird in diesem Kapitel nicht näher darauf eingegangen. Im nächsten Kapitel findest Du zu jedem Charakter eine Auflistung seiner Specials.</p>
-			<p>Was alle Charaktere (außer Pummeluff) allerdings gemeinsam haben, ist die Verwendung von <img class="img-responsive img-inline" src="src/images/controler/up.png" alt="Linker Stick nach oben" width='2%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/b.png" alt="B-Button" width='2%'/> als Rettung, um wieder zurück zur Stage zu kommen.</p>
+		  
+		  <article id="specials_basic">
+			<script>
+					$( "#specials_basic" ).load( "content/specials_basic.html" );
+			</script>
 		  </article>
-		  <article>
-			<h2 class="invisible">Let's Smash</h2>
-			<img class="img-responsive banner_lets-smash" src="src/images/lets_smash_banner.png" alt="Dr. Mario" style="float:left; margin-right:20px" width='7%'/>
-			<p>Nun ist es Zeit, das Gelernte praktisch anzuwenden.</p>
-			<p>Gehe dafür in den Trainingsmodus des Spiels. Diesen findest du im Menüpunkt "1-P Mode". Wähle nun einen Charakter, der Dich interessiert, und experimentiere mit den gelernten Befehlen.</p>
-			<p>Versuche auch, von der Stage zu springen und wieder an die Kante zu gelangen. Viel Spaß!</p>
+		  
+		  <article id="lets_smash_basics">
+			<script>
+					$( "#lets_smash_basics" ).load( "content/lets_smash_basics.html" );
+			</script>
 		  </article>
+		
 		<article>
 			<h2>Quiz</h2>
 			<p>
@@ -531,6 +150,7 @@
 		</article>
         </section>
 
+		
          <section id="character">
           <h1>Charaktere</h1> 
 		  <p>
@@ -540,19 +160,14 @@
 		  </p>
 		  <article>
 			<h2>Gewichtsklassen</h2>
-			<img class="img-responsive" src="src/images/pummel.png" alt="Pummeluff" style="float:left" width='40%'/>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-			</p>
-			<p>
-				Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				Duis autem vel eum iriure dolor in
-			</p>
+			<div id="weight">
+				<script>
+					$( "#weight" ).load( "content/weight.html" );
+				</script>
+			</div>
 		  </article>
-          <article>
+          
+		  <article>
 			<h2>Floaties</h2>
 			<p class="rosterP">
 				<span style="font-weight:bolder">Wähle einen Charakter</span>
@@ -671,7 +286,8 @@
 				</div>
 			</div>
 		  </article>
-          <article>
+          
+		  <article>
             <h2>Mid Weight</h2>
 			<p class="rosterP">
 				<span style="font-weight:bolder">Wähle einen Charakter</span>
@@ -687,15 +303,16 @@
 		    </p>
             <p>Content 2</p>
           </article>
+		  
 		  <article>
 			<h2 class="invisible">Let's Smash</h2>
-			<img class="img-responsive banner_lets-smash" src="src/images/lets_smash_banner.png" alt="Dr. Mario" style="float:right; margin-left:20px" width='100%'/>
-			<p>Es ist wieder soweit: Die nächste Übung steht an.</p>
-			<p>Gehe nun in den Melee Modus (VS. Mode -> Melee) und wähle einen Charakter, der Dich interessiert. Wähle Donkey Kong als gegnerischen Bot und setze seine Schwierigkeit auf 3.</p>
-			<p>Stelle oben am Bildschirm den Modus auf 4 Stocks (Leben) und deaktiviere Items.</p>
-			<p>Im nächsten Bildschirm wählst Du "Yoshi's Story" als Map.</p>
-			<p>Experimentiere nun mit Deinem Charakter. Versuche, gegen Donkey Kong zu gewinnen. Teste alle Angriffe und Specials. Erhöhe die Schwierigkeit des Bots bei jedem Sieg.</p>
+			<div id="lets_smash_chars">
+				<script>
+					$( "#lets_smash_chars" ).load( "content/lets_smash_chars.html" );
+				</script>
+			</div>
 		  </article>
+		
 		<article>
 			<h2>Quiz</h2>
 			<p>
@@ -704,21 +321,21 @@
 		</article>
         </section>
 
+		
         <section id="stages">
           <h1>Stages</h1> 
 		  <p>Nun lernst Du die verschiedenen Stages des Spiels kennen. Zunächst klären wir allerdings erst einmal, was eine Stage legal, also bei einem Turnier erlaubt, macht und was illegale Stages sind.</p>
-		  <p>Im Anschluss kannst Du dir alle Stages nach ihrer Turnierregeln unterteilt anschauen.</p>
+		  <p>Im Anschluss kannst Du dir alle Stages nach Belieben betrachten.</p>
           <article>
-            <h2>Turnierregeln</h2>
-			<img class="img-responsive" src="src/images/banhammer.jpeg" alt="banhammer" style="float:right; margin-right:20px" width='30%'/>
-            <p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			</p>
+			<h2>Turnierregeln</h2>
+			<div id="tourney_legal">
+				<script>
+					$( "#tourney_legal" ).load( "content/tourney_legal.html" );
+				</script>
+			</div>
           </article>
-          <article>
+          
+		  <article>
             <h2>Tournament legal</h2>
 			<p class="rosterP">
 				<span style="font-weight:bolder">Wähle eine Stage</span>
@@ -761,6 +378,7 @@
 				</p>
 			</div>
           </article>
+		  
 		  <article>
 			<h2>Tournament illegal</h2>
 			<p class="rosterP">
@@ -834,15 +452,16 @@
 				</p>
 			</div>
 		  </article>
+		  
 		  <article>
 			<h2 class="invisible">Let's Smash</h2>
-			<img class="img-responsive banner_lets-smash" src="src/images/lets_smash_banner.png" alt="Dr. Mario" style="float:right; margin-left:20px" width='100%'/>
-			<p>In dieser Übung schauen wir uns die verschiedenen Stages mal genauer an.</p>
-			<p>Gehe nun in den Melee Modus (VS. Mode -> Melee) und wähle einen Charakter, der Dich interessiert. Wähle einen beliebigen gegnerischen Bot und setze seine Schwierigkeitsstufe auf ein für Dich herausforderndes Level.</p>
-			<p>Stelle oben am Bildschirm den Modus auf 4 Stocks (Leben) und deaktiviere Items.</p>
-			<p>Wähle im nächsten Bildschirm einfach Stages aus, die Du ansprechend findest.</p>
-			<p>Kämpfe nun gegen den Bot, während du den Gefahren der Stages trotzt. Wähle bei jedem Sieg eine andere Stage.</p>
+			<div id="lets_smash_stages">
+				<script>
+					$( "#lets_smash_stages" ).load( "content/lets_smash_stages.html" );
+				</script>
+			</div>
 		  </article>
+		
 		<article>
 			<h2>Quiz</h2>
 			<p>
@@ -850,7 +469,9 @@
 			</p>
 		</article>
         </section>
-         <section id="abschlussquiz">
+         
+		
+		<section id="abschlussquiz">
           <h1>Abschlussquiz</h1> 
 		  <p>
 			Dieses Quiz beendet das Training.
@@ -859,6 +480,8 @@
 			<h2>Abschlussquiz</h2>
 		  </article>
 		</section>
+		
+		
 		<section>
 			<h1>Advanced</h1>
 			<p>
@@ -866,197 +489,47 @@
 			</p>
 			<article>
 				<h2>Teching</h2>
-				<h3>Was ist Teching?</h3>
-				<figure style="float:left; margin-right:20px; display:table; width:35%">
-					<img class="figure-img img-responsive" src="src/images/tech.gif"/ alt="Tech auf der Stelle">
-					<figcaption class="figure-caption">Tech auf der Stelle</figcaption>
-				</figure>
-				<!--<img class="img-responsive" src="src/images/tech.gif" style="float:left; margin-right:20px" width='30%'/>-->
-				<p>
-					<span style="display:block">
-						Prallt man nach einem gegnerischen Treffer auf dem Boden auf, so bleibt der eigene Charakter regungslos auf dem Boden liegen, bis man eine Taste drückt. 
-						Allerdings gibt es dabei ein kurzes Zeitfenster in dem man wehrlos ist, was der Gegner benutzen kann, um weiter zu attackieren.
-					</span>
-					<span style="display:block">
-						Auch gegen eine Wand geschlagen zu werden, zum Beispiel die Begrenzung der Stage beim Versuch zu ihr zurück zu gelangen, ist gefährlich.
-						Von Wänden und Decken prallen Charaktere stark ab, besonders bei einer hohen Prozentanzeige. Dabei ist an Rettung nicht mehr zu denken
-					</span>
-					<span style="display:block">
-						Um genau diese Szenarien zu verhindern, gibt es die Möglichkeit, einen Aufprall zu "techen". 
-						Das bedeutet, dass der Charakter beim Sturz auf den Boden sofort wieder aufsteht.
-						Trifft er eine Wand, wird er nicht von dieser reflektiert sondern federt nur kurz ab.
-					</span>
-				</p>
-				<h3>Wie funktioniert Teching?</h3>
-				<figure style="float:right; margin-left:20px; display:table; width:35%">
-					<img class="figure-img img-responsive" src="src/images/wall_tech.png"/ alt="Tech an einer Wand">
-					<figcaption class="figure-caption">Tech an einer Wand</figcaption>
-				</figure>
-				<p>
-					<span style="display:block">
-						Um zu "techen" musst Du kurz vor dem Aufprall <img class="img-responsive img-inline" src="src/images/controler/l.png" alt="L-Button" width='3%'/> oder <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/> drücken.
-						Das klingt einfacher als es ist, denn perfektes Timing ist sehr wichtig. Vor allem in einem erhitzten Schlagabtausch wird es schwer, daran zu denken, geschweige denn das Timing zu beachten.
-						Vor allem Teching an einer Wand wird sehr schwer, wenn Dein Charakter viele Prozente gesammelt hat und sehr schnell fliegt.
-					</span>
-					<span style="display:block">
-						Durch das Drücken einer Richtung auf dem Analogstick kannst du verschiedene Variationen ausführen: Durch das bloße Drücken von <img class="img-responsive img-inline" src="src/images/controler/l.png" alt="L-Button" width='3%'/> bzw. <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/> ohne Bewegung des Sticks springt dein Charakter áuf der Stelle auf (siehe gif).
-						Durch <img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='3%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/l.png" alt="L-Button" width='3%'/> / <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/> und durch
-						<img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='3%'/> <b>+</b> <img class="img-responsive img-inline" src="src/images/controler/l.png" alt="L-Button" width='3%'/> / <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/>
-						führst Du eine Rolle in die entsprechende Richtung aus und kannst so noch etwas Distanz zwischen Dich und Deinen Gegner bringen.
-					</span>
-				</p>
-				<h3 class="invisible">Let's smash</h3>
-				<img class="img-responsive banner_lets-smash" src="src/images/lets_smash_banner.png" alt="Dr. Mario" style="float:left; margin-right:20px" width='100%'/>
-				<p>
-					Spiele gegen einen beliebigen Bot auf Stufe 9 auf einer Stage, die für das Turnierspiel erlaubt ist. Versuche, so oft wie möglich zu techen, wenn du getroffen wirst.
-				</p>
+				<div id="teching">
+					<script>
+						$( "#teching" ).load( "content/teching.html" );
+					</script>
+				</div>
 			</article>
+			
 			<article>
 				<h2>DI</h2>
-				<h3>Was ist DI?</h3>
-				<figure style="float:left; margin-right:20px; display:table; width:35%">
-					<img class="figure-img img-responsive" src="src/images/di.gif"/ alt="DI Demonstration">
-					<figcaption class="figure-caption">Regular DI Demonstration</figcaption>
-				</figure>
-				<p>
-					<span style="display:block">
-						DI ist die gängige Abkürzung für "Directional Influence". Das bedeutet genauer: Die Beeinflussung der Flugbahn seines Charakters, nachdem dieser getroffen wurde.
-						Man unterscheidet dabei zwischen "Regular DI" und "Smash DI".
-					</span>
-					<span style="display:block">
-						Regular DI wird verwendet, um nach einem harten Treffer nach dem man weit fliegt keinen Stock zu verlieren. Man versucht dabei seine Flugbahn in der Regel so zu ändern, dass man möglichst nah an der Stage bleibt.
-						Wichtig ist hier: Regular DI kann nur orthogonal zur Flugbahn erfolgen. Fliegt man also horizontal, kann man seine Flugbahn nur nach oben und unten verändern (siehe gif). 
-						Fliegt man vertikal, kann man seine Flugbahn nach links und rechts ändern. Dadurch verkürzt sich die Strecke, die man in die originale Flugrichtung zurücklegt und man kann länger überleben.
-					</span>
-					<span style="display:block">
-						Smash DI hingegen wird verwendet, um gegnerischen Kombos zu entkommen. Ist man in einer Kombo gefangen, so kann man durch Smash DI von dem Gegner weg steuern, um dieser zu entkommen.
-						Hier wird einfach in die gewünschte Richtung gesteuert, ohne auf Orthogonalität zu achten.
-					</span>
-				</p>
-				<h3>Wie funktioniert DI?</h3>
-				<p>
-					<span style="display:block">
-						Regular DI wird ausgeführt, indem man <img class="img-responsive img-inline" src="src/images/controler/n.png" alt="Linker Stick neutral" width='2%'/> in die gewünschte Richtung bewegt und dort hält.
-						Die Schwierigkeit hierbei liegt darin, erstens so früh nach dem Treffer wie möglich mit der Bewegung anzufangen und zweitens den richtigen Winkel zu treffen.
-						Außerdem muss die Situation sehr schnell eingeschätzt werden.
-					</span>
-					<span style="display:block">
-						Smash DI wird ebenfalls durch Bewegung von <img class="img-responsive img-inline" src="src/images/controler/n.png" alt="Linker Stick neutral" width='2%'/> in eine Richtung ausgeführt.
-						Allerdings wird der Stick nicht an dieser Position gehalten, sondern immer wieder aus der neutralen Position so schnell wie möglich in die gewünschte Richtung "geschlagen".
-						Die Schwierigkeit liegt hier im Tempo der Eingabe zusammen mit der richtigen Richtung.
-					</span>
-				</p>
-				<h3 class="invisible">Let's smash</h3>
-				<img class="img-responsive banner_lets-smash" src="src/images/lets_smash_banner.png" alt="Dr. Mario" style="float:left; margin-right:20px" width='100%'/>
-				<p>
-					Spiele gegen einen beliebigen Bot auf Stufe 9 auf einer Stage, die für das Turnierspiel erlaubt ist. Versuche, so oft wie möglich zu techen, wenn du getroffen wirst. Achte außerdem darauf, sowohl Regular DI als auch Smash DI einzusetzen, wenn du getroffen wirst. 
-				</p>
+				<div id="di">
+					<script>
+						$( "#di" ).load( "content/di.html" );
+					</script>
+				</div>
 			</article>
+			
 			<article>
 				<h2>Dash dancing</h2>
-				<h3>Was ist Dash dancing?</h3>
-				<figure style="float:left; margin-right:20px; display:table; width:30%">
-					<img class="figure-img img-responsive" src="src/images/dashdance.gif"/ alt="Dash dancing auf der Stelle">
-					<figcaption class="figure-caption">Dash dancing auf der Stelle</figcaption>
-				</figure>
-				<p>
-					<span style="display:block">
-						Als Dash dancing bezeichnet man schnelle Richtungswechsel, also schnell hintereinander folgende Dashes in verschiedene Richtungen.
-					</span>			
-					<span style="display:block">
-						Dies dient dazu, den Gegner im unklaren darüber zu lassen, was man als nächstes vorhat. Es ist nur sehr schwer einzuschätzen, wann ein Angriff kommt, oder ob man sich zurückzieht.
-						Auch die Art des Angriffs bleibt ungewiss, da man aus einem Dash immer noch springen kann.
-					</span>		
-					<span style="display:block">
-						Außerdem ist auch die Länge des Dash dancing variabel. So ist man zum Beispiel in der Lage, auf einen Gegner zu stürmen, eine Reaktion des Gegners herauszufordern und kurz vor dem Gegner wieder umzudrehen und erneut anzugreifen.
-						Blockt der Gegner zum Beispiel, so kann das Blocken durch einen Griff bestraft werden.
-					</span>	
-				</p>
-				<h3>Wie funktioniert Dash dancing?</h3>
-				<figure style="float:right; margin-left:20px; display:table; width:30%">
-					<img class="figure-img img-responsive" src="src/images/dashdance2.gif"/ alt="Dash dancing gegen einen Gegner">
-					<figcaption class="figure-caption">Dash dancing im Einsatz gegen einen Gegner</figcaption>
-				</figure>
-				<p>
-					<span style="display:block">
-						Um Dash dancing auf der Stelle durchzuführen wird nur der Analogstick benötigt. Führe einfach <img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='2%'/><img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='2%'/> und <img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='2%'/><img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='2%'/> so schnell wie möglich nacheinander aus.
-						Kurz gesagt: Wackel den Stick fest hin und her.
-					</span>
-					<span style="display:block">
-						Schwieriger wird es, wenn Du einen längeren Dash dance durchführen willst. 
-						Drücke dafür zunächst sehr kurz (nicht gedrückt lassen) <img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='2%'/><img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='2%'/> / <img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='2%'/><img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='2%'/>.
-						Dein Charakter wird einen kurzen Sprint in die entsprechende Richtung durchführen. Drücke am Ende dieses Sprints den Stick in die entgegengesetzte Richtung. 
-					</span>
-					<span style="display:block">
-						Richtig ausgeführt lässt sich der Dash dance beliebig wiederholen.
-						Gutes Timing ist hierbei sehr wichtig. Wechselst Du die Richtung zu früh, so passiert nichts. Wechselst Du die Richtung zu spät, führt dein Charakter eine Animation aus, in der er abbremst und sich umdreht, was leicht bestraft werden kann.
-					</span>
-				</p>
-				<h3 class="invisible">Let's smash</h3>
-				<img class="img-responsive banner_lets-smash" src="src/images/lets_smash_banner.png" alt="Dr. Mario" style="float:left; margin-right:20px" width='100%'/>
-				<p>
-					Gehe in den Trainingsmodus und versuche erst einmal, Dich nur auf das Dash dancing zu konzentrieren. Übe, bis du es zuverlässig schaffst.
-				</p>
-				<p>
-					Versuche danach, das Dash dancing im Spiel gegen einen Bot einzubinden.
-				</p>
+				<div id="dash_dance">
+					<script>
+						$( "#dash_dance" ).load( "content/dash_dance.html" );
+					</script>
+				</div>
 			</article>
+			
 			<article>
 				<h2>Wave dashing</h2>
-				<h3>Was ist Wave dashing?</h3>
-				<!--<img class="img-responsive" src="src/images/wavedash.gif" style="float:left; margin-right:20px" width='50%'/>-->
-				<p>
-					<span style="display:block">
-						Wave dashing ist eine Technik, bei der der Charakter über den Boden der Stage gleitet, ohne zu Laufen oder zu springen. Die Länge eines Wave dashes ist dabei stark vom gespielten Charakter abhängig. 
-						Während Luigi fast die halbe Stage mit einem Wave dash überwindet, legt Princess Peach nur die breite ihres Charaktermodels zurück.
-					</span>
-					<span style="display:block">
-						Was ist der Vorteil von Wave dashing gegenüber dem regulären Dashing? Wie bei dem zuvor beschriebenen Dash dancing sind auch durch Wave dashing schnelle Richtungswechsel möglich. 
-						Allerdings überwinden bestimmte Charaktere durch einen Wave dash deutlich mehr Strecke als durch normale Dashes. 
-						Der größte Vorteil ist jedoch, dass ein Wave dash nicht als regulärer Dash gilt. Das bedeutet: Aus einem Dash sind nur die Angriffsmöglichkeiten Dashattack und Greifen erlaubt. 
-						Bei einem Wave dash sind alle möglichen Aktionen erlaubt, da der Charakter für das Spiel "steht". Also Jabs, Tilts, Smashes und Griffe.
-					</span>
-				</p>
-				<figure style="float:top; margin: auto; display:block; width:auto">
-					<img class="figure-img img-responsive" src="src/images/wd_length.gif"/ alt="Längenvergleich des Wave dashes" style="width:100%">
-					<figcaption class="figure-caption">Längenvergleich des Wave dashes</figcaption>
-				</figure>
-				<h3>Wie funktioniert Wave dashing?</h3>
-				<figure style="float:left; margin-right: 20px; display:table; width:50%">
-					<img class="figure-img img-responsive" src="src/images/wavedash.gif"/ alt="Wave dashing" style="width:100%">
-					<figcaption class="figure-caption">Wave dashing</figcaption>
-				</figure>
-				<p>
-					<span style="display:block">
-						Es bedarf viel Übung, um zuverlässig zu wave dashen. Führe einen Sprung mit <img class="img-responsive img-inline" src="src/images/controler/y.png" alt="Y-Button" width='3%'/> aus. 
-						Drücke sofort danach <img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='2%'/><img class="img-responsive img-inline" src="src/images/controler/left.png" alt="Linker Stick nach links" width='2%'/> / <img class="img-responsive img-inline" src="src/images/controler/down.png" alt="Linker Stick nach unten" width='2%'/><img class="img-responsive img-inline" src="src/images/controler/right.png" alt="Linker Stick nach rechts" width='2%'/> <b>+</b>  <img class="img-responsive img-inline" src="src/images/controler/r.png" alt="R-Button" width='3%'/>.
-					</span>
-					<span style="display:block">
-						Das bedeutet: Sofort nach dem Absprung muss ein Airdodge diagonal nach unten durchgeführt werden. Stimmt das Timing, siehst Du keinen Sprung mehr, sondern nur eine weiße Wolke und Dein Charakter rutscht über die Stage.
-					</span>
-					<span style="display:block">
-						Am wichtigsten ist hierbei neben dem richtigen Timing die Position des Sticks. 
-						Versuche möglichst du untere seitliche Ecke zu treffen. 
-						Ist der Stick mehr nach unten als zur Ecke gedrückt, geht der Wave dash nicht besonders weit.
-						Ist der Stick allerdings zu weit seitlich, so wird anstatt des Wave dashes ein Airdodge ausgeführt und du landest für einen kurzen Moment wehrlos auf der Stage.
-					</span>
-				</p>
-				<h3 class="invisible">Let's smash</h3>
-				<img class="img-responsive banner_lets-smash" src="src/images/lets_smash_banner.png" alt="Dr. Mario" style="float:left; margin-right:20px" width='100%'/>
-				<p>
-					Gehe in den Trainingsmodus und versuche erst einmal, Dich nur auf das Wave dashing zu konzentrieren. Übe, bis du es zuverlässig schaffst. Lass dich nicht abschrecken, es kann sehr lange dauern, die Technik zu meistern.
-				</p>
-				<p>
-					Versuche danach, das Wave dashing im Spiel gegen einen Bot einzubinden.
-				</p>
+				<div id="wave_dash">
+					<script>
+						$( "#wave_dash" ).load( "content/wave_dash.html" );
+					</script>
+				</div>
 			</article>
+			
 			<article>
 				<h2>Practice makes perfect</h2>
-				<img class="img-responsive" src="src/images/salute.png" alt="Cpt. Falcon salute" style="float:left; margin-right:20px" width='40%'/>
-				<p>Wir hoffen, dass Du Dein Wissen über Super Smash Bros. Melee durch dieses WBT um einiges erweitern konntest.</p>
-				<p>Du hast nun eine solide Grundlage, um das Spiel zu verstehen und Spielen zu können. Doch Wissen allein reicht nicht, Übung macht den Meister.</p>
-				<p>Versuche, vor allem oft zu spielen. Nicht nur gegen Bots, sondern wenn möglich auch gegen andere Spieler. Suche öfter den Trainingsmodus auf, um deine Techniken zu verbessern und neue Dinge auszuprobieren.</p>
-				<p>Viel Erfolg!</p>
+				<div id="practice">
+					<script>
+						$( "#practice" ).load( "content/practice.html" );
+					</script>
+				</div>
 			</article>
 		</section>
 
