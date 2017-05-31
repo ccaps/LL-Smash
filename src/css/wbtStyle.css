@@ -107,9 +107,48 @@ body{
 
 
 /** Characters **/
-.chars_overview
-{
+#character-roster{
+	background-image: url(../images/backgrounds/character_background.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: url(../others/Mouse2.cur), pointer;
+}
+.chars_overview{
 	width: 100%;
+}
+
+.character-tile{
+	position: relative;
+	margin: 2px;
+}
+
+.character-tile:hover{
+	cursor: url(../others/Mouse3.cur), pointer;
+}
+
+.character-name{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-bottom-right-radius:6px;
+	border-bottom-left-radius:6px;
+	background-color: black;
+	color: white;	
+	text-align: center;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters  > .col, .no-gutters  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.modal-header .close{
+	margin-top: -20px;
 }
 
 

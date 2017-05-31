@@ -25,640 +25,353 @@
     <script src="src/js/dragDrop.js" type="text/javascript" charset="utf-8"></script>
     <script src="src/js/gallery.js" type="text/javascript" charset="utf-8"></script>
    <script src="src/js/multiple-choice.js" type="text/javascript" charset="utf-8"></script>
+   <!-- Custom JS -->
+   <script src="src/js/character_data.js" type="text/javascript" charset="utf-8"></script>
    <!--Fonts-->
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
-<header class="image-bg-fixed-height">
-</header>
-<div class="container">
-<!-- main navigation -->
-    <nav class="mainNavigation"></nav>
-    <div class="row">
-      <!-- subnavigation-->
-      <!--<div class="col-md-3">-->
-            <!--<nav class="subNavigation"></nav>-->
-        <!--</div>-->
-        <div class="col-md-10 col-md-offset-1">
-
-		<section id="start">
-			<h1>Willkommen</h1>
-			<p><img class="img-responsive" src="src/images/header_smashbrosmelee.jpg" alt="Alle Charaktere als Header"/></p>
-			<article>
-			<h2>Zu diesem WBT</h2>
-				<div id="welcome">
-					<script>
-							$( "#welcome" ).load( "content/welcome.html" );
-					</script>
-				</div>
-			</article>
-		</section>
-
-
-        <section id="introduction">
-          <h1>Einleitung</h1> 
-          <p>In diesem Abschnitt lernst Du, was das Super Smash Bros. Melee genau ist, und wie das Spielprinzip im Detail funktioniert.</p>
-          
-		  <article>
-            <h2>Die Smash Bros. Serie</h2>
-			<div id="smash_series">
-				<script>
-					$( "#smash_series" ).load( "content/smash_series.html" );
-				</script>
-			</div>	
-          </article>
-          
-		  <article>
-            <h2>Das Spielprinzip</h2>
-			<div id="prinzip">
-				<script>
-					$( "#prinzip" ).load( "content/prinzip.html" );
-				</script>
-			</div>
-		  </article>
-		
-		<article>
-			<h2>Prozente vs Lebensbalken</h2>
-			<div id="percent">
-				<script>
-					$( "#percent" ).load( "content/percent.html" );
-				</script>
-			</div>
-		</article>
-		
-		<article>
-			<h2>Quiz</h2>
-			<p>
-				Hier kommt ein Quiz 
-			</p>
-		</article>		
-		
-        </section>
-
-
-         <section id="basics">
-          <h1>Basics</h1>
-		  <p>In diesem Kapitel lernst Du die grundlegende Steuerung des Spiels kennen.</p>
-          
-		  <article>
-            <h2>Tastenbelegung</h2>
-            <p><img class="img-responsive" src="src/images/controller.png" alt="Gamecube Controller"/></p> 
-          </article>
-		  
-		  <article>
-			<h2>Legende</h2>
-			<div id="legend">
-				<script>
-					$( "#legend" ).load( "content/legend.html" );
-				</script>
-			</div>
-		  </article>
-          
-		  <article id="movement">
-				<script>
-					$( "#movement" ).load( "content/movement.html" );
-				</script>
-          </article>
-		  
-		  <article id="attack">
-			<script>
-					$( "#attack" ).load( "content/attack.html" );
-			</script>
-		  </article>
-		  
-		  <article id="defense">
-			<script>
-					$( "#defense" ).load( "content/defense.html" );
-			</script>
-		  </article>
-		  
-		  <article id="specials_basic">
-			<script>
-					$( "#specials_basic" ).load( "content/specials_basic.html" );
-			</script>
-		  </article>
-		  
-		  <article id="lets_smash_basics">
-			<script>
-					$( "#lets_smash_basics" ).load( "content/lets_smash_basics.html" );
-			</script>
-		  </article>
-		
-		<article>
-			<h2>Quiz</h2>
-			<p>
-				Hier kommt ein Quiz 
-			</p>
-		</article>
-        </section>
-
-		
-         <section id="character">
-          <h1>Charaktere</h1> 
-		  <p>
-			In diesem Abschnitt lernst Du die verschiedenen Charaktere des Spiels kennen. Diese sind nach Gewichtsklassen unterteilt. 
-			Zunächst wird der Unterschied zwischen den Gewichtsklassen erklärt.
-			Anschließend kannst Du die Herkunft, Eigenschaften und Specials aller Charaktere im Detail betrachten.
-		  </p>
-		  <article>
-			<h2>Gewichtsklassen</h2>
-			<div id="weight">
-				<script>
-					$( "#weight" ).load( "content/weight.html" );
-				</script>
-			</div>
-		  </article>
-          
-		  <article>
-			<h2>Floaties</h2>
-			<p class="rosterP">
-				<span style="font-weight:bolder">Wähle einen Charakter</span>
-				<img class="img-responsive charRoster" src="src/images/chars_cut.jpg" alt="Character Select Screen"/>
-		    </p>
-			<div>
-				<div>
-					<div class="container-fluid">
-						<div class="panel-group collapse in" id="B0x4r1Ir8ayy6h">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#B0x4r1Ir8ayy6h" href="#WSlLxzsEnzdqFhp" class="collapsed">Sakurai Sensei</a>
-									</h4>
-								</div>
-								<div id="WSlLxzsEnzdqFhp" class="panel-collapse collapse" style="height: 0px;">
-									<div class="panel-body"> 
-										<table class="table table-reponsive">
-											<tbody>
-												<tr>
-													<td rowspan="3">
-														<img title="Sakurai Sensei" alt="Sakurai Sensei" src="src/images/SAKURAAAAAAAI.jpg" class="img-responsive" />
-													</td>
-													<td>Aus Spiel:</td>
-													<td>Takeshis Castle</td>
-												</tr>
-												<tr>
-													<td>Freigeschaltet durch:</td>
-													<td>Bei Spielstart verfügbar</td>
-												</tr>	
-												<tr>
-													<td>Eigenschaften:</td>
-													<td>Die totale Bosshaftigkeit</td>
-												</tr>														
-											</tbody>
-										</table>
-										<div class="panel-group" id="sakurei_accordion">
-											<div class="panel panel-default" id="sakurei_neutral_special">
-												<div class="panel-heading">
-													 <h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#sakurei_accordion" data-target="#sakurei_neutral_special_content" href="#collapseOne">Neutral Special</a>
-													</h4>
-												</div>
-												<div id="sakurei_neutral_special_content" class="panel-collapse collapse">
-													<div class="panel-body">
-														<video autoplay loop class="embed-responsive-item"  alt="Charakter während eines Airdodges" width='50%' style="float:left; margin-right:20px">
-															<source src="src/videos/specials/mario/neutral.mp4" type="video/mp4">
-															Your browser does not support the video tag.
-														</video>
-														<p>
-															Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default" id="sakurei_up_special">
-												<div class="panel-heading">
-													 <h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#sakurei_accordion" data-target="#sakurei_up_special_content" href="#collapseOne">Up Special</a>
-													</h4>
-												</div>
-												<div id="sakurei_up_special_content" class="panel-collapse collapse">
-													<div class="panel-body">
-														<video autoplay loop class="embed-responsive-item"  alt="Charakter während eines Airdodges" width='50%' style="float:left; margin-right:20px">
-															<source src="src/videos/specials/mario/up.mp4" type="video/mp4">
-															Your browser does not support the video tag.
-														</video>
-														<p>
-															Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default" id="sakurei_down_special">
-												<div class="panel-heading">
-													 <h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#sakurei_accordion" data-target="#sakurei_down_special_content" href="#collapseOne">Down Special</a>
-													</h4>
-												</div>
-												<div id="sakurei_down_special_content" class="panel-collapse collapse">
-													<div class="panel-body">
-														<video autoplay loop class="embed-responsive-item"  alt="Charakter während eines Airdodges" width='50%' style="float:left; margin-right:20px">
-															<source src="src/videos/specials/mario/down.mp4" type="video/mp4">
-															Your browser does not support the video tag.
-														</video>
-														<p>
-															Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="panel panel-default" id="sakurei_slide_special">
-												<div class="panel-heading">
-													 <h4 class="panel-title">
-														<a data-toggle="collapse" data-parent="#sakurei_accordion" data-target="#sakurei_slide_special_content" href="#collapseOne">Side Special</a>
-													</h4>
-												</div>
-												<div id="sakurei_slide_special_content" class="panel-collapse collapse">
-													<div class="panel-body">
-														<video autoplay loop class="embed-responsive-item"  alt="Charakter während eines Airdodges" width='50%' style="float:left; margin-right:20px">
-															<source src="src/videos/specials/mario/side.mp4" type="video/mp4">
-															Your browser does not support the video tag.
-														</video>
-														<p>
-															Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>									
-									</div>
-								</div>
-							</div>
+	<header class="image-bg-fixed-height"></header>
+	<div class="container">
+	<!-- main navigation -->
+		<nav class="mainNavigation"></nav>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<section id="start">
+					<h1>Willkommen</h1>
+					<p><img class="img-responsive" src="src/images/header_smashbrosmelee.jpg" alt="Alle Charaktere als Header"/></p>
+					<article>
+					<h2>Zu diesem WBT</h2>
+						<div id="welcome">
+							<script>
+									$( "#welcome" ).load( "content/welcome.html" );
+							</script>
 						</div>
-					</div>
-				</div>
+					</article>
+				</section>
+				<section id="introduction">
+					<h1>Einleitung</h1> 
+					<p>In diesem Abschnitt lernst Du, was das Super Smash Bros. Melee genau ist, und wie das Spielprinzip im Detail funktioniert.</p>
+					<article>
+						<h2>Die Smash Bros. Serie</h2>
+						<div id="smash_series">
+							<script>
+								$( "#smash_series" ).load( "content/smash_series.html" );
+							</script>
+						</div>	
+					</article>
+					<article>
+						<h2>Das Spielprinzip</h2>
+						<div id="prinzip">
+							<script>
+								$( "#prinzip" ).load( "content/prinzip.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>Prozente vs Lebensbalken</h2>
+						<div id="percent">
+							<script>
+								$( "#percent" ).load( "content/percent.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>Quiz</h2>
+						<p>
+							Hier kommt ein Quiz 
+						</p>
+					</article>		
+				</section>
+				<section id="basics">
+					<h1>Basics</h1>
+					<p>In diesem Kapitel lernst Du die grundlegende Steuerung des Spiels kennen.</p>
+					<article>
+						<h2>Tastenbelegung</h2>
+						<p><img class="img-responsive" src="src/images/controller.png" alt="Gamecube Controller"/></p> 
+					</article>
+					<article>
+						<h2>Legende</h2>
+						<div id="legend">
+							<script>
+								$( "#legend" ).load( "content/legend.html" );
+							</script>
+						</div>
+					</article>
+					<article id="movement">
+						<script>
+							$( "#movement" ).load( "content/movement.html" );
+						</script>
+					</article>
+					<article id="attack">
+						<script>
+							$( "#attack" ).load( "content/attack.html" );
+						</script>
+					</article>
+					<article id="defense">
+						<script>
+								$( "#defense" ).load( "content/defense.html" );
+						</script>
+					</article>
+					<article id="specials_basic">
+						<script>
+								$( "#specials_basic" ).load( "content/specials_basic.html" );
+						</script>
+					</article>
+					<article id="lets_smash_basics">
+						<script>
+								$( "#lets_smash_basics" ).load( "content/lets_smash_basics.html" );
+						</script>
+					</article>
+					<article>
+						<h2>Quiz</h2>
+						<p>
+							Hier kommt ein Quiz 
+						</p>
+					</article>
+				</section>
+				<section id="character">
+					<h1>Charaktere</h1> 
+						<p>
+							In diesem Abschnitt lernst Du die verschiedenen Charaktere des Spiels kennen. Diese sind nach Gewichtsklassen unterteilt. 
+							Zunächst wird der Unterschied zwischen den Gewichtsklassen erklärt.
+							Anschließend kannst Du die Herkunft, Eigenschaften und Specials aller Charaktere im Detail betrachten.
+						</p>
+					<article>
+						<h2>Gewichtsklassen</h2>
+						<div id="weight">
+							<script>
+								$( "#weight" ).load( "content/weight.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>Charakterinformationen</h2>
+						<div id="character_information">
+							<script>
+								$( "#character_information" ).load( "content/characters.html" );
+							</script>							
+						</div>
+					
+					</article>
+				</section>
+				<section id="stages">
+					<h1>Stages</h1> 
+					<p>Nun lernst Du die verschiedenen Stages des Spiels kennen. Zunächst klären wir allerdings erst einmal, was eine Stage legal, also bei einem Turnier erlaubt, macht und was illegale Stages sind.</p>
+					<p>Im Anschluss kannst Du dir alle Stages nach Belieben betrachten.</p>
+					<article>
+						<h2>Turnierregeln</h2>
+						<div id="tourney_legal">
+							<script>
+								$( "#tourney_legal" ).load( "content/tourney_legal.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>Tournament legal</h2>
+						<p class="rosterP">
+							<span style="font-weight:bolder">Wähle eine Stage</span>
+							<img class="img-responsive charRoster" src="src/images/stages.png" alt="Stages Select Screen"/>
+						</p>
+						<div class="module accordion">
+							<p data-title="Dreamland N64" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Battlefield" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Final Destination" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Fountain of Dreams" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Pokémon Stadium" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Yoshi's Story" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+					</article>
+					<article>
+						<h2>Tournament illegal</h2>
+						<p class="rosterP">
+							<span style="font-weight:bolder">Wähle eine Stage</span>
+							<img class="img-responsive charRoster" src="src/images/stages.png" alt="Stages Select Screen"/>
+						</p>
+						<div class="module accordion">
+							<p data-title="Big Blue" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Brinstar" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Brinstar Depths" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Corneria" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Flat Zone" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Fourside" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Great Bay" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Green Greens" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Icicle Mountain" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Jungle Japes" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+						<div class="module accordion">
+							<p data-title="Kongo Jungle" align="center" class="embed-responsive embed-responsive-16by9"> 
+								<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+							</p>
+						</div>
+					</article>
+					<article>
+						<h2 class="invisible">Let's Smash</h2>
+						<div id="lets_smash_stages">
+							<script>
+								$( "#lets_smash_stages" ).load( "content/lets_smash_stages.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>Quiz</h2>
+						<p>
+							Hier kommt ein Quiz 
+						</p>
+					</article>
+				</section>
+				<section id="abschlussquiz">
+					<h1>Abschlussquiz</h1> 
+					<p>
+					Dieses Quiz beendet das Training.
+					</p>
+					<article>
+						<h2>Abschlussquiz</h2>
+					</article>
+				</section>
+				<section>
+					<h1>Advanced</h1>
+					<p>
+						Herzlichen Glückwunsch, Du hast das WBT bestanden! Wenn Du nun noch mehr über das Spiel lernen und deinen Skill verbessern möchtest, haben wir hier ein paar Anhaltspunkte für Dich.
+					</p>
+					<article>
+						<h2>Teching</h2>
+						<div id="teching">
+							<script>
+								$( "#teching" ).load( "content/teching.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>DI</h2>
+						<div id="di">
+							<script>
+								$( "#di" ).load( "content/di.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>Dash dancing</h2>
+						<div id="dash_dance">
+							<script>
+								$( "#dash_dance" ).load( "content/dash_dance.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>Wave dashing</h2>
+						<div id="wave_dash">
+							<script>
+								$( "#wave_dash" ).load( "content/wave_dash.html" );
+							</script>
+						</div>
+					</article>
+					<article>
+						<h2>Practice makes perfect</h2>
+						<div id="practice">
+							<script>
+								$( "#practice" ).load( "content/practice.html" );
+							</script>
+						</div>
+					</article>
+				</section>
 			</div>
-		  </article>
-          
-		  <article>
-            <h2>Mid Weight</h2>
-			<p class="rosterP">
-				<span style="font-weight:bolder">Wähle einen Charakter</span>
-				<img class="img-responsive charRoster" src="src/images/chars_cut.jpg" alt="Character Select Screen"/>
-		    </p>
-            <p>Content 2</p>
-          </article>
-          <article>
-            <h2>Heavy Weight</h2>
-			<p class="rosterP">
-				<span style="font-weight:bolder">Wähle einen Charakter</span>
-				<img class="img-responsive charRoster" src="src/images/chars_cut.jpg" alt="Character Select Screen"/>
-		    </p>
-            <p>Content 2</p>
-          </article>
-		  
-		  <article>
-			<h2 class="invisible">Let's Smash</h2>
-			<div id="lets_smash_chars">
-				<script>
-					$( "#lets_smash_chars" ).load( "content/lets_smash_chars.html" );
-				</script>
-			</div>
-		  </article>
-		
-		<article>
-			<h2>Quiz</h2>
-			<p>
-				Hier kommt ein Quiz 
-			</p>
-		</article>
-        </section>
+		</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function(){
+				var vids = this.getElementsByTagName('video');
+				Array.prototype.forEach.call (vids, function (vid) {
 
-		
-        <section id="stages">
-          <h1>Stages</h1> 
-		  <p>Nun lernst Du die verschiedenen Stages des Spiels kennen. Zunächst klären wir allerdings erst einmal, was eine Stage legal, also bei einem Turnier erlaubt, macht und was illegale Stages sind.</p>
-		  <p>Im Anschluss kannst Du dir alle Stages nach Belieben betrachten.</p>
-          <article>
-			<h2>Turnierregeln</h2>
-			<div id="tourney_legal">
-				<script>
-					$( "#tourney_legal" ).load( "content/tourney_legal.html" );
-				</script>
-			</div>
-          </article>
-          
-		  <article>
-            <h2>Tournament legal</h2>
-			<p class="rosterP">
-				<span style="font-weight:bolder">Wähle eine Stage</span>
-				<img class="img-responsive charRoster" src="src/images/stages.png" alt="Stages Select Screen"/>
-		    </p>
-            <div class="module accordion">
-				<p data-title="Dreamland N64" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Battlefield" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Final Destination" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Fountain of Dreams" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Pokémon Stadium" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Yoshi's Story" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-          </article>
-		  
-		  <article>
-			<h2>Tournament illegal</h2>
-			<p class="rosterP">
-				<span style="font-weight:bolder">Wähle eine Stage</span>
-				<img class="img-responsive charRoster" src="src/images/stages.png" alt="Stages Select Screen"/>
-		    </p>
-			<div class="module accordion">
-				<p data-title="Big Blue" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Brinstar" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Brinstar Depths" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Corneria" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Flat Zone" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Fourside" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Great Bay" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Green Greens" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Icicle Mountain" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Jungle Japes" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-			<div class="module accordion">
-				<p data-title="Kongo Jungle" align="center" class="embed-responsive embed-responsive-16by9"> 
-					<img class="img-responsive embed-responsive-item" src="src/images/DreamLandSSB.png" alt="Dreamland" style="float:left; margin-right:20px" width='40%'/>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
-		  </article>
-		  
-		  <article>
-			<h2 class="invisible">Let's Smash</h2>
-			<div id="lets_smash_stages">
-				<script>
-					$( "#lets_smash_stages" ).load( "content/lets_smash_stages.html" );
-				</script>
-			</div>
-		  </article>
-		
-		<article>
-			<h2>Quiz</h2>
-			<p>
-				Hier kommt ein Quiz 
-			</p>
-		</article>
-        </section>
-         
-		
-		<section id="abschlussquiz">
-          <h1>Abschlussquiz</h1> 
-		  <p>
-			Dieses Quiz beendet das Training.
-		  </p>
-		  <article>
-			<h2>Abschlussquiz</h2>
-		  </article>
-		</section>
-		
-		
-		<section>
-			<h1>Advanced</h1>
-			<p>
-				Herzlichen Glückwunsch, Du hast das WBT bestanden! Wenn Du nun noch mehr über das Spiel lernen und deinen Skill verbessern möchtest, haben wir hier ein paar Anhaltspunkte für Dich.
-			</p>
-			<article>
-				<h2>Teching</h2>
-				<div id="teching">
-					<script>
-						$( "#teching" ).load( "content/teching.html" );
-					</script>
-				</div>
-			</article>
-			
-			<article>
-				<h2>DI</h2>
-				<div id="di">
-					<script>
-						$( "#di" ).load( "content/di.html" );
-					</script>
-				</div>
-			</article>
-			
-			<article>
-				<h2>Dash dancing</h2>
-				<div id="dash_dance">
-					<script>
-						$( "#dash_dance" ).load( "content/dash_dance.html" );
-					</script>
-				</div>
-			</article>
-			
-			<article>
-				<h2>Wave dashing</h2>
-				<div id="wave_dash">
-					<script>
-						$( "#wave_dash" ).load( "content/wave_dash.html" );
-					</script>
-				</div>
-			</article>
-			
-			<article>
-				<h2>Practice makes perfect</h2>
-				<div id="practice">
-					<script>
-						$( "#practice" ).load( "content/practice.html" );
-					</script>
-				</div>
-			</article>
-		</section>
+					vid.pause();
+					vid.setAttribute("controls","controls");
 
-
-
-
-
-        <!-- BEISPIELSEITEN FÜR COPY & PASTE -->
-
-
-		
-        <!-- Accordion with video -->
-        
-		
-		<section id="examples">
-          <h1>Layout</h1> 
-          <article>
-            <h2>Schriften</h2>
-            <div>
-              <p> 
-				<span class="smashFont">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span><span> (fan made Smash Bros Font)</span><br/>
-				<span class="sansProFont">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span><span> (Source Sans Pro)</span><br/>
-				<span class="sansProFont">abcdefghijklmnopqrstuvwxyz</span>
-              </p>
-            </div> 
-          </article>
-         <!-- <article>
-            <h2>Modul Accordion inklusive Video</h2>
-            <div class="module accordion">
-              <p data-title="Accordion Header 1" align="center" class="embed-responsive embed-responsive-16by9"> 
-                <video autoplay loop class="embed-responsive-item">
-                  <source src="src/videos/examplevideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-              </p>
-              <p data-title="Accordion Header 2">
-                Content2 </p>
-            </div> 
-          </article> -->
-
-          <!-- Video Modul  -->
-          <!--<article>
-            <h2>Modul Video</h2>
-            <div class="module video">
-              <p data-src="src/videos/examplevideo.mp4">
-              </p> 
-            </div>
-          </article>-->
-
-
-          <!-- Gallery Modul  -->
-          <!--<article>
-            <h2>Modul Gallery</h2>
-            <!--<div class="module gallery">
-            <div data-src="src/images/melee.png">
-            </div>
-            <div data-src="src/images/melee.png">
-            </div>
-            <div data-src="src/images/melee.png">
-            </div> -->
-            <!--<p>Funktioniert, wirft aber Fehler </p>
-
-          </article>-->
-
-
-
-          <!-- Modul DragnDrop  -->
-          <!--<article>
-            <h2>Dragn Drop Modul</h2>
-            <!-- <div class="module dragDrop" data-question="What is your question?">
-	            <div>
-					<div>Draggable Word</div>
-					<div>Draggable Target</div>
-				</div>
-			</div>
-			-->
-			<!--<p>Funktioniert nicht wie im Manual </p>
-          </article>-->
-
-
-           <!-- Modul Value  -->
-          <!--<article>
-			<h2>Values</h2>
-			<div class="module value" data-value="111" data-question="Was sind drei einser hintereinander?" data-label="unit"></div>
-		</article>-->
-
-
-		<!-- Modul Multiple choice  -->
-		<!--<article>
-			<h2>Multiple Choice</h2>
-			<div class="module multiple-choice" data-question="asked quetion">
-			<p data-correct="1"> answer 1</p> 
-			<p data-correct="0"> answer n</p>
-			</div>
-		</article>-->
-
-		<!-- Modul Single choice  -->
-		<!--<article>
-			<h2>Single Choice</h2>
-			<div class="module single-choice" data-question="asked quetion">
-			<p data-correct="1"> answer 1</p> 
-			<p data-correct="0"> answer n</p>
-			</div>
-			<p> FUNZT AUCH NET AMENA </p>
-		</article>
-        </section>-->
-		
-		
-        </div>
-    </div>
-</div>
-<script>
-	document.addEventListener('DOMContentLoaded', function(){
-			var vids = this.getElementsByTagName('video');
-			Array.prototype.forEach.call (vids, function (vid) {
-
-				vid.pause();
-				vid.setAttribute("controls","controls");
-
-			} );
-			var stages = this.getElementsByClassName('panel-collapse');
-			Array.prototype.forEach.call (stages, function (stg) {
-				if(stg.classList.contains('in')){
-					stg.classList.remove('in');
-				}
-			} );			
-	}, false);	
-</script>
+				} );
+				var stages = this.getElementsByClassName('panel-collapse');
+				Array.prototype.forEach.call (stages, function (stg) {
+					if(stg.classList.contains('in')){
+						stg.classList.remove('in');
+					}
+				} );			
+		}, false);	
+	</script>
 </body>
 </html>
