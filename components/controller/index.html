@@ -33,17 +33,14 @@
 </div>
 
 <div id="display_container">
-    <span class="display__field field_one"></span>
-    <span class="display__field field_two"></span>
-    <span class="display__field field_three"></span>
+    <span class="display__field field_1" data-result="right"></span>
+    <span class="display__field field_2" data-result="left"></span>
+    <span class="display__field field_3" data-result="a"></span>
 </div>
 
 
 
 <script>
-    window.addEventListener('keydown', function(e){
-        console.log(e);
-    });
 
     var key = document.getElementsByClassName("key");
 
@@ -52,22 +49,38 @@
         var key_img = document.querySelector('.controller_icons>img[data-key="'+data_key+'"]');
         key_img = key_img.outerHTML;
 
-        var field_one = document.querySelector('.field_one');
-        var field_two = document.querySelector('.field_two');
-        var field_three = document.querySelector('.field_three');
+        var display_fields = document.querySelectorAll(".display__field");
 
-        if(!field_one.innerHTML){
-            field_one.innerHTML = key_img;
-        } else if (!field_two.innerHTML){
-            field_two.innerHTML = key_img;
-        } else if (!field_three.innerHTML) {
-            field_three.innerHTML = key_img;
+        var field = [];
+        for (var i = 0; i < display_fields.length; i++){
+            field[i] = display_fields[i];
+            if(!field[i].innerHTML){
+                field[i].innerHTML = key_img;
+                field[i].dataset.key = data_key;
+                break;
+            } else {
+                console.log("feld " +i+ " ist bereits gefüllt")
+            }
+
+            console.log(display_fields)
+
+            if(i + 1 == (display_fields.length)){
+                checkResult(field[i]);
+            }
         }
-        console.log(key_img);
     };
 
     for (var i = 0; i < key.length; i++) {
         key[i].addEventListener('click', clickButton, false);
+    }
+
+
+    function checkResult(field){
+        if(field.dataset.key === field.dataset.result){
+            console.log("richtig")
+        } else {
+            console.log("falsch")
+        }
     }
 
 </script>
@@ -82,7 +95,6 @@
     var stick_right = document.getElementsByClassName("stick__cta--right")[0];
     var stick_up = document.getElementsByClassName("stick__cta--up")[0];
     var stick_down = document.getElementsByClassName("stick__cta--down")[0];
-    console.log(stick_boxes);
 
     stick_left.onmouseover = function(){
         moveStick(stick, "x", -10 )
