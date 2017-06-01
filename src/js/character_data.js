@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		mario: {
 			game: "Super Mario Bros",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Mario",
 			image: {
 				url: "src/images/characters/modal/mario.jpg",
@@ -39,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		dr_mario: {
 			game: "Dr. Mario",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Dr. Mario",
 			image: {
 				url: "src/images/characters/modal/dr_mario.jpg",
@@ -75,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		luigi: {
 			game: "Super Mario Bros",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Luigi",
 			image: {
 				url: "src/images/characters/modal/luigi.jpg",
@@ -111,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		bowser: {
 			game: "Super Mario Bros",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Bowser",
 			image: {
 				url: "src/images/characters/modal/bowser.jpg",
@@ -147,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		peach: {
 			game: "Super Mario Bros",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Peach",
 			image: {
 				url: "src/images/characters/modal/peach.jpg",
@@ -183,6 +188,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		yoshi: {
 			game: "Super Mario Bros",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Yoshi",
 			image: {
 				url: "src/images/characters/modal/yoshi.jpg",
@@ -219,6 +225,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		dk: {
 			game: "Donkey Kong Country",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von DK",
 			image: {
 				url: "src/images/characters/modal/dk.jpg",
@@ -255,6 +262,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		c_falcon: {
 			game: "F-Zero",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Cpt Falcon",
 			image: {
 				url: "src/images/characters/modal/c_falcon.jpg",
@@ -291,6 +299,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		ganondorf: {
 			game: "The Legend of Zelda",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Ganondorf",
 			image: {
 				url: "src/images/characters/modal/ganondorf.jpg",
@@ -327,6 +336,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		falco: {
 			game: "Star Fox",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Falco",
 			image: {
 				url: "src/images/characters/modal/falco.jpg",
@@ -363,6 +373,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		fox: {
 			game: "Star Fox",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Fox",
 			image: {
 				url: "src/images/characters/modal/fox.jpg",
@@ -399,6 +410,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		ness: {
 			game: "Mother / EarthBound",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Ness",
 			image: {
 				url: "src/images/characters/modal/ness.jpg",
@@ -435,6 +447,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		ice_climbers: {
 			game: "Ice Climber",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Ice Climbers",
 			image: {
 				url: "src/images/characters/modal/ice_climbers.jpg",
@@ -471,6 +484,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		kirby: {
 			game: "Kirby",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Kirby",
 			image: {
 				url: "src/images/characters/modal/kirby.jpg",
@@ -507,6 +521,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		samus: {
 			game: "Metroid",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Samus",
 			image: {
 				url: "src/images/characters/modal/samus.jpg",
@@ -543,6 +558,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		zelda: {
 			game: "The Legend of Zelda",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Zelda",
 			image: {
 				url: "src/images/characters/modal/zelda.jpg",
@@ -579,6 +595,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		link: {
 			game: "The Legend of Zelda",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Link",
 			image: {
 				url: "src/images/characters/modal/link.jpg",
@@ -615,6 +632,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		young_link: {
 			game: "The Legend of Zelda",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Young Link",
 			image: {
 				url: "src/images/characters/modal/young_link.jpg",
@@ -651,6 +669,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		pichu: {
 			game: "Pokemon",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Pichu",
 			image: {
 				url: "src/images/characters/modal/pichu.png",
@@ -687,6 +706,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		pikachu: {
 			game: "Pokemon",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Pikachu",
 			image: {
 				url: "src/images/characters/modal/pikachu.jpg",
@@ -759,6 +779,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		mewtwo: {
 			game: "Pokemon",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Mewtwo",
 			image: {
 				url: "src/images/characters/modal/mewtwo.png",
@@ -795,6 +816,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		mr_game_and_watch: {
 			game: "Game & Watch",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Mr Game and Watch",
 			image: {
 				url: "src/images/characters/modal/mr_game_and_watch.jpg",
@@ -831,6 +853,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		marth: {
 			game: "Fire Emblem",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Marth",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -867,6 +890,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		roy: {
 			game: "Fire Emblem",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Eigenschaften von Roy",
 			image: {
 				url: "src/images/characters/modal/roy.jpg",
@@ -911,6 +935,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	  modal.find('.modal-title').text(character_name)
 	  modal.find('#from-game').text(character_data[character_id].game)
 	  modal.find('#unlocked-through').text(character_data[character_id].unlock)
+	  modal.find('#weight-category').text(character_data[character_id].weight_category)
 	  modal.find('#characteristics').text(character_data[character_id].characteristics)
 	  modal.find('#character-modal-image').attr("src", character_data[character_id].image.url)
 	  modal.find('#character-modal-image').attr("alt", character_data[character_id].image.alt)

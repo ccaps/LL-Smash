@@ -370,7 +370,10 @@
 					if(stg.classList.contains('in')){
 						stg.classList.remove('in');
 					}
-				} );			
+				} );
+				$('a[href="#finish"]').each(function() {
+					$(this).remove();   
+				});
 		}, false);	
 	</script>
 </body>
