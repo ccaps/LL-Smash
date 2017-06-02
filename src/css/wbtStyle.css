@@ -107,7 +107,7 @@ body{
 
 
 /** Characters **/
-#character-roster{
+#stage-roster,#character-roster{
 	background-image: url(../images/backgrounds/character_background.png);
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -117,16 +117,16 @@ body{
 	width: 100%;
 }
 
-.character-tile{
+.stage-tile,.character-tile{
 	position: relative;
 	margin: 2px;
 }
 
-.character-tile:hover{
+.stage-tile,.character-tile:hover{
 	cursor: url(../others/Mouse3.cur), pointer;
 }
 
-.character-name{
+.stage-name,.character-name{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -149,6 +149,10 @@ body{
 
 .modal-header .close{
 	margin-top: -20px;
+}
+
+.modal-vid{
+	width: 100%;
 }
 
 
