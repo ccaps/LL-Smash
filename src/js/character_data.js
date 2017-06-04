@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
 	var character_data = {
 		mario: {
-			game: "Super Mario Bros",
+			game: "Super Mario",
 			unlock: "Von Anfang an verfügbar",
 			characteristics: "Ein klassischer Allrounder",
 			image: {
@@ -109,10 +109,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		bowser: {
-			game: "Super Mario Bros",
+			game: "Super Mario",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Bowser",
+			characteristics: "Bowser ist der größte und schwerste Charakter im Spiel. Er ist sehr langsam, aber teilt auch gewaltig aus.",
 			image: {
 				url: "src/images/characters/modal/bowser.jpg",
 				alt: "Bowser",
@@ -146,10 +146,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		peach: {
-			game: "Super Mario Bros",
+			game: "Super Mario",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Peach",
+			characteristics: "Peach ist vor allem in der Luft sehr stark und mobil. Sie kann eine Zeit lang auf einer Höhe schweben, wenn die Sprungtaste nach einem Sprung gedrückt gehalten wird.",
 			image: {
 				url: "src/images/characters/modal/peach.jpg",
 				alt: "Peach",
@@ -183,10 +183,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		yoshi: {
-			game: "Super Mario Bros",
+			game: "Super Mario World",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Yoshi",
+			characteristics: "Yoshi verfügt über das stabilste Schild. Allerdings ist sein Up Special kein Rettungsmove. Um dies auszugleichen hat Yoshi den höchsten Doppelsprung des Spiels.",
 			image: {
 				url: "src/images/characters/modal/yoshi.jpg",
 				alt: "Yoshi",
@@ -220,10 +220,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		dk: {
-			game: "Donkey Kong Country",
+			game: "Donkey Kong",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von DK",
+			characteristics: "Donkey Kong ist der zweitschwerste Charakter, besitzt aber dennoch eine überraschende Mobilität.",
 			image: {
 				url: "src/images/characters/modal/dk.jpg",
 				alt: "DK",
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "F-Zero",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Cpt Falcon",
+			characteristics: "Captain Falcon ist einer der beliebtesten Charaktere der Serie. Er ist der schnellste Charakter auf dem Boden und verfügt über eine hohe Killpower, vor allem durch das ikonische Knie (Forward Air)",
 			image: {
 				url: "src/images/characters/modal/c_falcon.jpg",
 				alt: "Cpt Falcon",
@@ -295,9 +295,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		ganondorf: {
 			game: "The Legend of Zelda",
-			unlock: "Von Anfang an verfügbar",
+			unlock: "Beende das Event 29 oder spiele 600 VS Kämpfe",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Ganondorf",
+			characteristics: "Ganondorf ist sehr langsam, besitzt dafür aber einige der stärksten Attacken des Spiels, wie z.B. sein Down Air und Up Smash.",
 			image: {
 				url: "src/images/characters/modal/ganondorf.jpg",
 				alt: "Ganondorf",
@@ -332,9 +332,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		falco: {
 			game: "Star Fox",
-			unlock: "Von Anfang an verfügbar",
+			unlock: "Beende den 100 Mann Melee Modus oder spiele 300 VS Kämpfe",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Falco",
+			characteristics: "Falco hat den höchsten Sprung des Spiels und eine sehr hohe Mobilität. Außerdem kann Falco vernichtende Kombos mithilfe seines Down Airs durchführen.",
 			image: {
 				url: "src/images/characters/modal/falco.jpg",
 				alt: "Falco",
@@ -371,7 +371,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "Star Fox",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Fox",
+			characteristics: "Fox ist ein extrem schneller Charakter, sowohl auf dem Boden als auch in der Luft, was es ihm ermöglicht, vernichtende Kombinationen durchzuführen.",
 			image: {
 				url: "src/images/characters/modal/fox.jpg",
 				alt: "Fox",
@@ -408,7 +408,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "Mother / EarthBound",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Ness",
+			characteristics: "Ness verfügt über den stärksten Wurf des Spieles, seinen Back Throw. Abgesehen davon ist er besonders stark in der Luft, auch wenn sein Up B schwer zu benutzen ist.",
 			image: {
 				url: "src/images/characters/modal/ness.jpg",
 				alt: "Ness",
@@ -445,7 +445,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "Ice Climber",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Ice Climbers",
+			characteristics: "Die Ice Climbers sind 2 Charaktere in einem. Du steuerst \"Popo\", \"Nana\" führt deine Attacken mit Dir aus. Dabei kann \"Nana\" allerdings auch von der Stage gestoßen werden, was Dich erheblich schwächt. Sehr schwer zu spielen!",
 			image: {
 				url: "src/images/characters/modal/ice_climbers.jpg",
 				alt: "Ice Climbers",
@@ -482,7 +482,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "Kirby",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Kirby",
+			characteristics: "Kirby ist durch seine geringe Größe schwer zu Treffen. Außerdem verfügt Kirby über 6 Sprünge und einen Rettungsmove, was es ihm ermöglicht, leicht zur Stage zurück zu kommen.",
 			image: {
 				url: "src/images/characters/modal/kirby.jpg",
 				alt: "Kirby",
@@ -519,7 +519,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "Metroid",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Samus",
+			characteristics: "Samus ist sehr gut darin, Gegner durch Distanzangriffe auf Abstand zu halten. Obwohl sie ein schwerer Charakter ist, fällt sie sehr langsam, wodurch eine große horizontale Strecke überwunden werden kann.",
 			image: {
 				url: "src/images/characters/modal/samus.jpg",
 				alt: "Samus",
@@ -556,7 +556,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "The Legend of Zelda",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Zelda",
+			characteristics: "Zelda beinhaltet 2 Charaktere. Sie kann sich durch ihren Down Special in Shiek verwandeln, was ihr gesamtes Arsenal an Moves verändert.",
 			image: {
 				url: "src/images/characters/modal/zelda.jpg",
 				alt: "Zelda",
@@ -593,7 +593,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "The Legend of Zelda",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Link",
+			characteristics: "Link ist relativ langsam, verfügt aber dank seines Schwertes über eine große Reichweite. Außerdem kann Link 3 verschiedene Projektile verwenden, um Gegner von ihm fernzuhalten.",
 			image: {
 				url: "src/images/characters/modal/link.jpg",
 				alt: "Link",
@@ -628,9 +628,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		young_link: {
 			game: "The Legend of Zelda",
-			unlock: "Von Anfang an verfügbar",
+			unlock: "Beende den Klassik Modus mit 10 verschiedenen Charakteren oder spiele 500 VS Kämpfe.",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Young Link",
+			characteristics: "Young Link ist eine kleinere und schnellere Version von Link, dessen Attacken dafür etwas schwächer sind.",
 			image: {
 				url: "src/images/characters/modal/young_link.jpg",
 				alt: "Young Link",
@@ -664,10 +664,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		pichu: {
-			game: "Pokemon",
-			unlock: "Von Anfang an verfügbar",
+			game: "Pokémon",
+			unlock: "Beende das Event \"Legendäre Pokemon\" oder spiele 200 VS Kämpfe.",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Pichu",
+			characteristics: "Pichu ist der kleinste und leichteste Charakter des Spiels und hat eine sehr kleine Range, ist aber überraschend stark für seine Größe.",
 			image: {
 				url: "src/images/characters/modal/pichu.png",
 				alt: "Pichu",
@@ -701,10 +701,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		pikachu: {
-			game: "Pokemon",
+			game: "Pokémon",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Pikachu",
+			characteristics: "Pikachu ist ein kleiner schneller Charakter mit sehr guten Rettungsmöglichkeiten.",
 			image: {
 				url: "src/images/characters/modal/pikachu.jpg",
 				alt: "Pikachu",
@@ -738,9 +738,9 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		jigglypuff: {
-			game: "Pokemon",
-			unlock: "Von Anfang an verfügbar",
-			characteristics: "Eigenschaften von Jigglypuff",
+			game: "Pokémon",
+			unlock: "Beende den Abenteuer Modus auf einer beliebigen Schwierigkeit oder spiele 50 VS Kämpfe.",
+			characteristics: "Pummeluff ist der langsamste Charakter am Boden, aber der schnellste in der Luft. Außerdem ist es einer der leichtesten Charaktere des Spiels. Pumeluff verfügt über 6 Sprünge, besitzt aber keinen Rettungsmove.",
 			image: {
 				url: "src/images/characters/modal/jigglypuff.jpg",
 				alt: "Jigglypuff",
@@ -774,10 +774,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		mewtwo: {
-			game: "Pokemon",
-			unlock: "Von Anfang an verfügbar",
+			game: "Pokémon",
+			unlock: "Spiele den Vs Modus 20 Stunden lang oder bestreite 700 Kämpfe.",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Mewtwo",
+			characteristics: "Mewtwo hat die längsten Rollen des Spiels und sehr starke Würfe.",
 			image: {
 				url: "src/images/characters/modal/mewtwo.png",
 				alt: "Mewtwo",
@@ -812,9 +812,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		mr_game_and_watch: {
 			game: "Game & Watch",
-			unlock: "Von Anfang an verfügbar",
+			unlock: "Beende den Klassik, Abenteuer oder Zielscheiben Test Modus mit allen 24 Charakteren oder spiele 1000 VS Kämpfe.",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Mr Game and Watch",
+			characteristics: "Mr. Game & Watch ist einer der leichtesten Charaktere des Spiels. Allerdings verfügt er über schnelle und starke Aerials, die gut für Kombos geeignet sind.",
 			image: {
 				url: "src/images/characters/modal/mr_game_and_watch.jpg",
 				alt: "Mr Game and Watch",
@@ -849,9 +849,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		marth: {
 			game: "Fire Emblem",
-			unlock: "Von Anfang an verfügbar",
+			unlock: "Drei Möglichkeiten: Spiele den Klassik oder Abenteuer Modus mit allen 14 Starter Charakteren, benutze alle 14 Starter in VS Kämpfen, oder spiele 400 VS Kämpfe.",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Marth",
+			characteristics: "Ein schneller, starker Charakter mit einer großen Reichweite. Alle Attacken von Marth werden sehr viel stärker, wenn Du genau mit der Schwertspitze triffst.",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
 				alt: "Marth",
@@ -886,9 +886,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		roy: {
 			game: "Fire Emblem",
-			unlock: "Von Anfang an verfügbar",
+			unlock: "Beende den Klassik oder Abenteuer Modus mit Marth oder spiele 900 VS Kämpfe.",
 			weight_category: "Medium",
-			characteristics: "Eigenschaften von Roy",
+			characteristics: "Ein schneller, starker Charakter mit einer großen Reichweite. Vor allem am Boden sehr stark. Im Gegensatz zu Marth verursacht der Angriff von Roy mehr Schaden je näher der Gegner am Schwertgriff getroffen wird.",
 			image: {
 				url: "src/images/characters/modal/roy.jpg",
 				alt: "Roy",
