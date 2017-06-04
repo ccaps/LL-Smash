@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		mario: {
 			game: "Super Mario Bros",
 			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
-			characteristics: "Eigenschaften von Mario",
+			characteristics: "Ein klassischer Allrounder",
 			image: {
 				url: "src/images/characters/modal/mario.jpg",
 				alt: "Mario",
@@ -39,9 +38,8 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		dr_mario: {
 			game: "Dr. Mario",
-			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
-			characteristics: "Eigenschaften von Dr. Mario",
+			unlock: "Spiele den Klassik oder Abenteuer Modus ohne zu sterben, oder spiele 100 VS Kämpfe.",
+			characteristics: "Eine stärkere Version von Mario.",
 			image: {
 				url: "src/images/characters/modal/dr_mario.jpg",
 				alt: "Dr. Mario",
@@ -75,10 +73,9 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		luigi: {
-			game: "Super Mario Bros",
-			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
-			characteristics: "Eigenschaften von Luigi",
+			game: "Super Mario Bros.",
+			unlock: "Beende das erste Level das Abenteuer Modus, so dass eine 2 als Sekundenzahl auf dem Timer steht. Besiege danach Peach und Luigi unter einer Minute. Luigi kann auch nach 800 VS Kämpfen freigeschaltet werden.",
+			characteristics: "Luigi ist generell sehr \"rutschig\". Das heißt, dass er sehr stark über den Boden gleitet nach einem Treffer und so leicht aus der Reichweite seiner Gegner kommt, was deren Kombos erschwert.",
 			image: {
 				url: "src/images/characters/modal/luigi.jpg",
 				alt: "Luigi",
