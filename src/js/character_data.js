@@ -14,25 +14,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: "Test"
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: "Test"
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: "Test"
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: "Test"
 				}
 			}
 		},
@@ -50,25 +54,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -86,25 +94,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -123,25 +135,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -160,25 +176,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -197,25 +217,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -234,25 +258,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -271,25 +299,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -308,25 +340,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -345,25 +381,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -382,25 +422,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -419,25 +463,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -456,25 +504,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -493,25 +545,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -530,25 +586,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -567,25 +627,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -604,25 +668,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -641,25 +709,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -678,25 +750,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -715,25 +791,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -751,25 +831,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -788,25 +872,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -825,25 +913,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -862,25 +954,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		},
@@ -899,25 +995,29 @@ document.addEventListener('DOMContentLoaded', function(){
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
-					}
+					},
+					description: ""
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
-					}
+					},
+					description: ""
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
-					}
+					},
+					description: ""
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
 						alt: "Mario während Slide Special"
-					}
+					},
+					description: ""
 				}
 			}
 		}
@@ -941,17 +1041,21 @@ document.addEventListener('DOMContentLoaded', function(){
 	  modal.find('#neutral-special-video').children('source').attr("alt", character_data[character_id].moves.neutral.video.alt)
 	  modal.find('#neutral-special-video').load()
 	  modal.find('#neutral-special-video').get(0).pause()
+	  modal.find('#neutral-special-p').text(character_data[character_id].moves.neutral.description)
 	  modal.find('#up-special-video').children('source').attr("src", character_data[character_id].moves.up.video.url)
 	  modal.find('#up-special-video').children('source').attr("alt", character_data[character_id].moves.up.video.alt)
 	  modal.find('#up-special-video').load()
 	  modal.find('#up-special-video').get(0).pause()
+	  modal.find('#up-special-p').text(character_data[character_id].moves.up.description)
 	  modal.find('#down-special-video').children('source').attr("src", character_data[character_id].moves.down.video.url)
 	  modal.find('#down-special-video').children('source').attr("alt", character_data[character_id].moves.down.video.alt)
 	  modal.find('#down-special-video').load()
 	  modal.find('#down-special-video').get(0).pause()
+	  modal.find('#down-special-p').text(character_data[character_id].moves.down.description)
 	  modal.find('#slide-special-video').children('source').attr("src", character_data[character_id].moves.slide.video.url)
 	  modal.find('#slide-special-video').children('source').attr("alt", character_data[character_id].moves.slide.video.alt)
 	  modal.find('#slide-special-video').load()
 	  modal.find('#slide-special-video').get(0).pause()
+	  modal.find('#slide-special-p').text(character_data[character_id].moves.slide.description)
 	});			
 }, false);	
