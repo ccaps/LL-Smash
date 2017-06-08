@@ -15,28 +15,28 @@ document.addEventListener('DOMContentLoaded', function(){
 						url: "src/videos/specials/mario/neutral.mp4",
 						alt: "Mario während Neutral Special"
 					},
-					description: "Test"
+					description: "Mario wirft einen Feuerball. Dieser prallt von Oberflächen ab und verursacht geringen Schaden."
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
 						alt: "Mario während Up Special"
 					},
-					description: "Test"
+					description: "Mario springt ein kurzes Stück diagonal nach oben. Getroffene Gegner erleiden Schaden."
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
 						alt: "Mario während Down Special"
 					},
-					description: "Test"
+					description: "Mario dreht sich wie ein Tornado um die eigene Achse. Gegner werden darin gefangen und bekommen viel Schaden. Drücke die B-Taste wiederholt, um an Höhe zu gewinnen."
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
-						alt: "Mario während Slide Special"
+						alt: "Mario während Side Special"
 					},
-					description: "Test"
+					description: "Mithilfe eines Capes dreht Mario seinen Gegner um. Das Cape ist außerdem in der Lage, Projektile zu reflektieren."
 				}
 			}
 		},
@@ -53,30 +53,30 @@ document.addEventListener('DOMContentLoaded', function(){
 				neutral: {
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
-						alt: "Mario während Neutral Special"
+						alt: "Dr. Mario während Neutral Special"
 					},
-					description: ""
+					description: "Dr. Mario wirft eine Pille, die von Oberflächen abprallt und geringen Schaden verursacht."
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
-						alt: "Mario während Up Special"
+						alt: "Dr. Mario während Up Special"
 					},
-					description: ""
+					description: "Dr. Mario springt ein kurzes Stück diagonal nach oben. Getroffene Gegner erleiden Schaden."
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
-						alt: "Mario während Down Special"
+						alt: "Dr. Mario während Down Special"
 					},
-					description: ""
+					description: "Dr. Mario dreht sich wie ein Tornado um die eigene Achse. Gegner werden darin gefangen und bekommen viel Schaden. Drücke die B-Taste wiederholt, um an Höhe zu gewinnen."
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
-						alt: "Mario während Slide Special"
+						alt: "Dr. Mario während Side Special"
 					},
-					description: ""
+					description: "Mithilfe eines Capes dreht Dr. Mario seinen Gegner um. Das Cape ist außerdem in der Lage, Projektile zu reflektieren."
 				}
 			}
 		},
@@ -93,30 +93,30 @@ document.addEventListener('DOMContentLoaded', function(){
 				neutral: {
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
-						alt: "Mario während Neutral Special"
+						alt: "Luigi während Neutral Special"
 					},
-					description: ""
+					description: "Luigi wirft einen Feuerball, der in einer geraden Linie fliegt und geringen Schaden verursacht."
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
-						alt: "Mario während Up Special"
+						alt: "Luigi während Up Special"
 					},
-					description: ""
+					description: "Luigi springt ein Stück gerade nach oben. Gegner, die am Anfang der Animation getroffen erleiden sehr viel Schaden und fliegen früh von der Stage."
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
-						alt: "Mario während Down Special"
+						alt: "Luigi während Down Special"
 					},
-					description: ""
+					description: "Luigi dreht sich wie ein Tornado um die eigene Achse. Gegner werden darin gefangen und bekommen viel Schaden. Drücke die B-Taste wiederholt, um an Höhe zu gewinnen."
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
-						alt: "Mario während Slide Special"
+						alt: "Luigi während Side Special"
 					},
-					description: ""
+					description: "Halte B gedrückt, um den Move aufzuladen. Wenn Du loslässt schießt in die gedrückte Richtung. Mit einer Chance von 12,5% (1/8) wird der Move zu einer Fehlzündung. Dabei fliegt Luigi sehr weit und verursacht enormen Schaden und Rückstoß."
 				}
 			}
 		},
@@ -134,30 +134,30 @@ document.addEventListener('DOMContentLoaded', function(){
 				neutral: {
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
-						alt: "Mario während Neutral Special"
+						alt: "Bowser während Neutral Special"
 					},
-					description: ""
+					description: "Bowser spuckt solange Feuer, wie Du die B-Taste gedrückt hältst. Dabei wird das Feuer mit der Zeit immer schwächer."
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
-						alt: "Mario während Up Special"
+						alt: "Bowser während Up Special"
 					},
-					description: ""
+					description: "Bowser zieht sich in seinen Panzer zurück und dreht sich um die eigene Achse, wodurch du an Höhe gewinnen kannst."
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
-						alt: "Mario während Down Special"
+						alt: "Bowser während Down Special"
 					},
-					description: ""
+					description: "Auf dem Boden ausgeführt springt Bowser hoch in die Luft und lässt sich anschließend wieder fallen. Dieser Move verursacht sehr viel Schaden und kann sehr leicht Schilde zerstören. In der Luft ausgeführt springt Bowser nicht mehr, sondern führt nur den zweiten Teil des Moves aus."
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
-						alt: "Mario während Slide Special"
+						alt: "Bowser während Slide Special"
 					},
-					description: ""
+					description: "Bowser greift seinen Gegner und beißt ihn. Danach hast Du die Möglichkeit den Gegner noch einmal zu beißen (A-Taste) oder ihn nach vorne oder hinten zu schmeißen (Linker Stick)."
 				}
 			}
 		},
