@@ -175,30 +175,30 @@ document.addEventListener('DOMContentLoaded', function(){
 				neutral: {
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
-						alt: "Mario während Neutral Special"
+						alt: "Peach während Neutral Special"
 					},
-					description: ""
+					description: "Peach hält Toad schützend vor sich. Schlägt ein Gegner Toad, so wird der Schaden reflektiert."
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
-						alt: "Mario während Up Special"
+						alt: "Peach während Up Special"
 					},
-					description: ""
+					description: "Peach fliegt mit ihrem Regenschirm diagonal nach oben. Danach schwebt sie langsam mit geöffnetem Schirm nach unten. Du kannst den Schirm währenddessen schließen und öffnen, in Du den linken Stick nach unten bzw. oben drückst. Berühren Gegner den Schirm, so erleiden sie Schaden."
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
-						alt: "Mario während Down Special"
+						alt: "Peach während Down Special"
 					},
-					description: ""
+					description: "Peach zieht Rettiche aus dem Boden. Je wütender das Gesicht auf dem Rettich ist, desto mehr Schaden verursacht dieser. In sehr seltenen Fällen kann Peach auch Mr. Saturn, ein Bob-omb oder ein Laserschwert ziehen."
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
-						alt: "Mario während Slide Special"
+						alt: "Peach während Slide Special"
 					},
-					description: ""
+					description: "Peach katapultiert sich seitlich mit dem Hintern zuerst in einen Gegner und verursacht dabei Schaden und Rückstoß."
 				}
 			}
 		},
@@ -216,30 +216,30 @@ document.addEventListener('DOMContentLoaded', function(){
 				neutral: {
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
-						alt: "Mario während Neutral Special"
+						alt: "Yoshi während Neutral Special"
 					},
-					description: ""
+					description: "Yoshi streckt seine Zunge aus. Berührt sie einen Gegner, so frisst er diesen und verpackt ihn in einem Ei. Je mehr Prozent der Gegner hat, desto länger bleibt er im Ei gefangen. Gefangene Gegner sind wehrlos und erleiden Schaden, auch wenn der Schaden etwas reduziert wird."
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
-						alt: "Mario während Up Special"
+						alt: "Yoshi während Up Special"
 					},
-					description: ""
+					description: "Yoshi wirft ein Ei. Die Flugbahn kann gesteuert werden, indem Du die B-Taste unterschiedlich lang drückst und den Stick bewegst. Im Gegensatz zu den meisten anderen Charakteren gewinnt Yoshi nicht an Höhe bei seinem Up Special."
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
-						alt: "Mario während Down Special"
+						alt: "Yoshi während Down Special"
 					},
-					description: ""
+					description: "Yoshi springt in die Luft und fliegt schnell auf den Boden zurück. In der Luft ausgeführt fliegt Yoshi nur nach unten, ohne den Sprung auszuführen."
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
-						alt: "Mario während Slide Special"
+						alt: "Yoshi während Side Special"
 					},
-					description: ""
+					description: "Yoshi verwandelt sich in ein Ei und rollt auf der Stage umher. Gegner die ihn berühren erleiden Schaden abhängig von seiner Geschwindigkeit. Vorsicht: Fällst Du als Ei von der Stage bist Du machtlos!"
 				}
 			}
 		},
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			game: "Donkey Kong",
 			unlock: "Von Anfang an verfügbar",
 			weight_category: "Medium",
-			characteristics: "Donkey Kong ist der zweitschwerste Charakter, besitzt aber dennoch eine überraschende Mobilität.",
+			characteristics: "Donkey Kong ist der zweitschwerste Charakter, besitzt aber dennoch eine überraschende Mobilität. Drückst du nach dem Greifen den Stick nach vorne, so trägt DK seinen Gegner auf dem Rücken. Du kannst dich nun mit deinem Gegner bewegen, bevor du ihn wirfst.",
 			image: {
 				url: "src/images/characters/modal/dk.jpg",
 				alt: "DK",
@@ -257,30 +257,30 @@ document.addEventListener('DOMContentLoaded', function(){
 				neutral: {
 					video: {
 						url: "src/videos/specials/mario/neutral.mp4",
-						alt: "Mario während Neutral Special"
+						alt: "DK während Neutral Special"
 					},
-					description: ""
+					description: "DK lädt einen sehr starken Schlag auf. Du kannst das Aufladen abbrechen, indem du blockst, oder nach links / rechts gehst. Wirst du währenddessen getroffen, verlierst du die bisherige Ladung. Sobald der Schlag voll aufgeladen ist, steigt Dampf von DK's Kopf. Drückst du die B-Taste noch einmal, so führt er einen mächtigen Schlag aus, der Gegner von der Stage katapultiert."
 				},
 				up: {
 					video: {
 						url: "src/videos/specials/mario/up.mp4",
-						alt: "Mario während Up Special"
+						alt: "DK während Up Special"
 					},
-					description: ""
+					description: "Wie ein Helikopter dreht DK sich um die eigene Achse und gewinnt dabei etwas an Höhe, aber viel an horizontaler Strecke."
 				},
 				down: {
 					video: {
 						url: "src/videos/specials/mario/down.mp4",
-						alt: "Mario während Down Special"
+						alt: "Dk während Down Special"
 					},
-					description: ""
+					description: "DK schlägt auf den Boden und löst ein großflächiges Erdbeben um sich herum aus."
 				},
 				slide: {
 					video: {
 						url: "src/videos/specials/mario/side.mp4",
-						alt: "Mario während Slide Special"
+						alt: "DK während Slide Special"
 					},
-					description: ""
+					description: "DK trifft seinen Gegner mit einer Kopfnuss. Ist der Gegner auf dem Boden, so wird er ein Stück darin vergraben und ist kurz wehrlos. In der Luft besitzt die Attacke enormen Rückstoß. Außerdem lassen sich sehr leicht Schilde mit ihr zerstören."
 				}
 			}
 		},
