@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		dreamland_n64: {
 			game: "Test",
 			legality: "Test",
+			unlock: "Von Anfang an verfügbar",
 			description: "Test Test 123",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		battlefield: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -23,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		final_destination: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -33,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		fountain_of_dreams: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -43,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		pokemon_stadium: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -53,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		yoshis_story: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -63,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		big_blue: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -73,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		brinstar: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -83,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		brinstar_depths: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -93,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		corneria: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -103,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		flat_zone: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -113,6 +124,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		fourside: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -123,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		great_bay: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -133,6 +146,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		green_greens: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -143,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		icicle_mountain: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -153,6 +168,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		jungle_japes: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -163,6 +179,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		kongo_jungle: {
 			game: "",
 			legality: "",
+			unlock: "Von Anfang an verfügbar",
 			description: "",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
@@ -183,7 +200,8 @@ document.addEventListener('DOMContentLoaded', function(){
 	  modal.find('#stage-modal-image').attr("alt", stage_data[stage_id].image.alt)
 	  modal.find('#stage-modal-image').attr("title", stage_data[stage_id].image.title)
 	  modal.find('#from-game').text(stage_data[stage_id].game)
-	  modal.find('#characteristics').text(stage_data[stage_id].legality)
+	  modal.find('#legal').text(stage_data[stage_id].legality)
+	  modal.find('#unlock-through').text(stage_data[stage_id].unlock)
 	  modal.find('#stage-description').text(stage_data[stage_id].description)
 	});			
 }, false);	
