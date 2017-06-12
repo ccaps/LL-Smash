@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function(){
 	var stage_data = {
 		dreamland_n64: {
-			game: "Test",
-			legality: "Test",
-			unlock: "Von Anfang an verfügbar",
-			description: "Test Test 123",
+			game: "Kirby",
+			legality: "Legal",
+			unlock: "Target Test mit jedem Charakter beenden.",
+			description: "Eine Stage mit drei Plattformen in einem Dreieck angeordnet. Der Baum in der Mitte pustet gelegentlich Wind, der dich auf der Stage verschiebt.",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
 				alt: "Marth",
@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		battlefield: {
-			game: "",
-			legality: "",
-			unlock: "Von Anfang an verfügbar",
-			description: "",
+			game: "Super Smash Bros.",
+			legality: "Legal",
+			unlock: "All-Star Modus beenden.",
+			description: "Eine Stage mit drei Plattformen in einem Dreieck angeordnet, ohne sonstige Gefahren.",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
 				alt: "Marth",
@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		final_destination: {
-			game: "",
-			legality: "",
-			unlock: "Von Anfang an verfügbar",
-			description: "",
+			game: "Super Smash Bros.",
+			legality: "Legal",
+			unlock: "Beende Event 51.",
+			description: "Eine flache Stage ohne jegliche Gefahren.",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
 				alt: "Marth",
@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		fountain_of_dreams: {
-			game: "",
-			legality: "",
+			game: "Kirby",
+			legality: "Legal",
 			unlock: "Von Anfang an verfügbar",
-			description: "",
+			description: "Eine Stage mit drei Plattformen in einem Dreieck angeordnet. Die unteren beiden Plattformen bewegen sich langsam auf und ab.",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
 				alt: "Marth",
@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			}
 		},
 		pokemon_stadium: {
-			game: "",
-			legality: "",
+			game: "Pokémon",
+			legality: "Legal",
 			unlock: "Von Anfang an verfügbar",
-			description: "",
+			description: "Diese Stage verläuft 5 Transformationen mit unterschiedlichen Layouts, die sich an den Pokémontypen Gras, Feuer, Wasser und Stein orientieren. Das Standardlayout besteht aus einer flachen Stage mit 2 Plattformen",
 			image: {
 				url: "src/images/characters/modal/marth.jpg",
 				alt: "Marth",
