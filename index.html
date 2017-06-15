@@ -32,7 +32,7 @@
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
-	<header class="image-bg-fixed-height"></header>
+	<header id="banner" class="image-bg-fixed-height"></header>
 	<div class="container">
 	<!-- main navigation -->
 		<nav class="mainNavigation"></nav>
@@ -264,6 +264,28 @@
 	</div>
 	<script>
 		document.addEventListener('DOMContentLoaded', function(){
+			
+				//LocalStorage
+				if(window.localStorage){
+					if(!localStorage.getItem("solvedQuizzes")) localStorage.setItem("solvedQuizzes", 0); //Set Key for the amount of solved quizzes if the key doesn't exist
+				}
+				//
+				
+				//Set banner 
+				if(localStorage.getItem("solvedQuizzes") == 0){
+					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt0.png)');
+				}else if(localStorage.getItem("solvedQuizzes") == 1){
+					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt1.png)');
+				}else if(localStorage.getItem("solvedQuizzes") == 2){
+					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt2.png)');
+				}else if(localStorage.getItem("solvedQuizzes") == 3){
+					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt3.png)');
+				}else if(localStorage.getItem("solvedQuizzes") == 4){
+					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt4.png)');
+				}
+				//
+				
+				//pause all videos
 				var vids = this.getElementsByTagName('video');
 				Array.prototype.forEach.call (vids, function (vid) {
 
@@ -271,12 +293,18 @@
 					vid.setAttribute("controls","controls");
 
 				} );
+				//
+				
+				//
 				var stages = this.getElementsByClassName('panel-collapse');
 				Array.prototype.forEach.call (stages, function (stg) {
 					if(stg.classList.contains('in')){
 						stg.classList.remove('in');
 					}
 				} );
+				//
+				
+				//remove "Abschließen" buttons from framework
 				$('a[href="#finish"]').each(function() {
 					$(this).remove();   
 				});
