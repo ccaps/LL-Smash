@@ -293,4 +293,8 @@ body{
 	margin: 0 auto;
 }
 
+#quiz-modal .modal-dialog{
+	width: 60%;
+}
+
 

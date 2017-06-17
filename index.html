@@ -28,6 +28,7 @@
    <!-- Custom JS -->
    <script src="src/js/character_data.js" type="text/javascript" charset="utf-8"></script>
    <script src="src/js/stage_data.js" type="text/javascript" charset="utf-8"></script>
+   <script src="src/js/quizzes.js" type="text/javascript" charset="utf-8"></script>
    <!--Fonts-->
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
@@ -79,9 +80,8 @@
 					</article>
 					<article>
 						<h2>Quiz</h2>
-						<p>
-							Hier kommt ein Quiz 
-						</p>
+						<p>Bereit?</p>
+						<button type="button" class="btn btn-primary" data-backdrop="static" data-keyboard="false" data-quiz-id="Einleitung" data-toggle="modal" data-target="#quiz-modal">Quiz starten</button>
 					</article>		
 				</section>
 				<section id="basics">
@@ -126,9 +126,8 @@
 					</article>
 					<article>
 						<h2>Quiz</h2>
-						<p>
-							Hier kommt ein Quiz 
-						</p>
+						<p>Bereit?</p>
+						<button type="button" class="btn btn-primary" data-backdrop="static" data-keyboard="false" data-quiz-id="Basics" data-toggle="modal" data-target="#quiz-modal">Quiz starten</button>
 					</article>
 				</section>
 				<section id="character">
@@ -164,9 +163,8 @@
 					</article>
 					<article>
 						<h2>Quiz</h2>
-						<p>
-							Hier kommt ein Quiz 
-						</p>
+						<p>Bereit?</p>
+						<button type="button" class="btn btn-primary" data-backdrop="static" data-keyboard="false" data-quiz-id="Charaktere" data-toggle="modal" data-target="#quiz-modal">Quiz starten</button>
 					</article>
 				</section>
 				<section id="stages">
@@ -199,18 +197,17 @@
 					</article>
 					<article>
 						<h2>Quiz</h2>
-						<p>
-							Hier kommt ein Quiz 
-						</p>
+						<p>Bereit?</p>
+						<button type="button" class="btn btn-primary" data-backdrop="static" data-keyboard="false" data-quiz-id="Stages" data-toggle="modal" data-target="#quiz-modal">Quiz starten</button>
 					</article>
 				</section>
 				<section id="abschlussquiz">
 					<h1>Abschlussquiz</h1> 
-					<p>
-					Dieses Quiz beendet das Training.
-					</p>
+					<p>Dieses Quiz beendet das Training.</p>
 					<article>
 						<h2>Abschlussquiz</h2>
+						<p>Bereit?</p>
+					    <button type="button" class="btn btn-primary" data-backdrop="static" data-keyboard="false" data-quiz-id="Abschlussquiz" data-toggle="modal" data-target="#quiz-modal">Quiz starten</button>
 					</article>
 				</section>
 				<section>
@@ -262,6 +259,39 @@
 			</div>
 		</div>
 	</div>
+	<!-- Quiz modal template --> 
+	<div class="modal fade" id="quiz-modal" tabindex="-1" role="dialog" aria-labelledby="quiz-modal-title" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="quiz-modal-title">Modal Titel</h5>
+					<button type="button" class="close closefirstmodal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary closefirstmodal">Schließen</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Closing Warning -->
+	<div id="Warning" class="modal fade" role="dialog" data-backdrop="false">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>Wilst du das Quiz wirklich abbrechen?<br/>
+					Dein Fortschritt wird nicht gespeichert.</p>
+					<button type="button" class="btn btn-danger confirmclosed">Quiz schließen</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Abbrechen</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- -->
 	<script>
 		document.addEventListener('DOMContentLoaded', function(){
 			
