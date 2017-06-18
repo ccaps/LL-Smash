@@ -4,10 +4,32 @@ document.addEventListener('DOMContentLoaded', function(){
 	//questions
 	intro_questions = [
         {
-			question_type: '', 
-			question:'Wähle die 2.', 
-			options: [1,2,3],
-			answer:2
+			question_type: 'radio', 
+			question:'Für welche Konsole erschien Super Smash Bros melee?', 
+			options: ['SNES','Nintendo Switch','Nintendo Gamecube'],
+			answer: 'Nintendo Gamecube',
+			hint: ''
+		},
+        {
+			question_type: 'radio', 
+			question:'Wann erschien Super Smash Bros melee?', 
+			options: [2015,2001,2003],
+			answer: 2001,
+			hint: ''
+		},
+        {
+			question_type: 'radio', 
+			question:'Wie heißt der Erfinder der Super Smash Bros Reihe?', 
+			options: ['Masahiro Sakurai','Jacky Chun','Ip Man'],
+			answer: 'Masahiro Sakurai',
+			hint: ''
+		},
+        {
+			question_type: 'radio', 
+			question:'Wie viele Teile von Super Smash Bros gibt es insgesamt?', 
+			options: [1,2,3,4],
+			answer: 4,
+			hint: ''
 		}
 	];
 	
@@ -87,5 +109,59 @@ document.addEventListener('DOMContentLoaded', function(){
 
 //Function to generate quiz
 function generateQuiz(questions){
+	QuizMod.setQuestions(questions);
+	QuizMod.startQuiz();
+	//console.log(QuizMod.getQuestions());
 	
 }
+
+//Quiz module
+var QuizMod = (function () {
+  //private scope
+  
+  //variables
+  var questions, solvedQuestions;
+  
+  //functions
+  var createQuestionRadio = function(q){
+	/*
+		<input type="radio" id="f-option" name="selector" value="1">
+		<label for="f-option" class="element-animation"></label>
+		<div class="check"></div>
+    */
+	var html = "<div>";
+	html += "</div>";
+	document.getElementById('quiz-container').innerHTML = html; //insert html into quiz container
+  };
+  
+  var pickQuestion = function(){
+	return questions.splice(Math.floor(Math.random() * questions.length), 1)[0];
+  };
+  
+  var startQuiz = function(){
+	//randomly pick the first question or the quiz
+	var q = pickQuestion();
+
+	//Which question type?
+	if(q.question_type == 'radio'){ //type is radio
+		createQuestionRadio(q);
+	}//add other types
+  };  
+  
+  var setQuestions = function(qs){
+	questions = qs;
+  };
+  
+  var getQuestions = function(){
+	return questions;
+  };
+  
+  //public interface
+  return {
+    //someMethod: someMethod
+	setQuestions: setQuestions,
+	getQuestions: getQuestions,
+	startQuiz: startQuiz
+  };
+
+})();
