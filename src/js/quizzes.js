@@ -109,27 +109,36 @@ document.addEventListener('DOMContentLoaded', function(){
 
 //Function to generate quiz
 function generateQuiz(questions){
-	QuizMod.setQuestions(questions);
+	QuizMod.init(questions);
 	QuizMod.startQuiz();
-	//console.log(QuizMod.getQuestions());
-	
 }
 
 //Quiz module
 var QuizMod = (function () {
   //private scope
-  
+
   //variables
-  var questions, solvedQuestions;
+  var questions = [];
+  var solvedQuestions;
   
   //functions
   var createQuestionRadio = function(q){
-	/*
-		<input type="radio" id="f-option" name="selector" value="1">
-		<label for="f-option" class="element-animation"></label>
-		<div class="check"></div>
-    */
+	//create html
 	var html = "<div>";
+		html += "<div id='question-container'>";
+			html += "<span>";
+			html += q.question;
+			html += "</span><hr/>";
+		html += "</div>";
+		html += "<div id='options-container'>";
+			for(var i=0; i<q.options.length; i++){
+				html += "<input id='option"+i+"' name='option-group' type='radio' value='"+q.options[i]+"'/><label for='option"+i+"'>"+q.options[i]+"</label><br/>";
+			}
+		html += "<hr/>";
+		html += "</div>";
+		html += "<div id='button-container'>";
+			html += "<button type='button' class='btn btn-primary disabled'>Nächste Frage</button>";
+		html += "</div>";
 	html += "</div>";
 	document.getElementById('quiz-container').innerHTML = html; //insert html into quiz container
   };
@@ -148,19 +157,19 @@ var QuizMod = (function () {
 	}//add other types
   };  
   
-  var setQuestions = function(qs){
-	questions = qs;
-  };
-  
-  var getQuestions = function(){
-	return questions;
+  var init = function(qs){ //set questions
+	  while(questions.length){
+		  questions.pop();
+	  }
+	  for(var i=0;i<qs.length;i++){
+		  questions.push(qs[i]);
+	  }
   };
   
   //public interface
   return {
     //someMethod: someMethod
-	setQuestions: setQuestions,
-	getQuestions: getQuestions,
+	init: init,
 	startQuiz: startQuiz
   };
 
