@@ -24,25 +24,25 @@ document.addEventListener('DOMContentLoaded', function(){
 	//quiz logic is defined here
 	
 	//questions
-	intro_questions = [
+	intro_questions = [ 
         {
-			question_type: 'radio', 
+			question_type: 'radio', //radio, controller, dnd...
 			question:'Für welche Konsole erschien Super Smash Bros melee?', 
-			options: ['SNES','Nintendo Switch','Nintendo Gamecube'],
-			answer: 'Nintendo Gamecube',
+			options: ['SNES','Nintendo Switch','Nintendo Gamecube', 'Wii'], 
+			answer: 'Nintendo Gamecube', 
 			hint: ''
 		},
         {
 			question_type: 'radio', 
 			question:'Wann erschien Super Smash Bros melee?', 
-			options: [2015,2001,2003],
+			options: [2015,2001,2003, 2007],
 			answer: 2001,
 			hint: 'In diesem Jahr geschah ein schlimmer Terroranschlag in New York'
 		},
         {
 			question_type: 'radio', 
 			question:'Wie heißt der Erfinder der Super Smash Bros Reihe?', 
-			options: ['Masahiro Sakurai','Chacky Chun','Ip Man'],
+			options: ['Masahiro Sakurai','Jacky Chan','Ip Man', 'Hideo Kojima'],
 			answer: 'Masahiro Sakurai',
 			hint: ''
 		},
@@ -52,44 +52,155 @@ document.addEventListener('DOMContentLoaded', function(){
 			options: [1,2,3,4],
 			answer: 4,
 			hint: ''
+		},
+		{
+			question_type: 'radio', 
+			question:'Welchem Genre ist SSBM zuzuordnen?', 
+			options: ['First Person Shooter','MMO','RPG', 'Fighting games'], 
+			answer: 'Fighting games', 
+			hint: 'Ähnlich Street Fighter.'
+		},
+		{
+			question_type: 'radio', 
+			question:'Wann verliert man in SSBM ein Leben?', 
+			options: ['Wenn man den Bildschirm verlässt','Wenn der Lebensbalken leer ist','Wenn man keine Herzen mehr hat', 'Wenn man keine Munition mehr hat'], 
+			answer: 'Wenn man den Bildschirm verlässt', 
+			hint: 'Die Arena hat keine Abgrenzungen'
+		},
+		{
+			question_type: 'radio', 
+			question:'Auf welche Weise wird der erlittene Schaden der Charaktere in SSBM ausgedrückt?', 
+			options: ['Lebensbalken', 'Herzen', 'Prozentanzeige', 'Gar nicht'], 
+			answer:  'Prozentanzeige',
+			hint: 'Einzigartig'
+		},
+		{
+			question_type: 'radio', 
+			question:'Was ist besser: 100% oder 0%?', 
+			options: ['100%','0%'], 
+			answer: '0%',
+			hint: ''
+		},
+		{
+			question_type: 'radio', 
+			question:'Was drückt die Prozentzahl aus?', 
+			options: ['Lebensdauer','Menge an Hit Points', 'Siegwahrscheinlichkeit', 'Multiplikator des Rückstoßes'], 
+			answer: 'Multiplikator des Rückstoßes',
+			hint: ''
 		}
 	];
 	
-	basics_questions = [
-        {
-			question_type: 'controller',
-			video: "URL",
-			question:'Führe Move x aus', 
-			//options: [1,2,3],
-			answer: ['left', 'b']
+	basics_questions = [ 
+		{
+			question_type: 'radio', 
+			question:'Welcher Move schützt am besten davor, gegriffen zu werden?', 
+			options: ['Spotdodge','Rollen','Blocken', 'Springen'], 
+			answer: 'Spotdodge', 
+			hint: 'Eine stationäre Aktion'
+		},
+		{
+			question_type: 'radio', 
+			question:'Was kann nur aus dem Sprint heraus ausgeführt werden?', 
+			options: ['Doublejump','Aerials','Dash Attack', 'Smash Attack'], 
+			answer: 'Dash Attack', 
+			hint: ''
+		},
+		{
+			question_type: 'radio', 
+			question:'Mit welchem Special gewinnen alle Charaktere außer Jigglypuff an Höhe?', 
+			options: ['Up Special','Side Special','Down Special', 'Neutral Special'], 
+			answer: 'Up Special', 
+			hint: 'Die Eingabe passt zur Funktion.'
+		},
+		{
+			question_type: 'radio', 
+			question:'Wie unterscheiden sich Tilts in der Regel von Smashes?', 
+			options: ['Langsamer und stärker','Gar nicht','Schneller und schwächer', 'Größere Reichweite'], 
+			answer: 'Schneller und schwächer', 
+			hint: ''
 		}
 	];
 	
-	characters_questions = [
-        {
-			question_type: '', 
-			question:'Wähle die 2.', 
-			options: [1,2,3],
-			answer:2
+	characters_questions = [ 
+		{
+			question_type: 'radio', 
+			question:'Aus welchem Spiel sind Marth und Roy?', 
+			options: ['Super Mario','Persona','Xenoblade Chronicles', 'Fire Emblem'], 
+			answer: 'Fire Emblem', 
+			hint: ''
+		},
+		{
+			question_type: 'radio', 
+			question:'Was passiert, wenn Jigglypuffs Schild zerstört wird?', 
+			options: ['Gar nichts','Es geht sofort KO','Es wird betäubt', 'Es erleidet hohen Schaden'], 
+			answer: 'Es geht sofort KO', 
+			hint: '' 
+		},
+		{
+			question_type: 'radio', 
+			question:'Welche Charaktere verfügen über einen Konter?', 
+			options: ['Mario, Luigi, Yoshi','Marth, Roy, Peach','Bowser, Donkey Kong, Ganondorf', 'Pikachu, Pummeluff, Mewtwo'], 
+			answer: 'Marth, Roy, Peach', 
+			hint: ''
+		},
+		{
+			question_type: 'radio', 
+			question:'Aus welchem Spiel stammt Ness?', 
+			options: ['Fire Emblem','Earthbound',"Yoshi's Island", 'Super Mario Bros.'], 
+			answer: 'Earthbound', 
+			hint: ''
+		},
+		{
+			question_type: 'radio', 
+			question:'Was unterscheidet Zelda von allen anderen Charakteren?', 
+			options: ['Einziger Charakter seiner Spielereihe','Zwei Charaktere in einem','Einziger weiblicher Charakter', 'Hat nur einen Sprung'], 
+			answer: 'Zwei Charaktere in einem',
+			hint: '' 
+		},
+		{
+			question_type: 'radio', 
+			question:'Welche Charaktere haben keinen Rettungsmove als Up B?', 
+			options: ['Captain Falcon und Ganondorf','Mario und Luigi','Pikachu und Mewtwo', 'Yoshi und Jigglypuff'], 
+			answer: 'Yoshi und Jigglypuff', 
+			hint: '' 
+		},
+		{
+			question_type: 'radio', 
+			question:'Was ist Peach’s besondere Eigenschaft in der Luft?',
+			options: ['Sie kann auf konstanter Höhe schweben','Sie ist enorm schnell','Sie hat mehr als zwei Sprünge', 'Sie kann ihren Up Special mehrfach benutzen'], 
+			answer: 'Sie kann auf konstanter Höhe schweben', 
+			hint: '' 
+		},
+		{
+			question_type: 'radio',
+			question:'Was unterscheidet Fox’s Laser von Falcos Laser?', 
+			options: ['Langsamer und schwächer','Schneller, schwächer, unterbricht Gegner nicht','Gar nichts', 'Langsamer und stärker'], 
+			answer: 'Schneller, schwächer, unterbricht Gegner nicht', 
+			hint: '' 
 		}
 	];
 	
-	stages_questions = [
-        {
-			question_type: '', 
-			question:'Wähle die 2.', 
-			options: [1,2,3],
-			answer:2
+	stages_questions = [ 
+		{
+			question_type: 'radio', 
+			question:'Welche Stage bietet weder Plattformen noch Gefahren?',
+			options: ['Final Destination','Dreamland N64','Battlefield', "Yoshi's Story"], 
+			answer: 'Final Destination', 
+			hint: '' 
+		},
+		{
+			question_type: 'radio', 
+			question:'Auf welchen Stages befindet sich ein pustender Baum in der Mitte?', 
+			options: ['Corneria und Brinstar','Dreamland N64 und Green Greens','Battlefield und Big Blue', 'Jungle Japes und Kongo Jungle'],
+			answer: 'Dreamland N64 und Green Greens', 
+			hint: '' 
 		}
+	
+	
 	];
 	
-	final_questions = [
-        {
-			question_type: '', 
-			question:'Wähle die 2.', 
-			options: [1,2,3],
-			answer:2
-		}
+	final_questions = [ 
+
 	];
 	
 	
@@ -103,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		if(quiz_id == "Einleitung"){
 			generateQuiz(quiz_id, intro_questions);
 		}else if(quiz_id == "Basics"){
-			generateQuiz(basics_questions);
+			generateQuiz(quiz_id, basics_questions);
 		}else if(quiz_id == "Charaktere"){
 			generateQuiz(quiz_id, characters_questions);
 		}else if(quiz_id == "Stages"){
@@ -239,6 +350,7 @@ var QuizMod = (function () {
 	var createAlert = function(type){
 			var alertDiv = document.createElement('div');
 			if(type == "wrong"){
+				alertDiv.id = "alert-div";
 				alertDiv.classList = "alert alert-danger";
 				alertDiv.innerHTML = "Leider Nein, wähle eine andere Antwort.";
 				if(currentQuestion.hint && currentQuestion.hint != ""){
@@ -250,6 +362,10 @@ var QuizMod = (function () {
 			}
 
 			var buttonContainer = document.getElementById('button-container');
+			if(document.getElementById('alert-div')){
+				var aDiv = document.getElementById('alert-div');
+				aDiv.parentNode.removeChild(aDiv);
+			}
 			var quizContainer = buttonContainer.parentNode;
 			quizContainer.insertBefore(alertDiv, buttonContainer);		
 	};
