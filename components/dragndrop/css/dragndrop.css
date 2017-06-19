@@ -1,0 +1,37 @@
+.question
+{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: block;
+    float: left;
+}
+
+
+.questions
+{
+    height: 150px;
+}
+
+.choice {
+    width: 30%;
+    margin-right: 20px;
+    float: left;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px dotted #808080;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.choice h2 {
+    position:absolute;
+    z-index: -5;
+    margin-top: 0;
+}
+
+.ui-state-hover {
+    border-color: #000;
+}
