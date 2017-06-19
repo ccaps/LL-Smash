@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		mario: {
 			game: "Super Mario",
 			unlock: "Von Anfang an verfügbar",
+			weight_category: "Medium",
 			characteristics: "Ein klassischer Allrounder",
 			image: {
 				url: "src/images/characters/modal/mario.jpg",
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		dr_mario: {
 			game: "Dr. Mario",
 			unlock: "Spiele den Klassik oder Abenteuer Modus ohne zu sterben, oder spiele 100 VS Kämpfe.",
+			weight_category: "Medium",
 			characteristics: "Eine stärkere Version von Mario.",
 			image: {
 				url: "src/images/characters/modal/dr_mario.jpg",
@@ -83,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		luigi: {
 			game: "Super Mario Bros.",
 			unlock: "Beende das erste Level das Abenteuer Modus, so dass eine 2 als Sekundenzahl auf dem Timer steht. Besiege danach Peach und Luigi unter einer Minute. Luigi kann auch nach 800 VS Kämpfen freigeschaltet werden.",
+			weight_category: "Medium",
 			characteristics: "Luigi ist generell sehr \"rutschig\". Das heißt, dass er sehr stark über den Boden gleitet nach einem Treffer und so leicht aus der Reichweite seiner Gegner kommt, was deren Kombos erschwert.",
 			image: {
 				url: "src/images/characters/modal/luigi.jpg",
@@ -123,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		bowser: {
 			game: "Super Mario",
 			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
+			weight_category: "Schwer",
 			characteristics: "Bowser ist der größte und schwerste Charakter im Spiel. Er ist sehr langsam, aber teilt auch gewaltig aus.",
 			image: {
 				url: "src/images/characters/modal/bowser.jpg",
@@ -164,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		peach: {
 			game: "Super Mario",
 			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
+			weight_category: "Leicht",
 			characteristics: "Peach ist vor allem in der Luft sehr stark und mobil. Sie kann eine Zeit lang auf einer Höhe schweben, wenn die Sprungtaste nach einem Sprung gedrückt gehalten wird.",
 			image: {
 				url: "src/images/characters/modal/peach.jpg",
@@ -246,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		dk: {
 			game: "Donkey Kong",
 			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
+			weight_category: "Schwer",
 			characteristics: "Donkey Kong ist der zweitschwerste Charakter, besitzt aber dennoch eine überraschende Mobilität. Drückst du nach dem Greifen den Stick nach vorne, so trägt DK seinen Gegner auf dem Rücken. Du kannst dich nun mit deinem Gegner bewegen, bevor du ihn wirfst.",
 			image: {
 				url: "src/images/characters/modal/dk.jpg",
@@ -328,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		ganondorf: {
 			game: "The Legend of Zelda",
 			unlock: "Beende das Event 29 oder spiele 600 VS Kämpfe",
-			weight_category: "Medium",
+			weight_category: "Schwer",
 			characteristics: "Ganondorf ist sehr langsam, besitzt dafür aber einige der stärksten Attacken des Spiels, wie z.B. sein Down Air und Up Smash.",
 			image: {
 				url: "src/images/characters/modal/ganondorf.jpg",
@@ -533,7 +536,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		kirby: {
 			game: "Kirby",
 			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
+			weight_category: "Leicht",
 			characteristics: "Kirby ist durch seine geringe Größe schwer zu Treffen. Außerdem verfügt Kirby über 6 Sprünge und einen Rettungsmove, was es ihm ermöglicht, leicht zur Stage zurück zu kommen.",
 			image: {
 				url: "src/images/characters/modal/kirby.jpg",
@@ -574,7 +577,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		samus: {
 			game: "Metroid",
 			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
+			weight_category: "Schwer",
 			characteristics: "Samus ist sehr gut darin, Gegner durch Distanzangriffe auf Abstand zu halten. Obwohl sie ein schwerer Charakter ist, fällt sie sehr langsam, wodurch eine große horizontale Strecke überwunden werden kann.",
 			image: {
 				url: "src/images/characters/modal/samus.jpg",
@@ -697,7 +700,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		young_link: {
 			game: "The Legend of Zelda",
 			unlock: "Beende den Klassik Modus mit 10 verschiedenen Charakteren oder spiele 500 VS Kämpfe.",
-			weight_category: "Medium",
+			weight_category: "Leicht",
 			characteristics: "Young Link ist eine kleinere und schnellere Version von Link, dessen Attacken dafür etwas schwächer sind.",
 			image: {
 				url: "src/images/characters/modal/young_link.jpg",
@@ -738,7 +741,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		pichu: {
 			game: "Pokémon",
 			unlock: "Beende das Event \"Legendäre Pokemon\" oder spiele 200 VS Kämpfe.",
-			weight_category: "Medium",
+			weight_category: "Leicht",
 			characteristics: "Pichu ist der kleinste und leichteste Charakter des Spiels und hat eine sehr kleine Range, ist aber überraschend stark für seine Größe.",
 			image: {
 				url: "src/images/characters/modal/pichu.png",
@@ -779,7 +782,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		pikachu: {
 			game: "Pokémon",
 			unlock: "Von Anfang an verfügbar",
-			weight_category: "Medium",
+			weight_category: "Leicht",
 			characteristics: "Pikachu ist ein kleiner schneller Charakter mit sehr guten Rettungsmöglichkeiten.",
 			image: {
 				url: "src/images/characters/modal/pikachu.jpg",
@@ -820,6 +823,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		jigglypuff: {
 			game: "Pokémon",
 			unlock: "Beende den Abenteuer Modus auf einer beliebigen Schwierigkeit oder spiele 50 VS Kämpfe.",
+			weight_category: "Leicht",
 			characteristics: "Jigglypuff ist der langsamste Charakter am Boden, aber der schnellste in der Luft. Außerdem ist es einer der leichtesten Charaktere des Spiels. Jigglypuff verfügt über 6 Sprünge, besitzt aber keinen Rettungsmove. Bricht das Schild von Jigglypuff, so geht es sofort K.O.",
 			image: {
 				url: "src/images/characters/modal/jigglypuff.jpg",
@@ -901,7 +905,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		mr_game_and_watch: {
 			game: "Game & Watch",
 			unlock: "Beende den Klassik, Abenteuer oder Zielscheiben Test Modus mit allen 24 Charakteren oder spiele 1000 VS Kämpfe.",
-			weight_category: "Medium",
+			weight_category: "Leicht",
 			characteristics: "Mr. Game & Watch ist einer der leichtesten Charaktere des Spiels. Allerdings verfügt er über schnelle und starke Aerials, die gut für Kombos geeignet sind.",
 			image: {
 				url: "src/images/characters/modal/mr_game_and_watch.jpg",
