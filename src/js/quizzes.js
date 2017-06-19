@@ -396,6 +396,9 @@ var QuizMod = (function () {
 		if(window.localStorage){
 			if(!localStorage.getItem(quizID + "solved")){
 				localStorage.setItem(quizID + "solved", true); 
+				$("#progress-alert").fadeTo(2000, 500).slideUp(500, function(){
+					$("#progress-alert").slideUp(500);
+                });
 				if(!localStorage.getItem("solvedQuizzes")){
 					localStorage.setItem("solvedQuizzes", 1);
 				}else{
