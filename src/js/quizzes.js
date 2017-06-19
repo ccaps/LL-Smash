@@ -194,13 +194,24 @@ document.addEventListener('DOMContentLoaded', function(){
 			options: ['Corneria und Brinstar','Dreamland N64 und Green Greens','Battlefield und Big Blue', 'Jungle Japes und Kongo Jungle'],
 			answer: 'Dreamland N64 und Green Greens', 
 			hint: '' 
+		},
+		{
+			question_type: 'choose',
+			question:'Welche der gezeigten Stages ist legal?',
+			options: [{url:'/src/images/stages/brinstar.jpg', name:'brinstar'},{url:'/src/images/stages/corneria.corneria', name:'corneria'},{url:'/src/images/stages/dreamland.png', name:'dreamland'}],
+			answer: 'brinstar',
+			hint: ''
 		}
-	
-	
 	];
 	
 	final_questions = [ 
-
+		{
+			question_type: 'choose',
+			question:'Welche der gezeigten Stages ist legal?',
+			options: [{url:'src/images/stages/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/corneria.jpg', name:'corneria'},{url:'src/images/stages/dreamland.png', name:'dreamland'}],
+			answer: 'brinstar',
+			hint: ''
+		}
 	];
 	
 	
@@ -252,7 +263,7 @@ var QuizMod = (function () {
 
 	//variables
 	var questions = [];
-	var quizID, currentQuestion = null;
+	var quizID, qDiv, oContainer, currentQuestion;
 
 	//functions
 	/**
@@ -268,12 +279,15 @@ var QuizMod = (function () {
 		}
 		return array;
 	}
-
-	var createQuestionRadio = function(q){ //function to create question of type radio 
-		//create html
+	
+	var clearMainDiv = function(){
 		var mDiv = document.getElementById('quiz-container');
-		mDiv.removeChild(mDiv.childNodes[0]); //clear quiz-container
-		var qDiv = document.createElement('div');
+		mDiv.removeChild(mDiv.childNodes[0]); //clear quiz-container		
+	};
+	
+	var createQuestionStructure = function(q){
+		clearMainDiv();
+		qDiv = document.createElement('div');
 		var qContainer = document.createElement('div');
 		qContainer.id = "question-container";
 		var qSpan =  document.createElement('span');
@@ -281,23 +295,8 @@ var QuizMod = (function () {
 		qContainer.appendChild(qSpan);
 		qContainer.appendChild(document.createElement('hr'));
 		qDiv.appendChild(qContainer);
-		var oContainer = document.createElement('div');
+		oContainer = document.createElement('div');
 		oContainer.id = "options-container";
-		q.options = shuffleArray(q.options); //shuffle options
-		for(var i=0; i<q.options.length; i++){
-			var radioButton = document.createElement('input');
-			var label = document.createElement('label');
-			label.htmlFor = "option" + i;
-			label.innerHTML = q.options[i];
-			var br = document.createElement('br');
-			radioButton.type = 'radio';
-			radioButton.id = "option" + i;
-			radioButton.name = "option-group";
-			radioButton.value = q.options[i];
-			oContainer.appendChild(radioButton);
-			oContainer.appendChild(label);
-			oContainer.appendChild(br);
-		}	
 		qDiv.appendChild(oContainer);
 		qDiv.appendChild(document.createElement('hr'));
 		var bContainer = document.createElement('div');
@@ -307,36 +306,89 @@ var QuizMod = (function () {
 		nextQuestion.className = "btn btn-primary disabled";
 		nextQuestion.innerHTML = "Nächste Frage";
 		bContainer.appendChild(nextQuestion);
-		qDiv.appendChild(bContainer);
-		mDiv.appendChild(qDiv);
-		//
-		
-		//Add event handler to options div
-		oContainer.addEventListener("click", function(e) {
-			if (e.target && e.target.type && e.target.type.toUpperCase() === "RADIO") { //radio button is clicked
-				var nextQuestion = document.getElementById('next-question');
-				if(nextQuestion.classList.contains('disabled')){ //enable next question button
-					nextQuestion.classList.remove('disabled');
-				}
-			}//add other types
-		});
+		qDiv.appendChild(bContainer);	
 		
 		//Add event handler to next question button
 		nextQuestion.addEventListener("click", function(e) {
 			QuizMod.nextQuestion();
 		});
+		
+		//Add event handler to options div
+		oContainer.addEventListener("click", function(e) {
+			t = e.target;
+			if (t && t.type && t.type.toUpperCase() === "RADIO") { //radio button is clicked
+				enableNextQuestionButton();
+			}else if(t && t.className && t.className === "choose-option"){
+				enableNextQuestionButton();
+				
+			}
+		});
+	};
+	
+	var enableNextQuestionButton = function(){
+		var nextQuestion = document.getElementById('next-question');
+		if(nextQuestion.classList.contains('disabled')){ //enable next question button
+			nextQuestion.classList.remove('disabled');
+		}		
+	};
+	
+	var appendAndResetContainers = function(){
+		var mDiv = document.getElementById('quiz-container');
+		mDiv.appendChild(qDiv);
+		oContainer = null;
+		qDiv = null;		
+	};
+	
+	var createQuestionRadio = function(q){ //function to create question of type radio 
+		//create html
+		createQuestionStructure(q);
+		q.options = shuffleArray(q.options); //shuffle options
+		for(var i=0; i<q.options.length; i++){
+			var radioButton = document.createElement('input');
+			radioButton.type = 'radio';
+			radioButton.id = "option" + i;
+			radioButton.name = "option-group";
+			var label = document.createElement('label');
+		    label.htmlFor = "option" + i;
+			
+			if(q.question_type == 'radio'){
+				label.innerHTML = q.options[i];
+				var br = document.createElement('br');
+				radioButton.value = q.options[i];
+				oContainer.appendChild(radioButton);
+				oContainer.appendChild(label);
+				oContainer.appendChild(br);
+			}else if(q.question_type == 'choose'){
+				//
+			}	
+			
+		}
+		appendAndResetContainers();
 	};
 
 	var createQuestionController = function(q){ //function to create question of type controller
-	
+		//create html
+		//createQuestionStructure(q);	
 	};
 	
-	var createQuestionDnD = function(q){ //function to create question of type DnD
-	
+	var createQuestionDnD = function(q){ //function to create question of type dnd
+		//create html
+		//createQuestionStructure(q);	
 	};
 	
 	var validateAnswer = function(q){
-		var selection = document.querySelector('input[name = "option-group"]:checked').value;
+		var selection;
+		if(q.question_type == 'radio'){
+			selection = document.querySelector('input[name = "option-group"]:checked').value;
+		}else if(q.question_type == 'choose'){
+			return false;
+		}
+		else if(q.question_type == 'dnd'){
+			return false;		
+		}
+		else if(q.question_type == 'controller'){
+			return false;		
+		}
 		if(selection == q.answer){
 			return true;
 		}else{
@@ -422,13 +474,13 @@ var QuizMod = (function () {
 	var createQuestion = function(q){
 		currentQuestion = q;
 		//Which question type?
-		if(q.question_type == 'radio'){ //type is radio
+		if(q.question_type == 'radio' || q.question_type == 'choose'){ //type is radio
 			createQuestionRadio(q);
 		}else if(q.question_type == 'controller'){ //type is controller
 			createQuestionController(q);
 		}else if(q.question_type == 'dnd'){ //type is dnd
 			createQuestionDnD(q);
-		}//add other types		
+		}
 	};
 
 	var startQuiz = function(id, qs){
