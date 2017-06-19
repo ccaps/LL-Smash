@@ -1,17 +1,27 @@
 document.addEventListener('DOMContentLoaded', function(){
-	//quiz logic is defined here
-		/**
-	 * Array.prototype.[method name] allows you to define/overwrite an objects method
-	 * needle is the item you are searching for
-	 * this is a special variable that refers to "this" instance of an Array.
-	 * returns true if needle is in the array, and false otherwise
-	 */
-	Array.prototype.contains = function ( needle ) {
-	   for (i in this) {
-		   if (this[i] == needle) return true;
-	   }
-	   return false;
+	//LocalStorage
+	if(window.localStorage){
+		if(!localStorage.getItem("solvedQuizzes")) localStorage.setItem("solvedQuizzes", 0); //Set Key for the amount of solved quizzes if the key doesn't exist
 	}
+	//
+	
+	//Set banner 
+	if(localStorage.getItem("solvedQuizzes") == 0){
+		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt0.png)');
+	}else if(localStorage.getItem("solvedQuizzes") == 1){
+		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt1.png)');
+	}else if(localStorage.getItem("solvedQuizzes") == 2){
+		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt2.png)');
+	}else if(localStorage.getItem("solvedQuizzes") == 3){
+		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt3.png)');
+	}else if(localStorage.getItem("solvedQuizzes") == 4){
+		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt4.png)');
+	}else if(localStorage.getItem("solvedQuizzes") == 5){
+		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt5.png)');
+	}
+	//
+	
+	//quiz logic is defined here
 	
 	//questions
 	intro_questions = [
@@ -32,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function(){
         {
 			question_type: 'radio', 
 			question:'Wie heißt der Erfinder der Super Smash Bros Reihe?', 
-			options: ['Masahiro Sakurai','Jacky Chun','Ip Man'],
+			options: ['Masahiro Sakurai','Chacky Chun','Ip Man'],
 			answer: 'Masahiro Sakurai',
 			hint: ''
 		},
@@ -131,7 +141,7 @@ var QuizMod = (function () {
 
 	//variables
 	var questions = [];
-	var quizID, questionAmount, currentQuestion = null;
+	var quizID, currentQuestion = null;
 
 	//functions
 	/**
@@ -182,7 +192,6 @@ var QuizMod = (function () {
 		var bContainer = document.createElement('div');
 		bContainer.id = "button-container";
 		var nextQuestion = document.createElement('button');
-		nextQuestion.type = "button";
 		nextQuestion.id = "next-question";
 		nextQuestion.className = "btn btn-primary disabled";
 		nextQuestion.innerHTML = "Nächste Frage";
@@ -203,11 +212,15 @@ var QuizMod = (function () {
 		
 		//Add event handler to next question button
 		nextQuestion.addEventListener("click", function(e) {
-			QuizMod.nextQuestion()
+			QuizMod.nextQuestion();
 		});
 	};
 
 	var createQuestionController = function(q){ //function to create question of type controller
+	
+	};
+	
+	var createQuestionDnD = function(q){ //function to create question of type DnD
 	
 	};
 	
@@ -245,27 +258,44 @@ var QuizMod = (function () {
 		return questions.splice(Math.floor(Math.random() * questions.length), 1)[0];
 	};
 	
+	var createCompleteButton = function(){
+		var completeButton = document.createElement('button');
+		completeButton.id = "complete-quiz";
+		completeButton.className = "btn btn-primary";
+		completeButton.innerHTML = "Quiz abschließen";
+		var buttonContainer = document.getElementById('button-container');
+		buttonContainer.appendChild(completeButton);
+		//register event handler
+		completeButton.addEventListener("click", function(e) {
+			location.reload(); // reload page
+		});
+	};
+	
+	var finishQuiz = function(){
+		var bContainer = document.getElementById('button-container');
+		bContainer.removeChild(bContainer.childNodes[0]); //clear button-container
+		createCompleteButton();
+		createAlert("success");
+		//update solved quizzes counter in local storage
+		if(window.localStorage){
+			if(!localStorage.getItem(quizID + "solved")){
+				localStorage.setItem(quizID + "solved", true); 
+				if(!localStorage.getItem("solvedQuizzes")){
+					localStorage.setItem("solvedQuizzes", 1);
+				}else{
+					localStorage.solvedQuizzes ++;
+				}
+			}
+		}		
+	};
+	
 	var nextQuestion = function(){
 		if(validateAnswer(currentQuestion)){
-			if(questions.length > 0){
-				//randomly pick a question 
-				var q = pickQuestion();
+			if(questions.length > 0){ //there are still questions remaining
+				var q = pickQuestion(); //randomly pick a question 
 				createQuestion(q);
 			}else{
-				var bContainer = document.getElementById('button-container');
-				bContainer.removeChild(bContainer.childNodes[0]); //clear button-container
-				createAlert("success");
-				//update solved quizzes counter in local storage
-				if(window.localStorage){
-					if(!window.localStorage.getItem(quizID + "solved")){
-						window.localStorage.setItem(quizID + "solved", true); 
-						if(!localStorage.getItem("solvedQuizzes")){
-							localStorage.setItem("solvedQuizzes", 1);
-						}else{
-							window.localStorage.solvedQuizzes ++;
-						}
-					}
-				}
+				finishQuiz();
 			}
 		}
 	};
@@ -277,6 +307,8 @@ var QuizMod = (function () {
 			createQuestionRadio(q);
 		}else if(q.question_type == 'controller'){ //type is controller
 			createQuestionController(q);
+		}else if(q.question_type == 'dnd'){ //type is dnd
+			createQuestionDnD(q);
 		}//add other types		
 	};
 
@@ -295,8 +327,6 @@ var QuizMod = (function () {
 		for(var i=0;i<qs.length;i++){
 		  questions.push(qs[i]);
 		}
-		questionAmount = questions.length;
-		solvedQuestions = 0;
 	};
 
 	//public interface

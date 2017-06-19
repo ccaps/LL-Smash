@@ -271,9 +271,6 @@
 				</div>
 				<div id="quiz-container" class="modal-body">
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary closefirstmodal">Schließen</button>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -294,28 +291,6 @@
 	<!-- -->
 	<script>
 		document.addEventListener('DOMContentLoaded', function(){
-			
-				//LocalStorage
-				if(window.localStorage){
-					if(!localStorage.getItem("solvedQuizzes")) localStorage.setItem("solvedQuizzes", 0); //Set Key for the amount of solved quizzes if the key doesn't exist
-				}
-				//
-				
-				//Set banner 
-				if(localStorage.getItem("solvedQuizzes") == 0){
-					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt0.png)');
-				}else if(localStorage.getItem("solvedQuizzes") == 1){
-					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt1.png)');
-				}else if(localStorage.getItem("solvedQuizzes") == 2){
-					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt2.png)');
-				}else if(localStorage.getItem("solvedQuizzes") == 3){
-					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt3.png)');
-				}else if(localStorage.getItem("solvedQuizzes") == 4){
-					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt4.png)');
-				}else if(localStorage.getItem("solvedQuizzes") == 5){
-					$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt5.png)');
-				}
-				//
 				
 				//pause all videos
 				var vids = this.getElementsByTagName('video');
