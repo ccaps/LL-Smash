@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', function(){
 	//quiz logic is defined here
+		/**
+	 * Array.prototype.[method name] allows you to define/overwrite an objects method
+	 * needle is the item you are searching for
+	 * this is a special variable that refers to "this" instance of an Array.
+	 * returns true if needle is in the array, and false otherwise
+	 */
+	Array.prototype.contains = function ( needle ) {
+	   for (i in this) {
+		   if (this[i] == needle) return true;
+	   }
+	   return false;
+	}
 	
 	//questions
 	intro_questions = [
@@ -15,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			question:'Wann erschien Super Smash Bros melee?', 
 			options: [2015,2001,2003],
 			answer: 2001,
-			hint: ''
+			hint: 'In diesem Jahr geschah ein schlimmer Terroranschlag in New York'
 		},
         {
 			question_type: 'radio', 
@@ -35,10 +47,11 @@ document.addEventListener('DOMContentLoaded', function(){
 	
 	basics_questions = [
         {
-			question_type: '', 
-			question:'Wähle die 2.', 
-			options: [1,2,3],
-			answer:2
+			question_type: 'controller',
+			video: "URL",
+			question:'Führe Move x aus', 
+			//options: [1,2,3],
+			answer: ['left', 'b']
 		}
 	];
 	
@@ -73,25 +86,25 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	//when quiz modal is opened
 	$('#quiz-modal').on('show.bs.modal', function (event) {
-	  var div = $(event.relatedTarget); // Element that triggered the modal
-	  var quiz_id = div.data('quiz-id'); // Extract info from data-* attributes
+		var div = $(event.relatedTarget); // Element that triggered the modal
+		var quiz_id = div.data('quiz-id'); // Extract info from data-* attributes
 	  
-	  //Which quiz?
-	  if(quiz_id == "Einleitung"){
-		generateQuiz(intro_questions);
-	  }else if(quiz_id == "Basics"){
-		generateQuiz(basics_questions);
-	  }else if(quiz_id == "Charaktere"){
-		generateQuiz(characters_questions);
-	  }else if(quiz_id == "Stages"){
-		generateQuiz(stages_questions);
-	  }else if(quiz_id == "Abschlussquiz"){
-		generateQuiz(final_questions);
-	  }
+		//Which quiz?
+		if(quiz_id == "Einleitung"){
+			generateQuiz(quiz_id, intro_questions);
+		}else if(quiz_id == "Basics"){
+			generateQuiz(basics_questions);
+		}else if(quiz_id == "Charaktere"){
+			generateQuiz(quiz_id, characters_questions);
+		}else if(quiz_id == "Stages"){
+			generateQuiz(quiz_id, stages_questions);
+		}else if(quiz_id == "Abschlussquiz"){
+			generateQuiz(quiz_id, final_questions);
+		}
 
-	  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-	  var modal = $(this)
-	  modal.find('#quiz-modal-title').text(quiz_id);
+		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		var modal = $(this)
+		modal.find('#quiz-modal-title').text(quiz_id);
 	});
 		
 	$('.closefirstmodal').click(function () { //Close Button on Form Modal to trigger Warning Modal
@@ -108,69 +121,190 @@ document.addEventListener('DOMContentLoaded', function(){
 }, false);
 
 //Function to generate quiz
-function generateQuiz(questions){
-	QuizMod.init(questions);
-	QuizMod.startQuiz();
+function generateQuiz(quiz_id, questions){
+	QuizMod.startQuiz(quiz_id, questions);
 }
 
 //Quiz module
 var QuizMod = (function () {
   //private scope
 
-  //variables
-  var questions = [];
-  var solvedQuestions;
-  
-  //functions
-  var createQuestionRadio = function(q){
-	//create html
-	var html = "<div>";
-		html += "<div id='question-container'>";
-			html += "<span>";
-			html += q.question;
-			html += "</span><hr/>";
-		html += "</div>";
-		html += "<div id='options-container'>";
-			for(var i=0; i<q.options.length; i++){
-				html += "<input id='option"+i+"' name='option-group' type='radio' value='"+q.options[i]+"'/><label for='option"+i+"'>"+q.options[i]+"</label><br/>";
-			}
-		html += "<hr/>";
-		html += "</div>";
-		html += "<div id='button-container'>";
-			html += "<button type='button' class='btn btn-primary disabled'>Nächste Frage</button>";
-		html += "</div>";
-	html += "</div>";
-	document.getElementById('quiz-container').innerHTML = html; //insert html into quiz container
-  };
-  
-  var pickQuestion = function(){
-	return questions.splice(Math.floor(Math.random() * questions.length), 1)[0];
-  };
-  
-  var startQuiz = function(){
-	//randomly pick the first question or the quiz
-	var q = pickQuestion();
+	//variables
+	var questions = [];
+	var quizID, questionAmount, currentQuestion = null;
 
-	//Which question type?
-	if(q.question_type == 'radio'){ //type is radio
-		createQuestionRadio(q);
-	}//add other types
-  };  
-  
-  var init = function(qs){ //set questions
-	  while(questions.length){
+	//functions
+	/**
+	* Randomize array element order in-place.
+	* Using Durstenfeld shuffle algorithm.
+	*/
+	var shuffleArray = function(array) {
+		for (var i = array.length - 1; i > 0; i--) {
+			var j = Math.floor(Math.random() * (i + 1));
+			var temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+		return array;
+	}
+
+	var createQuestionRadio = function(q){ //function to create question of type radio 
+		//create html
+		var mDiv = document.getElementById('quiz-container');
+		mDiv.removeChild(mDiv.childNodes[0]); //clear quiz-container
+		var qDiv = document.createElement('div');
+		var qContainer = document.createElement('div');
+		qContainer.id = "question-container";
+		var qSpan =  document.createElement('span');
+		qSpan.innerHTML = q.question;
+		qContainer.appendChild(qSpan);
+		qContainer.appendChild(document.createElement('hr'));
+		qDiv.appendChild(qContainer);
+		var oContainer = document.createElement('div');
+		oContainer.id = "options-container";
+		q.options = shuffleArray(q.options); //shuffle options
+		for(var i=0; i<q.options.length; i++){
+			var radioButton = document.createElement('input');
+			var label = document.createElement('label');
+			label.htmlFor = "option" + i;
+			label.innerHTML = q.options[i];
+			var br = document.createElement('br');
+			radioButton.type = 'radio';
+			radioButton.id = "option" + i;
+			radioButton.name = "option-group";
+			radioButton.value = q.options[i];
+			oContainer.appendChild(radioButton);
+			oContainer.appendChild(label);
+			oContainer.appendChild(br);
+		}	
+		qDiv.appendChild(oContainer);
+		qDiv.appendChild(document.createElement('hr'));
+		var bContainer = document.createElement('div');
+		bContainer.id = "button-container";
+		var nextQuestion = document.createElement('button');
+		nextQuestion.type = "button";
+		nextQuestion.id = "next-question";
+		nextQuestion.className = "btn btn-primary disabled";
+		nextQuestion.innerHTML = "Nächste Frage";
+		bContainer.appendChild(nextQuestion);
+		qDiv.appendChild(bContainer);
+		mDiv.appendChild(qDiv);
+		//
+		
+		//Add event handler to options div
+		oContainer.addEventListener("click", function(e) {
+			if (e.target && e.target.type && e.target.type.toUpperCase() === "RADIO") { //radio button is clicked
+				var nextQuestion = document.getElementById('next-question');
+				if(nextQuestion.classList.contains('disabled')){ //enable next question button
+					nextQuestion.classList.remove('disabled');
+				}
+			}//add other types
+		});
+		
+		//Add event handler to next question button
+		nextQuestion.addEventListener("click", function(e) {
+			QuizMod.nextQuestion()
+		});
+	};
+
+	var createQuestionController = function(q){ //function to create question of type controller
+	
+	};
+	
+	var validateAnswer = function(q){
+		var selection = document.querySelector('input[name = "option-group"]:checked').value;
+		if(selection == q.answer){
+			return true;
+		}else{
+			var nextQuestion = document.getElementById('next-question');
+			nextQuestion.classList += " disabled";
+			createAlert("wrong");
+			return false;
+		}
+	};
+	
+	var createAlert = function(type){
+			var alertDiv = document.createElement('div');
+			if(type == "wrong"){
+				alertDiv.classList = "alert alert-danger";
+				alertDiv.innerHTML = "Leider Nein, wähle eine andere Antwort.";
+				if(currentQuestion.hint && currentQuestion.hint != ""){
+					alertDiv.innerHTML += " <b>Hinweis: " + currentQuestion.hint + "</b>";
+				}				
+			}else if(type == "success"){
+				alertDiv.classList = "alert alert-success";
+				alertDiv.innerHTML = "Herzlichen Glückwunsch! Du hast dieses Quiz gemeistert =)";
+			}
+
+			var buttonContainer = document.getElementById('button-container');
+			var quizContainer = buttonContainer.parentNode;
+			quizContainer.insertBefore(alertDiv, buttonContainer);		
+	};
+	
+	var pickQuestion = function(){
+		return questions.splice(Math.floor(Math.random() * questions.length), 1)[0];
+	};
+	
+	var nextQuestion = function(){
+		if(validateAnswer(currentQuestion)){
+			if(questions.length > 0){
+				//randomly pick a question 
+				var q = pickQuestion();
+				createQuestion(q);
+			}else{
+				var bContainer = document.getElementById('button-container');
+				bContainer.removeChild(bContainer.childNodes[0]); //clear button-container
+				createAlert("success");
+				//update solved quizzes counter in local storage
+				if(window.localStorage){
+					if(!window.localStorage.getItem(quizID + "solved")){
+						window.localStorage.setItem(quizID + "solved", true); 
+						if(!localStorage.getItem("solvedQuizzes")){
+							localStorage.setItem("solvedQuizzes", 1);
+						}else{
+							window.localStorage.solvedQuizzes ++;
+						}
+					}
+				}
+			}
+		}
+	};
+	
+	var createQuestion = function(q){
+		currentQuestion = q;
+		//Which question type?
+		if(q.question_type == 'radio'){ //type is radio
+			createQuestionRadio(q);
+		}else if(q.question_type == 'controller'){ //type is controller
+			createQuestionController(q);
+		}//add other types		
+	};
+
+	var startQuiz = function(id, qs){
+		//initialize quiz
+		init(id, qs);
+		createQuestion(pickQuestion());
+	};  
+
+	var init = function(id, qs){ 
+		quizID = id;
+		//set questions
+		while(questions.length){
 		  questions.pop();
-	  }
-	  for(var i=0;i<qs.length;i++){
+		}
+		for(var i=0;i<qs.length;i++){
 		  questions.push(qs[i]);
-	  }
-  };
-  
-  //public interface
-  return {
-    //someMethod: someMethod
-	init: init,
-	startQuiz: startQuiz
-  };
+		}
+		questionAmount = questions.length;
+		solvedQuestions = 0;
+	};
+
+	//public interface
+	return {
+		startQuiz: startQuiz,
+		nextQuestion: nextQuestion,
+		questions: questions,
+		currentQuestion: currentQuestion
+	};
 
 })();
