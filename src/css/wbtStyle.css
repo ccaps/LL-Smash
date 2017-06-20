@@ -306,3 +306,21 @@ body{
 }
 
 
+/* QUIZZES
+ */
+
+input[type=radio],
+input[type=checkbox]
+{
+	margin-right: 15px;
+}
+
+#quiz-modal-title
+{
+	font-size: 18px;
+}
+
+#question-container 
+{
+	font-size: 16px;
+}
