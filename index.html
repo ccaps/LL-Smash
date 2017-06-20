@@ -296,6 +296,9 @@
 	<!-- -->
 	<script>
 		document.addEventListener('DOMContentLoaded', function(){
+		
+		// Hide method from for-in loops
+		Object.defineProperty(Array.prototype, "equals", {enumerable: false});
 				
 				//pause all videos
 				var vids = this.getElementsByTagName('video');
