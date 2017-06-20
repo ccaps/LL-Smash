@@ -1,4 +1,35 @@
 document.addEventListener('DOMContentLoaded', function(){
+	
+	//function to check if 2 arrays have the same values
+	// Warn if overriding existing method
+	if(Array.prototype.equals)
+		console.warn("Overriding existing Array.prototype.equals. Possible causes: New API defines the method, there's a framework conflict or you've got double inclusions in your code.");
+	// attach the .equals method to Array's prototype to call it on any array
+	Array.prototype.equals = function (array) {
+		// if the other array is a falsy value, return
+		if (!array)
+			return false;
+
+		// compare lengths - can save a lot of time 
+		if (this.length != array.length)
+			return false;
+
+		for (var i = 0, l=this.length; i < l; i++) {
+			// Check if we have nested arrays
+			if (this[i] instanceof Array && array[i] instanceof Array) {
+				// recurse into the nested arrays
+				if (!this[i].equals(array[i]))
+					return false;       
+			}           
+			else if (this[i] != array[i]) { 
+				// Warning - two different object instances will never be equal: {x:20} != {x:20}
+				return false;   
+			}           
+		}       
+		return true;
+	}
+	//
+		
 	//LocalStorage
 	if(window.localStorage){
 		if(!localStorage.getItem("solvedQuizzes")) localStorage.setItem("solvedQuizzes", 0); //Set Key for the amount of solved quizzes if the key doesn't exist
@@ -19,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	}else if(localStorage.getItem("solvedQuizzes") == 4){
 		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt4.png)');
 	}else if(localStorage.getItem("solvedQuizzes") == 5){
-		advancedSection.show();
+		advancedSection.show(); //show advanced section)
 		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt5.png)');
 	}
 	//
@@ -140,11 +171,11 @@ document.addEventListener('DOMContentLoaded', function(){
 			hint: '' 
 		},
 		{
-			question_type: 'radio', 
+			question_type: 'multiple',
 			question:'Welche Charaktere verfügen über einen Konter?', 
-			options: ['Mario, Luigi, Yoshi','Marth, Roy, Peach','Bowser, Donkey Kong, Ganondorf', 'Pikachu, Pummeluff, Mewtwo'], 
-			answer: 'Marth, Roy, Peach', 
-			hint: ''
+			options: ['Mario','Marth','Roy','Peach','Bowser'],
+			answer: ['Marth','Roy','Peach'], 
+			hint: '' 
 		},
 		{
 			question_type: 'radio', 
@@ -161,10 +192,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			hint: '' 
 		},
 		{
-			question_type: 'radio', 
+			question_type: 'multiple', 
 			question:'Welche Charaktere haben keinen Rettungsmove als Up B?', 
-			options: ['Captain Falcon und Ganondorf','Mario und Luigi','Pikachu und Mewtwo', 'Yoshi und Jigglypuff'], 
-			answer: 'Yoshi und Jigglypuff', 
+			options: ['Captain Falcon','Ganondorf','Mario','Yoshi','Jigglypuff'], 
+			answer: ['Yoshi','Jigglypuff'], 
 			hint: '' 
 		},
 		{
@@ -201,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		{
 			question_type: 'choose',
 			question:'Welche der gezeigten Stages ist legal?',
-			options: [{url:'/src/images/stages/brinstar.jpg', name:'brinstar'},{url:'/src/images/stages/corneria.corneria', name:'corneria'},{url:'/src/images/stages/dreamland.png', name:'dreamland'}],
+			options: [{url:'src/images/stages/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/corneria.jpg', name:'corneria'},{url:'src/images/stages/dreamland.png', name:'dreamland'}],
 			answer: 'brinstar',
 			hint: ''
 		}
@@ -213,6 +244,13 @@ document.addEventListener('DOMContentLoaded', function(){
 			question:'Welche der gezeigten Stages ist legal?',
 			options: [{url:'src/images/stages/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/corneria.jpg', name:'corneria'},{url:'src/images/stages/dreamland.png', name:'dreamland'}],
 			answer: 'brinstar',
+			hint: ''
+		},
+		{
+			question_type: 'multiple',
+			question:'Welche dieser Stages sind legal?',
+			options: ['dreamland64', 'corneria', 'brinstar', 'Great Bay'],
+			answer: ['brinstar', 'Great Bay'],
 			hint: ''
 		}
 	];
@@ -242,11 +280,8 @@ document.addEventListener('DOMContentLoaded', function(){
 		modal.find('#quiz-modal-title').text(quiz_id);
 	});
 		
-	$('.closefirstmodal').click(function () { //Close Button on Form Modal to trigger Warning Modal
-		$('.closefirstmodal').click(function () {
-			$('#Warning').modal('show');
-		});
-
+	$('.closefirstmodal').click(function () { //Close Button on Form Modal to trigger Warning Modal	
+		$('#Warning').modal('show');
 		$('.confirmclosed').click(function () {
 			$('#Warning').modal('hide');
 			$('#quiz-modal').modal('hide');
@@ -296,12 +331,11 @@ var QuizMod = (function () {
 		var qSpan =  document.createElement('span');
 		qSpan.innerHTML = q.question;
 		qContainer.appendChild(qSpan);
-		qContainer.appendChild(document.createElement('hr'));
 		qDiv.appendChild(qContainer);
 		oContainer = document.createElement('div');
+		oContainer.appendChild(document.createElement('hr'));
 		oContainer.id = "options-container";
 		qDiv.appendChild(oContainer);
-		qDiv.appendChild(document.createElement('hr'));
 		var bContainer = document.createElement('div');
 		bContainer.id = "button-container";
 		var nextQuestion = document.createElement('button');
@@ -319,11 +353,10 @@ var QuizMod = (function () {
 		//Add event handler to options div
 		oContainer.addEventListener("click", function(e) {
 			t = e.target;
-			if (t && t.type && t.type.toUpperCase() === "RADIO") { //radio button is clicked
+			if (t && t.type && (t.type.toUpperCase() === "RADIO" || t.type.toUpperCase() === "CHECKBOX")) { //radio button is clicked
 				enableNextQuestionButton();
 			}else if(t && t.className && t.className === "choose-option"){
 				enableNextQuestionButton();
-				
 			}
 		});
 	};
@@ -335,8 +368,16 @@ var QuizMod = (function () {
 		}		
 	};
 	
+	var disableNextQuestionButton = function(){
+		var nextQuestion = document.getElementById('next-question');
+		if(!nextQuestion.classList.contains('disabled')){
+			nextQuestion.classList += " disabled";	
+		}
+	};
+	
 	var appendAndResetContainers = function(){
 		var mDiv = document.getElementById('quiz-container');
+	    oContainer.appendChild(document.createElement('hr'));
 		mDiv.appendChild(qDiv);
 		oContainer = null;
 		qDiv = null;		
@@ -347,6 +388,7 @@ var QuizMod = (function () {
 		createQuestionStructure(q);
 		q.options = shuffleArray(q.options); //shuffle options
 		for(var i=0; i<q.options.length; i++){
+			var cOption = q.options[i];
 			var radioButton = document.createElement('input');
 			radioButton.type = 'radio';
 			radioButton.id = "option" + i;
@@ -355,14 +397,22 @@ var QuizMod = (function () {
 		    label.htmlFor = "option" + i;
 			
 			if(q.question_type == 'radio'){
-				label.innerHTML = q.options[i];
+				label.innerHTML = cOption;
 				var br = document.createElement('br');
-				radioButton.value = q.options[i];
+				radioButton.value = cOption;
 				oContainer.appendChild(radioButton);
 				oContainer.appendChild(label);
 				oContainer.appendChild(br);
 			}else if(q.question_type == 'choose'){
-				//
+				radioButton.value = cOption.name;
+				var oImg = document.createElement('img');
+				oImg.width = 200;
+				oImg.src = cOption.url;
+				oImg.setAttribute("style", "cursor:pointer; border:2px solid transparent;");
+				radioButton.setAttribute("style", "visibility: hidden; position: absolute");
+				label.appendChild(radioButton);
+				label.appendChild(oImg);
+				oContainer.appendChild(label);
 			}	
 			
 		}
@@ -379,26 +429,74 @@ var QuizMod = (function () {
 		//createQuestionStructure(q);	
 	};
 	
+	var createQuestionMultiple = function(q){
+		//create html
+		createQuestionStructure(q);
+		q.options = shuffleArray(q.options); //shuffle options
+		for(var i=0; i<q.options.length; i++){
+			var cOption = q.options[i];
+			var cDiv = document.createElement('div');
+			var cCheckbox = document.createElement('input');
+			var label = document.createElement('label');
+			label.innerHTML = cOption;
+			label.htmlFor = "option" + i;
+			cCheckbox.id = "option" + i;
+			cCheckbox.className = "quiz-checkbox";
+			cCheckbox.type = "checkbox";
+			cCheckbox.name = "checkbox-group";
+			cCheckbox.value = cOption;
+			cDiv.appendChild(cCheckbox);
+			cDiv.appendChild(label);
+			oContainer.appendChild(cDiv);
+		}
+		appendAndResetContainers();
+	}
+	
 	var validateAnswer = function(q){
 		var selection;
-		if(q.question_type == 'radio'){
+		
+		//which question type?
+		if(q.question_type == 'radio' || q.question_type == 'choose'){
 			selection = document.querySelector('input[name = "option-group"]:checked').value;
-		}else if(q.question_type == 'choose'){
-			return false;
-		}
-		else if(q.question_type == 'dnd'){
+			return validateSelection(q.answer, selection, "single");
+		}else if(q.question_type == 'multiple'){
+			var checkboxes = document.getElementsByClassName('quiz-checkbox');
+			var selArray = [];
+			for(var i = 0; i<checkboxes.length; i++){ //get values of checked checkboxes
+				var cb = checkboxes[i];
+				if(cb.checked === true){
+					selArray.push(cb.value);
+				}
+			}
+			return validateSelection(q.answer, selArray, "multiple");
+		}else if(q.question_type == 'dnd'){
+			return false;		
+		}else if(q.question_type == 'controller'){
 			return false;		
 		}
-		else if(q.question_type == 'controller'){
-			return false;		
+	};
+	
+	var validateSelection = function(answer, selection, type){
+		if(type == "single"){
+			//validate
+			if(selection == answer){
+				return true;
+			}else{
+				return wrong();
+			}			
+		}else if(type == "multiple"){
+			selection.sort();
+			answer.sort();
+			if(selection.equals(answer)){
+				return true;
+			}else{
+				return wrong();
+			}
 		}
-		if(selection == q.answer){
-			return true;
-		}else{
-			var nextQuestion = document.getElementById('next-question');
-			nextQuestion.classList += " disabled";
-			createAlert("wrong");
-			return false;
+		function wrong(){
+			disableNextQuestionButton();
+			createAlert("wrong");	
+			return false;			
 		}
 	};
 	
@@ -445,6 +543,10 @@ var QuizMod = (function () {
 	var finishQuiz = function(){
 		var bContainer = document.getElementById('button-container');
 		bContainer.removeChild(bContainer.childNodes[0]); //clear button-container
+		var oContainer = document.getElementById('options-container');
+		var qContainer = document.getElementById('question-container');
+		oContainer.parentNode.removeChild(oContainer);
+		qContainer.parentNode.removeChild(qContainer);
 		createCompleteButton();
 		createAlert("success");
 		//update solved quizzes counter in local storage
@@ -483,6 +585,8 @@ var QuizMod = (function () {
 			createQuestionController(q);
 		}else if(q.question_type == 'dnd'){ //type is dnd
 			createQuestionDnD(q);
+		}else if(q.question_type == 'multiple'){
+			createQuestionMultiple(q);
 		}
 	};
 
