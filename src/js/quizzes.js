@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	}else if(localStorage.getItem("solvedQuizzes") == 4){
 		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt4.png)');
 	}else if(localStorage.getItem("solvedQuizzes") == 5){
-		advancedSection.show();
+		advancedSection.show(); //show advanced section)
 		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt5.png)');
 	}
 	//
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		{
 			question_type: 'choose',
 			question:'Welche der gezeigten Stages ist legal?',
-			options: [{url:'/src/images/stages/brinstar.jpg', name:'brinstar'},{url:'/src/images/stages/corneria.corneria', name:'corneria'},{url:'/src/images/stages/dreamland.png', name:'dreamland'}],
+			options: [{url:'src/images/stages/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/corneria.jpg', name:'corneria'},{url:'src/images/stages/dreamland.png', name:'dreamland'}],
 			answer: 'brinstar',
 			hint: ''
 		}
@@ -323,7 +323,6 @@ var QuizMod = (function () {
 				enableNextQuestionButton();
 			}else if(t && t.className && t.className === "choose-option"){
 				enableNextQuestionButton();
-				
 			}
 		});
 	};
@@ -347,6 +346,7 @@ var QuizMod = (function () {
 		createQuestionStructure(q);
 		q.options = shuffleArray(q.options); //shuffle options
 		for(var i=0; i<q.options.length; i++){
+			var cOption = q.options[i];
 			var radioButton = document.createElement('input');
 			radioButton.type = 'radio';
 			radioButton.id = "option" + i;
@@ -355,14 +355,22 @@ var QuizMod = (function () {
 		    label.htmlFor = "option" + i;
 			
 			if(q.question_type == 'radio'){
-				label.innerHTML = q.options[i];
+				label.innerHTML = cOption;
 				var br = document.createElement('br');
-				radioButton.value = q.options[i];
+				radioButton.value = cOption;
 				oContainer.appendChild(radioButton);
 				oContainer.appendChild(label);
 				oContainer.appendChild(br);
 			}else if(q.question_type == 'choose'){
-				//
+				radioButton.value = cOption.name;
+				var oImg = document.createElement('img');
+				oImg.width = 200;
+				oImg.src = cOption.url;
+				oImg.setAttribute("style", "cursor:pointer; border:2px solid transparent;");
+				radioButton.setAttribute("style", "visibility: hidden; position: absolute");
+				label.appendChild(radioButton);
+				label.appendChild(oImg);
+				oContainer.appendChild(label);
 			}	
 			
 		}
@@ -381,17 +389,17 @@ var QuizMod = (function () {
 	
 	var validateAnswer = function(q){
 		var selection;
-		if(q.question_type == 'radio'){
+		
+		//which question type?
+		if(q.question_type == 'radio' || q.question_type == 'choose'){
 			selection = document.querySelector('input[name = "option-group"]:checked').value;
-		}else if(q.question_type == 'choose'){
-			return false;
-		}
-		else if(q.question_type == 'dnd'){
+		}else if(q.question_type == 'dnd'){
 			return false;		
 		}
 		else if(q.question_type == 'controller'){
 			return false;		
 		}
+		//validate
 		if(selection == q.answer){
 			return true;
 		}else{
