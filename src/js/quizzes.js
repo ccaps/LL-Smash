@@ -171,11 +171,11 @@ document.addEventListener('DOMContentLoaded', function(){
 			hint: '' 
 		},
 		{
-			question_type: 'radio', 
+			question_type: 'multiple',
 			question:'Welche Charaktere verfügen über einen Konter?', 
-			options: ['Mario, Luigi, Yoshi','Marth, Roy, Peach','Bowser, Donkey Kong, Ganondorf', 'Pikachu, Pummeluff, Mewtwo'], 
-			answer: 'Marth, Roy, Peach', 
-			hint: ''
+			options: ['Mario','Marth','Roy','Peach','Bowser'],
+			answer: ['Marth','Roy','Peach'], 
+			hint: '' 
 		},
 		{
 			question_type: 'radio', 
@@ -192,10 +192,10 @@ document.addEventListener('DOMContentLoaded', function(){
 			hint: '' 
 		},
 		{
-			question_type: 'radio', 
+			question_type: 'multiple', 
 			question:'Welche Charaktere haben keinen Rettungsmove als Up B?', 
-			options: ['Captain Falcon und Ganondorf','Mario und Luigi','Pikachu und Mewtwo', 'Yoshi und Jigglypuff'], 
-			answer: 'Yoshi und Jigglypuff', 
+			options: ['Captain Falcon','Ganondorf','Mario','Yoshi','Jigglypuff'], 
+			answer: ['Yoshi','Jigglypuff'], 
 			hint: '' 
 		},
 		{
