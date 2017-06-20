@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		if(!localStorage.getItem("solvedQuizzes")) localStorage.setItem("solvedQuizzes", 0); //Set Key for the amount of solved quizzes if the key doesn't exist
 	}
 	//
-	
+	//hide advanced section
+	var advancedSection = $('li').has('a:contains("Advanced")').hide();
+
 	//Set banner 
 	if(localStorage.getItem("solvedQuizzes") == 0){
 		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt0.png)');
@@ -17,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	}else if(localStorage.getItem("solvedQuizzes") == 4){
 		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt4.png)');
 	}else if(localStorage.getItem("solvedQuizzes") == 5){
+		advancedSection.show();
 		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt5.png)');
 	}
 	//
