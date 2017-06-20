@@ -242,11 +242,8 @@ document.addEventListener('DOMContentLoaded', function(){
 		modal.find('#quiz-modal-title').text(quiz_id);
 	});
 		
-	$('.closefirstmodal').click(function () { //Close Button on Form Modal to trigger Warning Modal
-		$('.closefirstmodal').click(function () {
-			$('#Warning').modal('show');
-		});
-
+	$('.closefirstmodal').click(function () { //Close Button on Form Modal to trigger Warning Modal	
+		$('#Warning').modal('show');
 		$('.confirmclosed').click(function () {
 			$('#Warning').modal('hide');
 			$('#quiz-modal').modal('hide');
