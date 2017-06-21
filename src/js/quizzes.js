@@ -553,11 +553,11 @@ var QuizMod = (function () {
 		qContainer.parentNode.removeChild(qContainer);
 		createCompleteButton();
 		createAlert("success");
-		oContainer.innerHTML = "Du hast eine neue Trophäe freigeschaltet <img src='src/images/trophy.jpg' id='trophy'>";
 		//update solved quizzes counter in local storage
 		if(window.localStorage){
 			if(!localStorage.getItem(quizID + "solved")){
-				localStorage.setItem(quizID + "solved", true); 
+                oContainer.innerHTML = "Du hast eine neue Trophäe freigeschaltet <img src='src/images/trophy.jpg' id='trophy'>";
+                localStorage.setItem(quizID + "solved", true);
 				$("#progress-alert").fadeTo(2000, 500).slideUp(500, function(){
 					$("#progress-alert").slideUp(500);
                 });
