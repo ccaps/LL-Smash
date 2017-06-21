@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt4.png)');
 	}else if(localStorage.getItem("solvedQuizzes") == 5){
 		advancedSection.show(); //show advanced section)
-		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt5.png)');
+		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt8.png)');
 	}
 	//
 	
