@@ -330,6 +330,10 @@ var QuizMod = (function () {
 		qContainer.id = "question-container";
 		var qSpan =  document.createElement('span');
 		qSpan.innerHTML = q.question;
+		if(q.question_type==="multiple")
+		{
+            qSpan.innerHTML = q.question + " <b style='color:darkred'><br>(Mehrfach Antwort nötig)</b>";
+        }
 		qContainer.appendChild(qSpan);
 		qDiv.appendChild(qContainer);
 		oContainer = document.createElement('div');
@@ -408,7 +412,7 @@ var QuizMod = (function () {
 				var oImg = document.createElement('img');
 				oImg.width = 200;
 				oImg.src = cOption.url;
-				oImg.setAttribute("style", "cursor:pointer; border:2px solid transparent;");
+				oImg.setAttribute("style", "cursor:pointer");
 				radioButton.setAttribute("style", "visibility: hidden; position: absolute");
 				label.appendChild(radioButton);
 				label.appendChild(oImg);
@@ -545,10 +549,11 @@ var QuizMod = (function () {
 		bContainer.removeChild(bContainer.childNodes[0]); //clear button-container
 		var oContainer = document.getElementById('options-container');
 		var qContainer = document.getElementById('question-container');
-		oContainer.parentNode.removeChild(oContainer);
+		//oContainer.parentNode.removeChild(oContainer);
 		qContainer.parentNode.removeChild(qContainer);
 		createCompleteButton();
 		createAlert("success");
+		oContainer.innerHTML = "Du hast eine neue Trophäe freigeschaltet <img src='src/images/trophy.jpg' id='trophy'>";
 		//update solved quizzes counter in local storage
 		if(window.localStorage){
 			if(!localStorage.getItem(quizID + "solved")){

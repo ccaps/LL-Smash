@@ -55,14 +55,14 @@
     // BUILD CONTROLLER FUNCTION
     // .
 
-    function buildControllerQuiz(q)
+    function buildControllerQuiz(container, videosrc, result1, result2, result3)
     {
-        var container = "";
-        var videosrc = q.video;
-        var result1 = q.answer[0];
-        var result2 = q.answer[1];
-        var result3 = q.answer[2];
-        var question = q.question;
+//        var container = "";
+//        var videosrc = q.video;
+//        var result1 = q.answer[0];
+//        var result2 = q.answer[1];
+//        var result3 = q.answer[2];
+//        var question = q.question;
 
         var controller =
             '<div id="controller_container">'
@@ -107,7 +107,7 @@
         document.querySelector(container).innerHTML = controller + controller_icons + video_container + display_container ;
     }
 
-    //buildControllerQuiz('body', '../../src/videos/controls/airdodge.mp4', 'right', 'left', 'a' );
+    buildControllerQuiz('body', '../../src/videos/controls/airdodge.mp4', 'right', 'left', 'a' );
 
 
 
