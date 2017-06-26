@@ -301,6 +301,7 @@ var QuizMod = (function () {
 
 	//variables
 	var questions = [];
+	var questionAmount, tries = 0;
 	var quizID, qDiv, oContainer, currentQuestion;
 
 	//functions
@@ -329,12 +330,18 @@ var QuizMod = (function () {
 		var qContainer = document.createElement('div');
 		qContainer.id = "question-container";
 		var qSpan =  document.createElement('span');
+		var progressSpan = document.createElement('span');
 		qSpan.innerHTML = q.question;
+		progressSpan.style.float = "right";
+		progressSpan.id = "quiz-progress";
+		var progress = questionAmount - questions.length;
+		progressSpan.innerHTML = progress + "/" + questionAmount;
 		if(q.question_type==="multiple")
 		{
             qSpan.innerHTML = q.question + " <b style='color:darkred'><br>(Mehrfach Antwort nötig)</b>";
         }
 		qContainer.appendChild(qSpan);
+		qContainer.appendChild(progressSpan);
 		qDiv.appendChild(qContainer);
 		oContainer = document.createElement('div');
 		oContainer.appendChild(document.createElement('hr'));
@@ -500,6 +507,7 @@ var QuizMod = (function () {
 		function wrong(){
 			disableNextQuestionButton();
 			createAlert("wrong");	
+			tries ++;
 			return false;			
 		}
 	};
@@ -556,18 +564,18 @@ var QuizMod = (function () {
 		//update solved quizzes counter in local storage
 		if(window.localStorage){
 			if(!localStorage.getItem(quizID + "solved")){
-                oContainer.innerHTML = "Du hast eine neue Trophäe freigeschaltet <img src='src/images/trophy.jpg' id='trophy'>";
+                oContainer.innerHTML = "Herlichen Glückwunsch! Du hast einen neuen Charakter freigeschaltet.";
                 localStorage.setItem(quizID + "solved", true);
-				$("#progress-alert").fadeTo(2000, 500).slideUp(500, function(){
-					$("#progress-alert").slideUp(500);
-                });
 				if(!localStorage.getItem("solvedQuizzes")){
 					localStorage.setItem("solvedQuizzes", 1);
 				}else{
 					localStorage.solvedQuizzes ++;
 				}
+			}else{
+				oContainer.innerHTML = "Quiz abgeschlossen.";
 			}
 		}		
+		oContainer.innerHTML += "<br/><span>Falsche Antworten: "+tries+"</span>";
 	};
 	
 	var nextQuestion = function(){
@@ -603,6 +611,10 @@ var QuizMod = (function () {
 
 	var init = function(id, qs){ 
 		quizID = id;
+		questionAmount = qs.length;
+		if(tries != 0){
+			tries = 0;
+		}
 		//set questions
 		while(questions.length){
 		  questions.pop();
