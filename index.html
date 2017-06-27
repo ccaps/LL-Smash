@@ -299,6 +299,33 @@
 	<!-- -->
 	<script>
 		document.addEventListener('DOMContentLoaded', function(){
+		//hide advanced section
+		var advancedSection = $('li').has('a:contains("Advanced")').hide();
+		
+		//Set banner 
+		if(localStorage.getItem("solvedQuizzes") == 0){
+			$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt0.png)');
+		}else if(localStorage.getItem("solvedQuizzes") == 1){
+			$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt1.png)');
+			$("#c_falcon").removeClass("locked");
+		}else if(localStorage.getItem("solvedQuizzes") == 2){
+			$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt3.png)');
+			$("#ice_climbers").removeClass("locked");
+			$("#jigglypuff").removeClass("locked");
+		}else if(localStorage.getItem("solvedQuizzes") == 3){
+			$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt5.png)');
+			$("#peach").removeClass("locked");
+			$("#zelda").removeClass("locked");
+		}else if(localStorage.getItem("solvedQuizzes") == 4){
+			$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt6.png)');
+			$("#roy").removeClass("locked");
+		}else if(localStorage.getItem("solvedQuizzes") == 5){
+			advancedSection.show(); //show advanced section)
+			$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt8.png)');
+			$("#falco").removeClass("locked");
+			$("#fox").removeClass("locked");
+		}
+		//	
 		
 		// Hide method from for-in loops
 		Object.defineProperty(Array.prototype, "equals", {enumerable: false});

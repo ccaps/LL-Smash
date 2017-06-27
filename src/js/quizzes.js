@@ -35,25 +35,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		if(!localStorage.getItem("solvedQuizzes")) localStorage.setItem("solvedQuizzes", 0); //Set Key for the amount of solved quizzes if the key doesn't exist
 	}
 	//
-	//hide advanced section
-	var advancedSection = $('li').has('a:contains("Advanced")').hide();
-
-	//Set banner 
-	if(localStorage.getItem("solvedQuizzes") == 0){
-		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt0.png)');
-	}else if(localStorage.getItem("solvedQuizzes") == 1){
-		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt1.png)');
-	}else if(localStorage.getItem("solvedQuizzes") == 2){
-		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt2.png)');
-	}else if(localStorage.getItem("solvedQuizzes") == 3){
-		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt3.png)');
-	}else if(localStorage.getItem("solvedQuizzes") == 4){
-		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt4.png)');
-	}else if(localStorage.getItem("solvedQuizzes") == 5){
-		advancedSection.show(); //show advanced section)
-		$('#banner').css('background-image', 'url(src/images/Photoshop/fortschritt8.png)');
-	}
-	//
 	
 	//quiz logic is defined here
 	

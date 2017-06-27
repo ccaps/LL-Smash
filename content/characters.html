@@ -298,39 +298,10 @@
 </div>
 
 <script>
-
-
-    if (localStorage.getItem("solvedQuizzes") >= 1) {
-        $("#c_falcon").removeClass("locked");
-    }
-    if (localStorage.getItem("solvedQuizzes") >= 2) {
-        $("#ice_climbers").removeClass("locked");
-    }
-    if (localStorage.getItem("solvedQuizzes") >= 3) {
-        $("#jigglypuff").removeClass("locked");
-    }
-    if (localStorage.getItem("solvedQuizzes") >= 4) {
-        $("#peach").removeClass("locked");
-    }
-    if (localStorage.getItem("solvedQuizzes") >= 5) {
-        $("#zelda").removeClass("locked");
-    }
-    if (localStorage.getItem("solvedQuizzes") >= 6) {
-        $("#roy").removeClass("locked");
-    }
-    if (localStorage.getItem("solvedQuizzes") >= 7) {
-        $("#falco").removeClass("locked");
-    }
-    if (localStorage.getItem("solvedQuizzes") >= 8) {
-        $("#fox").removeClass("locked");
-    }
-
-
     $('.character-tile').each(function(i, obj) {
         if($(this).hasClass('locked')){
             $(this).find('span').html('???');
             console.log('locked');
         }
     });
-
 </script>
