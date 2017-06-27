@@ -25,7 +25,7 @@
 			</div>					
 		</div>
 		<div class="col-lg-2">
-			<div class="character-tile" data-toggle="modal" data-target="#character-modal" data-character-id="peach">
+			<div id="peach" class="character-tile locked" data-toggle="modal" data-target="#character-modal" data-character-id="peach">
 				<img src="src/images/characters/profiles/peach.png" class="img-rounded img-responsive" alt="Peach" />
 				<span class="character-name">Peach</span>
 			</div>					
@@ -43,7 +43,7 @@
 			</div>					
 		</div>
 		<div class="col-lg-2">
-			<div class="character-tile" data-toggle="modal" data-target="#character-modal" data-character-id="c_falcon">
+			<div id="c_falcon" class="character-tile locked" data-toggle="modal" data-target="#character-modal" data-character-id="c_falcon">
 				<img src="src/images/characters/profiles/c_falcon.png" class="img-rounded img-responsive" alt="C. Falcon" />
 				<span class="character-name">C. Falcon</span>
 			</div>					
@@ -55,13 +55,13 @@
 			</div>					
 		</div>
 		<div class="col-lg-2">
-			<div class="character-tile" data-toggle="modal" data-target="#character-modal" data-character-id="falco">
+			<div id="falco" class="character-tile locked" data-toggle="modal" data-target="#character-modal" data-character-id="falco">
 				<img src="src/images/characters/profiles/falco.png" class="img-rounded img-responsive" alt="Falco" />
 				<span class="character-name">Falco</span>
 			</div>
 		</div>
 		<div class="col-lg-2 col-lg-offset-1">
-			<div class="character-tile" data-toggle="modal" data-target="#character-modal" data-character-id="fox">
+			<div id="fox" class="character-tile locked" data-toggle="modal" data-target="#character-modal" data-character-id="fox">
 				<img src="src/images/characters/profiles/fox.png" class="img-rounded img-responsive" alt="Fox" />
 				<span class="character-name">Fox</span>
 			</div>					
@@ -73,7 +73,7 @@
 			</div>					
 		</div>
 		<div class="col-lg-2">
-			<div class="character-tile" data-toggle="modal" data-target="#character-modal" data-character-id="ice_climbers">
+			<div id="ice_climbers" class="character-tile locked" data-toggle="modal" data-target="#character-modal" data-character-id="ice_climbers">
 				<img src="src/images/characters/profiles/ice_climbers.png" class="img-rounded img-responsive" alt="Ice Climbers" />
 				<span class="character-name">Ice Climbers</span>
 			</div>					
@@ -91,7 +91,7 @@
 			</div>					
 		</div>
 		<div class="col-lg-2 col-lg-offset-1">
-			<div class="character-tile" data-toggle="modal" data-target="#character-modal" data-character-id="zelda">
+			<div id="zelda" class="character-tile locked" data-toggle="modal" data-target="#character-modal" data-character-id="zelda">
 				<img src="src/images/characters/profiles/zelda.png" class="img-rounded img-responsive" alt="Zelda" />
 				<span class="character-name">Zelda</span>
 			</div>					
@@ -121,7 +121,7 @@
 			</div>					
 		</div>
 		<div class="col-lg-2 col-lg-offset-1">
-			<div class="character-tile" data-toggle="modal" data-target="#character-modal" data-character-id="jigglypuff">
+			<div id="jigglypuff" class="character-tile locked" data-toggle="modal" data-target="#character-modal" data-character-id="jigglypuff">
 				<img src="src/images/characters/profiles/jigglypuff.png" class="img-rounded img-responsive" alt="Jigglypuff" />
 				<span class="character-name">Jigglypuff</span>
 			</div>					
@@ -145,7 +145,7 @@
 			</div>					
 		</div>
 		<div class="col-lg-2">
-			<div class="character-tile" data-toggle="modal" data-target="#character-modal" data-character-id="roy">
+			<div id="roy" class="character-tile locked" data-toggle="modal" data-target="#character-modal" data-character-id="roy">
 				<img src="src/images/characters/profiles/roy.png" class="img-rounded img-responsive" alt="Roy" />
 				<span class="character-name">Roy</span>
 			</div>					
@@ -296,3 +296,41 @@
 		</div>
 	</div>
 </div>
+
+<script>
+
+
+    if (localStorage.getItem("solvedQuizzes") >= 1) {
+        $("#c_falcon").removeClass("locked");
+    }
+    if (localStorage.getItem("solvedQuizzes") >= 2) {
+        $("#ice_climbers").removeClass("locked");
+    }
+    if (localStorage.getItem("solvedQuizzes") >= 3) {
+        $("#jigglypuff").removeClass("locked");
+    }
+    if (localStorage.getItem("solvedQuizzes") >= 4) {
+        $("#peach").removeClass("locked");
+    }
+    if (localStorage.getItem("solvedQuizzes") >= 5) {
+        $("#zelda").removeClass("locked");
+    }
+    if (localStorage.getItem("solvedQuizzes") >= 6) {
+        $("#roy").removeClass("locked");
+    }
+    if (localStorage.getItem("solvedQuizzes") >= 7) {
+        $("#falco").removeClass("locked");
+    }
+    if (localStorage.getItem("solvedQuizzes") >= 8) {
+        $("#fox").removeClass("locked");
+    }
+
+
+    $('.character-tile').each(function(i, obj) {
+        if($(this).hasClass('locked')){
+            $(this).find('span').html('???');
+            console.log('locked');
+        }
+    });
+
+</script>

@@ -155,6 +155,18 @@ body{
 	width: 100%;
 }
 
+.locked{
+	cursor: not-allowed;
+}
+
+.locked img{
+	cursor: not-allowed;
+	-webkit-filter: grayscale(100%) blur(5px); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%) blur(5px);
+}
+
+
+
 
 /** LEts smash **/
 .banner_lets-smash
