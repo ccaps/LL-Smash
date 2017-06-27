@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "https://www.youtube.com/watch?v=eJwpikF6y18&ab_channel=Mirsans",
+						url: "https://www.youtube.com/embed/eJwpikF6y18",
 						alt: "Bowser während Neutral Special"
 					},
 					description: "Bowser spuckt solange Feuer, wie Du die B-Taste gedrückt hältst. Dabei wird das Feuer mit der Zeit immer schwächer."
@@ -1041,25 +1041,17 @@ document.addEventListener('DOMContentLoaded', function(){
 	  modal.find('#character-modal-image').attr("src", character_data[character_id].image.url)
 	  modal.find('#character-modal-image').attr("alt", character_data[character_id].image.alt)
 	  modal.find('#character-modal-image').attr("title", character_data[character_id].image.title)
-	  modal.find('#neutral-special-video').children('source').attr("src", character_data[character_id].moves.neutral.video.url)
-	  modal.find('#neutral-special-video').children('source').attr("alt", character_data[character_id].moves.neutral.video.alt)
-	  modal.find('#neutral-special-video').load()
-	  modal.find('#neutral-special-video').get(0).pause()
+	  modal.find('#neutral-special-video').attr("src", character_data[character_id].moves.neutral.video.url)
+	  modal.find('#neutral-special-video').attr("alt", character_data[character_id].moves.neutral.video.alt)
 	  modal.find('#neutral-special-p').text(character_data[character_id].moves.neutral.description)
-	  modal.find('#up-special-video').children('source').attr("src", character_data[character_id].moves.up.video.url)
-	  modal.find('#up-special-video').children('source').attr("alt", character_data[character_id].moves.up.video.alt)
-	  modal.find('#up-special-video').load()
-	  modal.find('#up-special-video').get(0).pause()
+	  modal.find('#up-special-video').attr("src", character_data[character_id].moves.up.video.url)
+	  modal.find('#up-special-video').attr("alt", character_data[character_id].moves.up.video.alt)
 	  modal.find('#up-special-p').text(character_data[character_id].moves.up.description)
-	  modal.find('#down-special-video').children('source').attr("src", character_data[character_id].moves.down.video.url)
-	  modal.find('#down-special-video').children('source').attr("alt", character_data[character_id].moves.down.video.alt)
-	  modal.find('#down-special-video').load()
-	  modal.find('#down-special-video').get(0).pause()
+	  modal.find('#down-special-video').attr("src", character_data[character_id].moves.down.video.url)
+	  modal.find('#down-special-video').attr("alt", character_data[character_id].moves.down.video.alt)
 	  modal.find('#down-special-p').text(character_data[character_id].moves.down.description)
-	  modal.find('#slide-special-video').children('source').attr("src", character_data[character_id].moves.slide.video.url)
-	  modal.find('#slide-special-video').children('source').attr("alt", character_data[character_id].moves.slide.video.alt)
-	  modal.find('#slide-special-video').load()
-	  modal.find('#slide-special-video').get(0).pause()
+	  modal.find('#slide-special-video').attr("src", character_data[character_id].moves.slide.video.url)
+	  modal.find('#slide-special-video').attr("alt", character_data[character_id].moves.slide.video.alt)
 	  modal.find('#slide-special-p').text(character_data[character_id].moves.slide.description)
 	});			
 }, false);	
