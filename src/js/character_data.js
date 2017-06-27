@@ -136,28 +136,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/Bowser/neutral.mp4",
+						url: "https://www.youtube.com/watch?v=eJwpikF6y18&ab_channel=Mirsans",
 						alt: "Bowser während Neutral Special"
 					},
 					description: "Bowser spuckt solange Feuer, wie Du die B-Taste gedrückt hältst. Dabei wird das Feuer mit der Zeit immer schwächer."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/Bowser/up.mp4",
+						url: "https://youtu.be/owAa9vAT0lk",
 						alt: "Bowser während Up Special"
 					},
 					description: "Bowser zieht sich in seinen Panzer zurück und dreht sich um die eigene Achse, wodurch du an Höhe gewinnen kannst."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/Bowser/down.mp4",
+						url: "https://www.youtube.com/watch?v=RcTg5mF5Q60&ab_channel=Mirsans",
 						alt: "Bowser während Down Special"
 					},
 					description: "Auf dem Boden ausgeführt springt Bowser hoch in die Luft und lässt sich anschließend wieder fallen. Dieser Move verursacht sehr viel Schaden und kann sehr leicht Schilde zerstören. In der Luft ausgeführt springt Bowser nicht mehr, sondern führt nur den zweiten Teil des Moves aus."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/Bowser/side.mp4",
+						url: "https://www.youtube.com/watch?v=xiSoNvmBNLU&ab_channel=Mirsans",
 						alt: "Bowser während Slide Special"
 					},
 					description: "Bowser greift seinen Gegner und beißt ihn. Danach hast Du die Möglichkeit den Gegner noch einmal zu beißen (A-Taste) oder ihn nach vorne oder hinten zu schmeißen (Linker Stick)."
