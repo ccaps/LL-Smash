@@ -29,12 +29,6 @@ document.addEventListener('DOMContentLoaded', function(){
 		return true;
 	}
 	//
-		
-	//LocalStorage
-	if(window.localStorage){
-		if(!localStorage.getItem("solvedQuizzes")) localStorage.setItem("solvedQuizzes", 0); //Set Key for the amount of solved quizzes if the key doesn't exist
-	}
-	//
 	
 	//quiz logic is defined here
 	
