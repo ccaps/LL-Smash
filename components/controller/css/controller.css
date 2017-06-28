@@ -134,15 +134,15 @@ top: 134px;
 
 
 #controller_container,
-#display_container,
+#input_container,
 #video_container
 {
-    display: inline-block;
+   /* display: block; */
 }
 
 #video_container
 {
-    margin-left: 50px;
+   /* margin-left: 50px; */
 }
 
 

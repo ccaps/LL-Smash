@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	];
 	
 	final_questions = [ 
-		{
+		/*{
 			question_type: 'choose',
 			question:'Welche der gezeigten Stages ist legal?',
 			options: [{url:'src/images/stages/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/corneria.jpg', name:'corneria'},{url:'src/images/stages/dreamland.png', name:'dreamland'}],
@@ -226,6 +226,17 @@ document.addEventListener('DOMContentLoaded', function(){
 			question:'Welche dieser Stages sind legal?',
 			options: ['dreamland64', 'corneria', 'brinstar', 'Great Bay'],
 			answer: ['brinstar', 'Great Bay'],
+			hint: ''
+		},*/
+		{
+			question_type: 'controller',
+			question:'Führe einen air dodge aus.',
+			video: {
+				url: 'src/videos/controls/airdodge.mp4',
+				type: 'video/mp4',
+				alt: 'air dodge'
+			},
+			answer: ['right','left','b'],
 			hint: ''
 		}
 	];
@@ -407,7 +418,77 @@ var QuizMod = (function () {
 
 	var createQuestionController = function(q){ //function to create question of type controller
 		//create html
-		//createQuestionStructure(q);	
+		createQuestionStructure(q);	
+		//create video container
+		var vidDiv = document.createElement('div');
+		vidDiv.id = "video_container";
+		var vid = document.createElement('video');
+		vid.setAttribute("controls","controls");
+		var vidSource = document.createElement('source');
+		vidSource.type = q.video.type;
+		vidSource.src = q.video.url;
+		vid.appendChild(vidSource);
+		vidDiv.appendChild(vid);
+		oContainer.appendChild(vidDiv);
+		//
+		//create controller input container
+		var inputDiv = document.createElement('div');
+		inputDiv.id = "input_container";
+		for(var i=0; i<q.answer.length; i++){
+			var inputField = document.createElement('span');
+			inputField.className = "display__field field_"+i;
+			inputField.dataset.result = q.answer[i];
+			inputDiv.appendChild(inputField);
+		}
+		oContainer.appendChild(inputDiv);
+		//
+		//create controller container
+		/*
+        var controller =
+            '<div id="controller_container">'
+            + '<img src="img/controller.png" alt="" class="controller">'
+            + '<img src="img/A.png" alt="" class="key button button_a" data-key="a">'
+            + '<img src="img/B.png" alt="" class="key button button_b" data-key="b">'
+            + '<img src="img/X.png" alt="" class="key button button_x" data-key="x">'
+            + '<img src="img/Y.png" alt="" class="key button button_y" data-key="y">'
+            + '<img src="img/stick.png" alt="" class="stick">'
+            + '<div class="key stick__cta stick__cta--left" data-key="left"></div>'
+            + '<div class="key stick__cta stick__cta--right" data-key="right"></div>'
+            + '<div class="key stick__cta stick__cta--up" data-key="up"></div>'
+            + '<div class="key stick__cta stick__cta--down" data-key="down"></div>'
+            + '</div>';
+		*/
+		var controllerDiv = document.createElement('div');
+		controllerDiv.id = "controller_container";
+		var controller = document.createElement('img');
+		var aButton = document.createElement('img');
+		var bButton = document.createElement('img');
+		var xButton = document.createElement('img');
+		var yButton = document.createElement('img');
+		var joyStick = document.createElement('img');
+		var leftStick = document.createElement('div');
+		var rightStick = document.createElement('div');
+		var upStick = document.createElement('div');
+		var downStick = document.createElement('div');
+		controller.src = "src/images/controller/controller.png";
+		aButton.src = "src/images/controller/a.png";
+		bButton.src = "src/images/controller/b.png";
+		xButton.src = "src/images/controller/x.png";
+		yButton.src = "src/images/controller/y.png";
+		joyStick.src = "src/images/controller/n.png";
+		
+		controllerDiv.appendChild(controller);
+		controllerDiv.appendChild(aButton);
+		controllerDiv.appendChild(bButton);
+		controllerDiv.appendChild(xButton);
+		controllerDiv.appendChild(yButton);
+		controllerDiv.appendChild(joyStick);
+		controllerDiv.appendChild(leftStick);
+		controllerDiv.appendChild(rightStick);
+		controllerDiv.appendChild(upStick);
+		controllerDiv.appendChild(downStick);
+		//
+		appendAndResetContainers();
 	};
 	
 	var createQuestionDnD = function(q){ //function to create question of type dnd
