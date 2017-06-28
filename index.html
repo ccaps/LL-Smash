@@ -346,6 +346,14 @@
 		}
 		//	
 		
+		//character lock
+		 $('.character-tile').each(function(i, obj) {
+			if($(this).hasClass('locked')){
+				$(this).find('span').html('???');
+				console.log('locked');
+			}
+		});
+		
 		// Hide method from for-in loops
 		Object.defineProperty(Array.prototype, "equals", {enumerable: false});
 				
@@ -372,7 +380,7 @@
 				$('a[href="#finish"]').each(function() {
 					$(this).remove();   
 				});
-		}, false);	
+		}, false);
 	</script>
 </body>
 </html>

@@ -13,7 +13,8 @@ Source Sans Pro
 
 /*BODY*/
 body{
-	background-image: url(../images/wallpaper/5.jpg)
+	background-image: url(../images/wallpaper/5.jpg);
+	overflow: hidden;
 }
 
 .container{
