@@ -443,21 +443,6 @@ var QuizMod = (function () {
 		oContainer.appendChild(inputDiv);
 		//
 		//create controller container
-		/*
-        var controller =
-            '<div id="controller_container">'
-            + '<img src="img/controller.png" alt="" class="controller">'
-            + '<img src="img/A.png" alt="" class="key button button_a" data-key="a">'
-            + '<img src="img/B.png" alt="" class="key button button_b" data-key="b">'
-            + '<img src="img/X.png" alt="" class="key button button_x" data-key="x">'
-            + '<img src="img/Y.png" alt="" class="key button button_y" data-key="y">'
-            + '<img src="img/stick.png" alt="" class="stick">'
-            + '<div class="key stick__cta stick__cta--left" data-key="left"></div>'
-            + '<div class="key stick__cta stick__cta--right" data-key="right"></div>'
-            + '<div class="key stick__cta stick__cta--up" data-key="up"></div>'
-            + '<div class="key stick__cta stick__cta--down" data-key="down"></div>'
-            + '</div>';
-		*/
 		var controllerDiv = document.createElement('div');
 		controllerDiv.id = "controller_container";
 		var controller = document.createElement('img');
@@ -476,7 +461,24 @@ var QuizMod = (function () {
 		xButton.src = "src/images/controller/x.png";
 		yButton.src = "src/images/controller/y.png";
 		joyStick.src = "src/images/controller/n.png";
-		
+		controller.className = "controller";
+		aButton.className = "key button button_a";
+		bButton.className = "key button button_b";
+		xButton.className = "key button button_x";
+		yButton.className = "key button button_y";
+		joyStick.className = "stick";
+		leftStick.className = "key stick__cta stick__cta--left";
+		rightStick.className = "key stick__cta stick__cta--right";
+		upStick.className = "key stick__cta stick__cta--up";
+		downStick.className = "key stick__cta stick__cta--down";
+		aButton.dataset.key = "a";
+		bButton.dataset.key = "b";
+		xButton.dataset.key = "x";
+		yButton.dataset.key = "y";
+		leftStick.dataset.key = "left";
+		rightStick.dataset.key = "right";
+		upStick.dataset.key = "up";
+		downStick.dataset.key = "down";
 		controllerDiv.appendChild(controller);
 		controllerDiv.appendChild(aButton);
 		controllerDiv.appendChild(bButton);
@@ -487,6 +489,7 @@ var QuizMod = (function () {
 		controllerDiv.appendChild(rightStick);
 		controllerDiv.appendChild(upStick);
 		controllerDiv.appendChild(downStick);
+		oContainer.appendChild(controllerDiv);
 		//
 		appendAndResetContainers();
 	};
