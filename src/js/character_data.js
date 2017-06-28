@@ -13,28 +13,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/mario/neutral.mp4",
+						url: "https://www.youtube.com/embed/k4F0fU5F9NY",
 						alt: "Mario während Neutral Special"
 					},
 					description: "Mario wirft einen Feuerball. Dieser prallt von Oberflächen ab und verursacht geringen Schaden."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/mario/up.mp4",
+						url: "https://www.youtube.com/embed/8R-Rh_RM-I0",
 						alt: "Mario während Up Special"
 					},
 					description: "Mario springt ein kurzes Stück diagonal nach oben. Getroffene Gegner erleiden Schaden."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/mario/down.mp4",
+						url: "https://www.youtube.com/embed/Oc1VnuB_ul4",
 						alt: "Mario während Down Special"
 					},
 					description: "Mario dreht sich wie ein Tornado um die eigene Achse. Gegner werden darin gefangen und bekommen viel Schaden. Drücke die B-Taste wiederholt, um an Höhe zu gewinnen."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/mario/side.mp4",
+						url: "https://www.youtube.com/embed/khQ19AyM148",
 						alt: "Mario während Side Special"
 					},
 					description: "Mithilfe eines Capes dreht Mario seinen Gegner um. Das Cape ist außerdem in der Lage, Projektile zu reflektieren."
@@ -54,28 +54,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/DrMario/neutral.mp4",
+						url: "https://www.youtube.com/embed/hUfeXXMxUh0",
 						alt: "Dr. Mario während Neutral Special"
 					},
 					description: "Dr. Mario wirft eine Pille, die von Oberflächen abprallt und geringen Schaden verursacht."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/DrMario/up.mp4",
+						url: "https://www.youtube.com/embed/R_5zArxrZVA",
 						alt: "Dr. Mario während Up Special"
 					},
 					description: "Dr. Mario springt ein kurzes Stück diagonal nach oben. Getroffene Gegner erleiden Schaden."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/DrMario/down.mp4",
+						url: "https://www.youtube.com/embed/C5IwHIKagug",
 						alt: "Dr. Mario während Down Special"
 					},
 					description: "Dr. Mario dreht sich wie ein Tornado um die eigene Achse. Gegner werden darin gefangen und bekommen viel Schaden. Drücke die B-Taste wiederholt, um an Höhe zu gewinnen."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/DrMario/side.mp4",
+						url: "https://www.youtube.com/embed/0GXA7dib4bU",
 						alt: "Dr. Mario während Side Special"
 					},
 					description: "Mithilfe eines Capes dreht Dr. Mario seinen Gegner um. Das Cape ist außerdem in der Lage, Projektile zu reflektieren."
@@ -95,28 +95,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/Luigi/neutral.mp4",
+						url: "https://www.youtube.com/embed/ocsz8s3-Mnw",
 						alt: "Luigi während Neutral Special"
 					},
 					description: "Luigi wirft einen Feuerball, der in einer geraden Linie fliegt und geringen Schaden verursacht."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/Luigi/up.mp4",
+						url: "https://www.youtube.com/embed/9uD-6spwWn8",
 						alt: "Luigi während Up Special"
 					},
 					description: "Luigi springt ein Stück gerade nach oben. Gegner, die am Anfang der Animation getroffen erleiden sehr viel Schaden und fliegen früh von der Stage."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/Luigi/down.mp4",
+						url: "https://www.youtube.com/embed/LUz8o13ZR2M",
 						alt: "Luigi während Down Special"
 					},
 					description: "Luigi dreht sich wie ein Tornado um die eigene Achse. Gegner werden darin gefangen und bekommen viel Schaden. Drücke die B-Taste wiederholt, um an Höhe zu gewinnen."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/Luigi/side.mp4",
+						url: "https://www.youtube.com/embed/YjxMwP-nOBA",
 						alt: "Luigi während Side Special"
 					},
 					description: "Halte B gedrückt, um den Move aufzuladen. Wenn Du loslässt schießt in die gedrückte Richtung. Mit einer Chance von 12,5% (1/8) wird der Move zu einer Fehlzündung. Dabei fliegt Luigi sehr weit und verursacht enormen Schaden und Rückstoß."
@@ -143,21 +143,21 @@ document.addEventListener('DOMContentLoaded', function(){
 				},
 				up: {
 					video: {
-						url: "https://youtu.be/owAa9vAT0lk",
+						url: "https://www.youtube.com/embed/owAa9vAT0lk",
 						alt: "Bowser während Up Special"
 					},
 					description: "Bowser zieht sich in seinen Panzer zurück und dreht sich um die eigene Achse, wodurch du an Höhe gewinnen kannst."
 				},
 				down: {
 					video: {
-						url: "https://www.youtube.com/watch?v=RcTg5mF5Q60&ab_channel=Mirsans",
+						url: "https://www.youtube.com/embed/RcTg5mF5Q60",
 						alt: "Bowser während Down Special"
 					},
 					description: "Auf dem Boden ausgeführt springt Bowser hoch in die Luft und lässt sich anschließend wieder fallen. Dieser Move verursacht sehr viel Schaden und kann sehr leicht Schilde zerstören. In der Luft ausgeführt springt Bowser nicht mehr, sondern führt nur den zweiten Teil des Moves aus."
 				},
 				slide: {
 					video: {
-						url: "https://www.youtube.com/watch?v=xiSoNvmBNLU&ab_channel=Mirsans",
+						url: "https://www.youtube.com/embed/xiSoNvmBNLU",
 						alt: "Bowser während Slide Special"
 					},
 					description: "Bowser greift seinen Gegner und beißt ihn. Danach hast Du die Möglichkeit den Gegner noch einmal zu beißen (A-Taste) oder ihn nach vorne oder hinten zu schmeißen (Linker Stick)."
@@ -177,28 +177,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/Peach/neutral.mp4",
+						url: "https://www.youtube.com/embed/RaNnX7QelWU",
 						alt: "Peach während Neutral Special"
 					},
 					description: "Peach hält Toad schützend vor sich. Schlägt ein Gegner Toad, so wird der Schaden reflektiert."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/Peach/up.mp4",
+						url: "https://www.youtube.com/embed/wtyi-3wK7-k",
 						alt: "Peach während Up Special"
 					},
 					description: "Peach fliegt mit ihrem Regenschirm diagonal nach oben. Danach schwebt sie langsam mit geöffnetem Schirm nach unten. Du kannst den Schirm währenddessen schließen und öffnen, in Du den linken Stick nach unten bzw. oben drückst. Berühren Gegner den Schirm, so erleiden sie Schaden."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/Peach/down.mp4",
+						url: "https://www.youtube.com/embed/knCKFzamHTU",
 						alt: "Peach während Down Special"
 					},
 					description: "Peach zieht Rettiche aus dem Boden. Je wütender das Gesicht auf dem Rettich ist, desto mehr Schaden verursacht dieser. In sehr seltenen Fällen kann Peach auch Mr. Saturn, ein Bob-omb oder ein Laserschwert ziehen."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/Peach/side.mp4",
+						url: "https://www.youtube.com/embed/LqmKdNvCpJs",
 						alt: "Peach während Slide Special"
 					},
 					description: "Peach katapultiert sich seitlich mit dem Hintern zuerst in einen Gegner und verursacht dabei Schaden und Rückstoß."
@@ -218,28 +218,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/Yoshi/neutral.mp4",
+						url: "https://www.youtube.com/embed/BXolwj2fwK8",
 						alt: "Yoshi während Neutral Special"
 					},
 					description: "Yoshi streckt seine Zunge aus. Berührt sie einen Gegner, so frisst er diesen und verpackt ihn in einem Ei. Je mehr Prozent der Gegner hat, desto länger bleibt er im Ei gefangen. Gefangene Gegner sind wehrlos und erleiden Schaden, auch wenn der Schaden etwas reduziert wird."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/Yoshi/up.mp4",
+						url: "https://www.youtube.com/embed/edht_d0boPA",
 						alt: "Yoshi während Up Special"
 					},
 					description: "Yoshi wirft ein Ei. Die Flugbahn kann gesteuert werden, indem Du die B-Taste unterschiedlich lang drückst und den Stick bewegst. Im Gegensatz zu den meisten anderen Charakteren gewinnt Yoshi nicht an Höhe bei seinem Up Special."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/Yoshi/down.mp4",
+						url: "https://www.youtube.com/embed/BF0zquBf7ew",
 						alt: "Yoshi während Down Special"
 					},
 					description: "Yoshi springt in die Luft und fliegt schnell auf den Boden zurück. In der Luft ausgeführt fliegt Yoshi nur nach unten, ohne den Sprung auszuführen."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/Yoshi/side.mp4",
+						url: "https://www.youtube.com/embed/r3dMCbZP66I",
 						alt: "Yoshi während Side Special"
 					},
 					description: "Yoshi verwandelt sich in ein Ei und rollt auf der Stage umher. Gegner die ihn berühren erleiden Schaden abhängig von seiner Geschwindigkeit. Vorsicht: Fällst Du als Ei von der Stage bist Du machtlos!"
@@ -259,28 +259,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/DK/neutral.mp4",
+						url: "https://www.youtube.com/embed/allDYmTEYFQ",
 						alt: "DK während Neutral Special"
 					},
 					description: "DK lädt einen sehr starken Schlag auf. Du kannst das Aufladen abbrechen, indem du blockst, oder nach links / rechts gehst. Wirst du währenddessen getroffen, verlierst du die bisherige Ladung. Sobald der Schlag voll aufgeladen ist, steigt Dampf von DK's Kopf. Drückst du die B-Taste noch einmal, so führt er einen mächtigen Schlag aus, der Gegner von der Stage katapultiert."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/DK/up.mp4",
+						url: "https://www.youtube.com/embed/9bHcJaSYWVE",
 						alt: "DK während Up Special"
 					},
 					description: "Wie ein Helikopter dreht DK sich um die eigene Achse und gewinnt dabei etwas an Höhe, aber viel an horizontaler Strecke."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/DK/down.mp4",
+						url: "https://www.youtube.com/embed/Hci2BkpXuyg",
 						alt: "Dk während Down Special"
 					},
 					description: "DK schlägt auf den Boden und löst ein großflächiges Erdbeben um sich herum aus."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/DK/side.mp4",
+						url: "https://www.youtube.com/embed/2TMpq6EQcaU",
 						alt: "DK während Slide Special"
 					},
 					description: "DK trifft seinen Gegner mit einer Kopfnuss. Ist der Gegner auf dem Boden, so wird er ein Stück darin vergraben und ist kurz wehrlos. In der Luft besitzt die Attacke enormen Rückstoß. Außerdem lassen sich sehr leicht Schilde mit ihr zerstören."
@@ -300,28 +300,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/CptFalcon/neutral.mp4",
+						url: "https://www.youtube.com/embed/IeOv6ZVH244",
 						alt: "Captain Falcon während Neutral Special"
 					},
 					description: "Captain Falcon lädt einen starken Schlag auf, der viel Schaden und Rückstoß verursacht und führt diesen aus."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/CptFalcon/up.mp4",
+						url: "https://www.youtube.com/embed/edltYpZMQf8",
 						alt: "Captain Falcon während Up Special"
 					},
 					description: "Captain Falcon springt nach oben. Getroffene Gegner werden kurz gehalten und dann von ihm weggestoßen. Trifft er einen Gegner, so kann der Move erneut ausgeführt werden."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/CptFalcon/down.mp4",
+						url: "https://www.youtube.com/embed/pomHETxCR_o",
 						alt: "Captain Falcon während Down Special"
 					},
 					description: "Captain Falcon schießt mit einem starken Kick eine große Distanz nach vorne. In der Luft ausgeführt bewegt er sich diagonal nach unten anstatt horizontal in Blickrichtung."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/CptFalcon/side.mp4",
+						url: "https://www.youtube.com/embed/y59M1jzfl1o",
 						alt: "Captain Falcon während Slide Special"
 					},
 					description: "Captain Falcon macht eine schnelle Bewegung nach vorne, kombiniert mit einem Haken nach oben. Führst du den Move in der Luft aus, wird der Gegner nach unten anstatt nach oben geschlagen und die Kraft des Moves erhöht sich."
@@ -341,28 +341,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/Ganon/neutral.mp4",
+						url: "https://www.youtube.com/embed/rZBKAlQgnC4",
 						alt: "Ganondorf während Neutral Special"
 					},
 					description: "Ganondorf lädt einen starken Schlag auf, der viel Schaden und Rückstoß verursacht und führt diesen aus."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/Ganon/up.mp4",
+						url: "https://www.youtube.com/embed/xGWelGsY8QA",
 						alt: "Ganondorf während Up Special"
 					},
 					description: "Ganondorf springt nach oben. Getroffene Gegner werden kurz gehalten und dann von ihm weggestoßen. Trifft er einen Gegner, so kann der Move erneut ausgeführt werden."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/Ganon/down.mp4",
+						url: "https://www.youtube.com/embed/Qti9YRwwPYE",
 						alt: "Ganondorf während Down Special"
 					},
 					description: "Ganondorf schießt mit einem starken Kick eine große Distanz nach vorne. In der Luft ausgeführt bewegt er sich diagonal nach unten anstatt horizontal in Blickrichtung."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/Ganon/side.mp4",
+						url: "https://www.youtube.com/embed/FsiARea87iY",
 						alt: "Ganondorf während Slide Special"
 					},
 					description: "Ganondorf macht eine schnelle Bewegung nach vorne, kombiniert mit einem Haken nach oben."
@@ -382,28 +382,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/mario/neutral.mp4",
+						url: "https://www.youtube.com/embed/yICw8KIXRA",
 						alt: "Falco während Neutral Special"
 					},
 					description: "Falco schießt einen Laserstrahl aus seiner Pistole, der zwar geringen Schaden verursacht, aber Gegner in ihren Aktionen unterbricht."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/mario/up.mp4",
+						url: "https://www.youtube.com/embed/coHVHMoZYCU",
 						alt: "Falco während Up Special"
 					},
 					description: "Falco geht in Flammen auf bevor er in die Richtung fliegt, die Du mit dem Linken Stick direkt nach der Eingabe des Moves drückst."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/mario/down.mp4",
+						url: "https://www.youtube.com/embed/0wi8wLf04D8",
 						alt: "Falco während Down Special"
 					},
 					description: "Falco aktiviert einen Reflektor um sich herum, der Projektile reflektiert und Gegnern leichten Schaden zufügt, die ihn berühren."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/mario/side.mp4",
+						url: "https://www.youtube.com/embed/DUBAW6f7Mqc",
 						alt: "Falco während Slide Special"
 					},
 					description: "Falco schießt seitlich in die gedrückte Richtung. Ein sehr gutes Rettungsmanöver. Auf dem Boden getroffene Gegner werden in die Luft befördert, während Gegner in der Luft gerade nach unten geschlagen werden."
@@ -423,28 +423,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/mario/neutral.mp4",
+						url: "https://www.youtube.com/embed/GStDQRcq1ho",
 						alt: "Fox während Neutral Special"
 					},
 					description: "Fox schießt einen Laserstrahl aus seiner Pistole, der zwar geringen Schaden verursacht, aber in einer schnellen Frequenz abgefeuert werden kann."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/mario/up.mp4",
+						url: "https://www.youtube.com/embed/NglUj9W_gYw",
 						alt: "Fox während Up Special"
 					},
 					description: "Fox geht in Flammen auf bevor er in die Richtung fliegt, die Du mit dem Linken Stick direkt nach der Eingabe des Moves drückst."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/mario/down.mp4",
+						url: "https://www.youtube.com/embed/gfyqfMWaByg",
 						alt: "Fox während Down Special"
 					},
 					description: "Fox aktiviert einen Reflektor um sich herum, der Projektile reflektiert und Gegnern leichten Schaden zufügt, die ihn berühren."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/mario/side.mp4",
+						url: "https://www.youtube.com/embed/G4w6O3oittQ",
 						alt: "Fox während Slide Special"
 					},
 					description: "Fox schießt seitlich in die gedrückte Richtung. Ein sehr gutes Rettungsmanöver. Getroffene Gegner werden in die Luft befördert."
@@ -464,28 +464,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/mario/neutral.mp4",
+						url: "https://www.youtube.com/embed/g7TixgUKzFw",
 						alt: "Ness während Neutral Special"
 					},
 					description: "Ness lädt einen grünen Energieball auf, solange die Taste gedrückt bleibt. Der Ball fliegt langsam nach unten und wird immer stärker. Getroffene Gegner erleiden massiven Schaden."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/mario/up.mp4",
+						url: "https://www.youtube.com/embed/MMqM79EG1l8",
 						alt: "Ness während Up Special"
 					},
 					description: "Ness schießt eine kleine Energiekugel, die solange fliegt, bis du eine Fläche, deinen Gegner oder dich selbst triffst. Benutzt Du diesen Move in der Luft, so verlangsamt sich Deine Fallgeschwindigkeit. Um Dich zu retten musst Du Ness in einem Winkel treffen, der Ness in die gewünscht Richtung katapultiert."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/mario/down.mp4",
+						url: "https://www.youtube.com/embed/x6E56NCXpF0",
 						alt: "Ness während Down Special"
 					},
 					description: "Ness umgibt sich mit einer Energiebariere, die Energiebasierte Projektile absorbiert und ihn heilt. Dazu gehören z.B. Samus' und Pikachus Neutral B. Wirkungslos gegen physische Projektile wie Links Pfeile. Die Barriere hält, solange Du die Taste gedrückt lässt."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/mario/side.mp4",
+						url: "https://www.youtube.com/embed/IKfcf01li7U",
 						alt: "Ness während Slide Special"
 					},
 					description: "Ness wirft ein Feuerprojektil, dass beim Aufprall ein Stück Boden in Brand setzt. Auf dem Boden ist die Flugbahn horizontal, in der Luft diagonal nach unten."
@@ -505,28 +505,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/mario/neutral.mp4",
+						url: "https://www.youtube.com/embed/jFIyMyyKjhw",
 						alt: "Ice Climbers während Neutral Special"
 					},
 					description: "Jeder Ice Climber feuer einen Eisblock ab, der über den Boden gleitet."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/mario/up.mp4",
+						url: "https://www.youtube.com/embed/ytLVAYQnLog",
 						alt: "Ice Climbers während Up Special"
 					},
 					description: "Der von dir gespielte Ice Climber wirft seinem Partner ein Seil zu, an dem er ihn in die Höhe wirft. Anschließend zieht er sich zu diesem."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/mario/down.mp4",
+						url: "https://www.youtube.com/embed/qGlEvxBUe4E",
 						alt: "Ice Climbers während Down Special"
 					},
 					description: "Jeder Ice Climber pustet eisigen Wind auf den Gegner. Auf dem Boden pusten beide in verschiedene Richtungen. Getroffene Gegner können eingefroren werden, was sie wehrlos macht."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/mario/side.mp4",
+						url: "https://www.youtube.com/embed/SSo0JBusQes",
 						alt: "Ice Climbers während Slide Special"
 					},
 					description: "Die Ice Climbers strecken ihre Hämmer aus und drehen sich um die eigene Achse. Hämmerst Du die B-Taste, so kannst Du an Höhe gewinnen."
@@ -546,28 +546,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "src/videos/specials/mario/neutral.mp4",
+						url: "https://www.youtube.com/embed/418vPvTvnrY",
 						alt: "Kirby während Neutral Special"
 					},
 					description: "Kirby saugt einen Gegner ein. Drückst Du die A-Taste, so spuckst du den Gegner von Dir. Drückst du die B-Taste, so kopierst du den Neutral Special Deines Gegners, was sich auch in Kirbys äußerem wiederspiegelt."
 				},
 				up: {
 					video: {
-						url: "src/videos/specials/mario/up.mp4",
+						url: "https://www.youtube.com/embed/DVYIANqAgVI",
 						alt: "Kirby während Up Special"
 					},
 					description: "Kirby schwingt sich mit einem Schwert nach oben. Greifst du dabei nicht die Kante, saust er mit ausgestrecktem Schwert nach unten. Landet er damit auf dem Boden, so fliegt von dem Schwert aus ein Projektil mit kurzer Reichweite in Blickrichtung."
 				},
 				down: {
 					video: {
-						url: "src/videos/specials/mario/down.mp4",
+						url: "https://www.youtube.com/embed/xZ5gH4uWLxE",
 						alt: "Kirby während Down Special"
 					},
 					description: "Kirby verwandelt sich in ein schweres Objekt. Während der verwandlung treffen ihn zwar keine Schläge, aber er kann immer noch gegriffen werden. In der Luft ausgeführt fällt er als schweres Objekt schnell nach unten und verursacht viel Schaden und Rückstoß."
 				},
 				slide: {
 					video: {
-						url: "src/videos/specials/mario/side.mp4",
+						url: "https://www.youtube.com/embed/zD-akjZfs-c",
 						alt: "Kirby während Slide Special"
 					},
 					description: "Kirby zieht einen Hammer und schlägt mit diesem zu. In der Luft dreht Kirby den Hammer im Kreis und trifft mehrfach. Der Hammer verursacht am meisten Schaden, wenn Du genau mit dem Kopf triffst."

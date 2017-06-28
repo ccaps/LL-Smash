@@ -155,6 +155,11 @@ body{
 	width: 100%;
 }
 
+.special-video{
+	width: 100%;
+	height: 360px;
+}
+
 .locked{
 	pointer-events: none;
 }
