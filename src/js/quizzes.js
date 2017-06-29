@@ -405,6 +405,7 @@ var QuizMod = (function () {
 				var oImg = document.createElement('img');
 				oImg.width = 200;
 				oImg.src = cOption.url;
+				oImg.className += 'radioImage';
 				oImg.setAttribute("style", "cursor:pointer");
 				radioButton.setAttribute("style", "visibility: hidden; position: absolute");
 				label.appendChild(radioButton);
@@ -492,6 +493,47 @@ var QuizMod = (function () {
 		oContainer.appendChild(controllerDiv);
 		//
 		appendAndResetContainers();
+
+
+
+
+
+
+        //
+        //
+        // STICK MOVES
+
+        var stick = document.getElementsByClassName("stick")[0];
+        var stick_boxes = document.getElementsByClassName("stick__cta");
+        var stick_left = document.getElementsByClassName("stick__cta--left")[0];
+        var stick_right = document.getElementsByClassName("stick__cta--right")[0];
+        var stick_up = document.getElementsByClassName("stick__cta--up")[0];
+        var stick_down = document.getElementsByClassName("stick__cta--down")[0];
+
+        stick_left.onmouseover = function(){
+            moveStick(stick, "x", -10 )
+        };
+        stick_right.onmouseover = function(){
+            moveStick(stick, "x", 10 )
+        };
+        stick_up.onmouseover = function(){
+            moveStick(stick, "y", -10 )
+        };
+        stick_down.onmouseover = function(){
+            moveStick(stick, "y", 10 )
+        };
+
+
+        for (index = 0; index < stick_boxes.length; ++index) {
+            stick_boxes[index].onmouseout = function(){
+                stick.style.transform = "translateX(0)"
+            }
+        }
+
+        function moveStick(stick, axis, translation){
+            stick.style.transform = "translate" + axis.toUpperCase() + "(" + translation + "px)";
+        }
+
 	};
 	
 	var createQuestionDnD = function(q){ //function to create question of type dnd
