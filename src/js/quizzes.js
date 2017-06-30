@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', function(){
 			question:'Wie heißt der Erfinder der Super Smash Bros Reihe?', 
 			options: ['Masahiro Sakurai','Jacky Chan','Ip Man', 'Hideo Kojima'],
 			answer: 'Masahiro Sakurai',
-			hint: ''
+			hint: 'Er ist zwar ein Kämpfer, aber nicht wortwörtlich.'
 		},
         {
 			question_type: 'radio', 
 			question:'Wie viele Teile von Super Smash Bros gibt es insgesamt?', 
 			options: [1,2,3,4],
 			answer: 4,
-			hint: ''
+			hint: 'Smash erschien ab dem N64'
 		},
 		{
 			question_type: 'radio', 
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			question:'Was drückt die Prozentzahl aus?', 
 			options: ['Lebensdauer','Menge an Hit Points', 'Siegwahrscheinlichkeit', 'Multiplikator des Rückstoßes'], 
 			answer: 'Multiplikator des Rückstoßes',
-			hint: ''
+			hint: 'Denke daran, wie man ein Leben verliert.'
 		}
 	];
 	
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
 		{
 			question_type: 'radio', 
-			question:'Mit welchem Special gewinnen alle Charaktere außer Jigglypuff an Höhe?', 
+			question:'Mit welchem Special gewinnen alle Charaktere außer Jigglypuff und Yoshi an Höhe?', 
 			options: ['Up Special','Side Special','Down Special', 'Neutral Special'], 
 			answer: 'Up Special', 
 			hint: 'Die Eingabe passt zur Funktion.'
@@ -126,8 +126,9 @@ document.addEventListener('DOMContentLoaded', function(){
 			question:'Wie unterscheiden sich Tilts in der Regel von Smashes?', 
 			options: ['Langsamer und stärker','Gar nicht','Schneller und schwächer', 'Größere Reichweite'], 
 			answer: 'Schneller und schwächer', 
-			hint: ''
+			hint: 'Können in der Regel nicht aufgeladen werden.'
 		}
+		
 	];
 	
 	characters_questions = [ 
@@ -136,56 +137,63 @@ document.addEventListener('DOMContentLoaded', function(){
 			question:'Aus welchem Spiel sind Marth und Roy?', 
 			options: ['Super Mario','Persona','Xenoblade Chronicles', 'Fire Emblem'], 
 			answer: 'Fire Emblem', 
-			hint: ''
+			hint: 'Klingt ziemlich hot.'
 		},
 		{
 			question_type: 'radio', 
 			question:'Was passiert, wenn Jigglypuffs Schild zerstört wird?', 
 			options: ['Gar nichts','Es geht sofort KO','Es wird betäubt', 'Es erleidet hohen Schaden'], 
 			answer: 'Es geht sofort KO', 
-			hint: '' 
+			hint: 'Die schlechteste Möglichkeit.' 
 		},
 		{
 			question_type: 'multiple',
 			question:'Welche Charaktere verfügen über einen Konter?', 
 			options: ['Mario','Marth','Roy','Peach','Bowser'],
 			answer: ['Marth','Roy','Peach'], 
-			hint: '' 
+			hint: 'Zwei davon tragen ein Schwert.' 
 		},
 		{
 			question_type: 'radio', 
 			question:'Aus welchem Spiel stammt Ness?', 
 			options: ['Fire Emblem','Earthbound',"Yoshi's Island", 'Super Mario Bros.'], 
 			answer: 'Earthbound', 
-			hint: ''
+			hint: 'Nicht aus dem Mario Universum.'
 		},
 		{
 			question_type: 'radio', 
 			question:'Was unterscheidet Zelda von allen anderen Charakteren?', 
 			options: ['Einziger Charakter seiner Spielereihe','Zwei Charaktere in einem','Einziger weiblicher Charakter', 'Hat nur einen Sprung'], 
 			answer: 'Zwei Charaktere in einem',
-			hint: '' 
+			hint: 'Zelda hat eine geheime Identität.' 
 		},
 		{
 			question_type: 'multiple', 
 			question:'Welche Charaktere haben keinen Rettungsmove als Up B?', 
 			options: ['Captain Falcon','Ganondorf','Mario','Yoshi','Jigglypuff'], 
 			answer: ['Yoshi','Jigglypuff'], 
-			hint: '' 
+			hint: 'Ein Tier und ein Ball.' 
 		},
 		{
 			question_type: 'radio', 
 			question:'Was ist Peach’s besondere Eigenschaft in der Luft?',
 			options: ['Sie kann auf konstanter Höhe schweben','Sie ist enorm schnell','Sie hat mehr als zwei Sprünge', 'Sie kann ihren Up Special mehrfach benutzen'], 
 			answer: 'Sie kann auf konstanter Höhe schweben', 
-			hint: '' 
+			hint: 'Sie kommt einfach nicht wieder runter...' 
 		},
 		{
 			question_type: 'radio',
 			question:'Was unterscheidet Fox’s Laser von Falcos Laser?', 
 			options: ['Langsamer und schwächer','Schneller, schwächer, unterbricht Gegner nicht','Gar nichts', 'Langsamer und stärker'], 
 			answer: 'Schneller, schwächer, unterbricht Gegner nicht', 
-			hint: '' 
+			hint: 'Ziemlich flink.' 
+		},
+		{
+			question_type: 'radio',
+			question:'Welcher ist der schwerste Charakter im Spiel?', 
+			options: ['Bowser','Ganondorf', 'Donkey Kong', 'Samus'], 
+			answer: 'Bowser', 
+			hint: 'Sehr scharfkantig.' 
 		}
 	];
 	
