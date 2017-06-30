@@ -489,7 +489,7 @@ input[type="checkbox"]:checked+label
 
 #video_container video
 {
-	width: 100%
+	max-width: 500px;
 }
 
 
@@ -643,6 +643,43 @@ input[type="checkbox"]:checked+label
 	padding: 20px;
 }
 
+.left_key{
+	background-image: url(../images/controller/left.png);
+}
+
+.right_key{
+	background-image: url(../images/controller/right.png);
+}
+
+.up_key{
+	background-image: url(../images/controller/up.png);
+}
+
+.down_key{
+	background-image: url(../images/controller/down.png);
+}
+
+.a_key{
+	background-image: url(../images/controller/a.png);
+}
+
+.b_key{
+	background-image: url(../images/controller/b.png);
+}
+
+.x_key{
+	background-image: url(../images/controller/x.png);
+}
+
+.y_key{
+	background-image: url(../images/controller/y.png);
+}
+
+.left_key, .right_key, .up_key, .down_key, .a_key, .b_key, .x_key, .y_key{
+	background-size:     contain;                
+    background-repeat:   no-repeat;
+    background-position: center center;  
+}
 
 
 

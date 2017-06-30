@@ -401,9 +401,12 @@ var QuizMod = (function () {
 		//Add event handler to options div
 		oContainer.addEventListener("click", function(e) {
 			t = e.target;
-			if (t && t.type && (t.type.toUpperCase() === "RADIO" || t.type.toUpperCase() === "CHECKBOX")) { //radio button is clicked
+
+			if (t && t.type && (t.type.toUpperCase() === "RADIO" || t.type.toUpperCase() === "CHECKBOX")) { //radio button or checkbox is clicked
 				enableNextQuestionButton();
-			}else if(t && t.className && t.className === "choose-option"){
+			}else if(t && t.className && t.className === "choose-option"){ //choose option is clicked
+				enableNextQuestionButton();
+			}else if(t && t.classList.contains('key')){ //controller key is clicked
 				enableNextQuestionButton();
 			}
 		});
@@ -487,9 +490,8 @@ var QuizMod = (function () {
 		var inputDiv = document.createElement('div');
 		inputDiv.id = "input_container";
 		for(var i=0; i<q.answer.length; i++){
-			var inputField = document.createElement('span');
-			inputField.className = "display__field field_"+i;
-			inputField.dataset.result = q.answer[i];
+			var inputField = document.createElement('div');
+			inputField.className = "display__field";
 			inputDiv.appendChild(inputField);
 		}
 		oContainer.appendChild(inputDiv);
@@ -545,10 +547,21 @@ var QuizMod = (function () {
 		//
 		appendAndResetContainers();
 
-
-
-
-
+		var keys = document.getElementsByClassName('key');
+		for(var i=0; i<keys.length; i++){
+			keys[i].addEventListener('click', function(){
+				var display_fields = document.getElementsByClassName('display__field');
+				var key = this.dataset.key;																		
+				for(var i=0; i<display_fields.length; i++){
+					var current_field = display_fields[i];
+					if(!current_field.dataset.filled){
+						current_field.classList.add(key+"_key");
+						current_field.dataset.filled = key;
+						break;
+					}
+				}
+			}, false);
+		}
 
         //
         //
@@ -635,7 +648,13 @@ var QuizMod = (function () {
 		}else if(q.question_type == 'dnd'){
 			return false;		
 		}else if(q.question_type == 'controller'){
-			return false;		
+			var input_keys = document.getElementsByClassName('display__field');
+			var selArray = [];
+			for(var i=0; i<input_keys.length; i++){
+				var input = input_keys[i];
+				selArray.push(input.dataset.filled);
+			}
+			return validateSelection(q.answer, selArray, "controller");
 		}
 	};
 	
@@ -647,9 +666,11 @@ var QuizMod = (function () {
 			}else{
 				return wrong();
 			}			
-		}else if(type == "multiple"){
-			selection.sort();
-			answer.sort();
+		}else if(type == "multiple" || "controller"){
+			if(type == "multiple"){ //order doesn't matter for multiple
+				selection.sort();
+				answer.sort();			
+			}
 			if(selection.equals(answer)){
 				return true;
 			}else{
@@ -660,6 +681,16 @@ var QuizMod = (function () {
 			disableNextQuestionButton();
 			createAlert("wrong");	
 			tries ++;
+			if(type == "controller"){
+				var input_keys = document.getElementsByClassName('display__field');
+				for(var i=0; i<input_keys.length; i++){
+					var input = input_keys[i];
+					if(input.dataset.filled){
+						input.classList.remove(input.dataset.filled + "_key");
+						input.removeAttribute("data-filled");
+					}
+				}				
+			}
 			return false;			
 		}
 	};
