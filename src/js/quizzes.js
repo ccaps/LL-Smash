@@ -199,26 +199,69 @@ document.addEventListener('DOMContentLoaded', function(){
 	
 	stages_questions = [ 
 		{
-			question_type: 'radio', 
+			question_type: 'choose', 
 			question:'Welche Stage bietet weder Plattformen noch Gefahren?',
-			options: ['Final Destination','Dreamland N64','Battlefield', "Yoshi's Story"], 
+			options: [{url:'src/images/stages/1x1/battlefield.jpg', name:'battlefield'},{url:'src/images/stages/1x1/corneria.jpg', name:'corneria'},{url:'src/images/stages/1x1/Pokemonstadium.jpg', name:'pokemon'}, {url:'src/images/stages/1x1/Finaldestination.jpg', name:'Final Destination'}], 
 			answer: 'Final Destination', 
-			hint: '' 
+			hint: 'Schau Dir die Bilder genau an.' 
 		},
 		{
-			question_type: 'radio', 
+			question_type: 'multiple', 
 			question:'Auf welchen Stages befindet sich ein pustender Baum in der Mitte?', 
-			options: ['Corneria und Brinstar','Dreamland N64 und Green Greens','Battlefield und Big Blue', 'Jungle Japes und Kongo Jungle'],
-			answer: 'Dreamland N64 und Green Greens', 
-			hint: '' 
+			options: ['Corneria','Dreamland N64','Big Blue', 'Green Greens'],
+			answer: ['Dreamland N64','Green Greens'], 
+			hint: 'Aus dem Kirby Universum.' 
 		},
 		{
 			question_type: 'choose',
 			question:'Welche der gezeigten Stages ist legal?',
-			options: [{url:'src/images/stages/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/corneria.jpg', name:'corneria'},{url:'src/images/stages/dreamland.png', name:'dreamland'}],
+			options: [{url:'src/images/stages/1x1/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/1x1/corneria.jpg', name:'corneria'},{url:'src/images/stages/1x1/dreamland.png', name:'dreamland'}, {url:'src/images/stages/1x1/Greengreens.jpg', name:'greenGreens'}],
+			answer: 'dreamland',
+			hint: 'Eine der Kirby Stages.'
+		},
+		{
+			question_type: 'multiple',
+			question:'Was bezeichnet der Begriff "Legalität" im Bezug auf Stages?', 
+			options: ['Es passieren auf der Stage keine Events','Im kompetitiven Spiel erlaubt', 'Die Stage ist vollkommen eben ohne Plattformen', 'Keine Umwelteinflüsse, die Schaden verursachen'], 
+			answer: ['Im kompetitiven Spiel erlaubt', 'Keine Umwelteinflüsse, die Schaden verursachen'], 
+			hint: 'Der Wettkampf muss fair bleiben.' 
+		},
+		{
+			question_type: 'choose',
+			question:'Welche der gezeigten Stages stammt aus der Metroid Reihe?',
+			options: [{url:'src/images/stages/1x1/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/1x1/Fountainofdreams.jpg', name:'fountain'},{url:'src/images/stages/1x1/Finaldestination.jpg', name:'Finaldestination'}, {url:'src/images/stages/1x1/Fourside.png', name:'Fourside'}],
 			answer: 'brinstar',
-			hint: ''
+			hint: 'Sieht nach Säure aus.'
+		},
+		{
+			question_type: 'choose',
+			question:'Welche der gezeigten Stages wurde für Super Smash Bros. eingeführt und entstammt keiner anderen Videospielreihe?',
+			options: [{url:'src/images/stages/1x1/Brinstardepths.jpg', name:'Brinstardepths'},{url:'src/images/stages/1x1/JungleJapes.jpg', name:'JungleJapes'},{url:'src/images/stages/1x1/battlefield.jpg', name:'battlefield'}, {url:'src/images/stages/1x1/Pokemonstadium.jpg', name:'Pokemonstadium'}],
+			answer: 'battlefield',
+			hint: 'Ziemlich dunkel hier.'
+		},
+		{
+			question_type: 'choose',
+			question:'Eine dieser Stages war schon in dem Super Smash Bros. Teil für N64 vorhanden. Welche?',
+			options: [{url:'src/images/stages/1x1/dreamland.png', name:'dreamland'},{url:'src/images/stages/1x1/Yoshi\'sStory.png', name:'Yoshi\'sStory'},{url:'src/images/stages/1x1/Fourside.png', name:'Fourside'}, {url:'src/images/stages/1x1/Bigblue.jpg', name:'Bigblue'}],
+			answer: 'dreamland',
+			hint: 'Du bist vielleicht auf dem Holzweg.'
+		},
+		{
+			question_type: 'choose',
+			question:'Auf welcher Stage bewegt sich die Kamera ständig auf und ab?',
+			options: [{url:'src/images/stages/1x1/Kongojungle.jpg', name:'Kongojungle'},{url:'src/images/stages/1x1/corneria.jpg', name:'corneria'},{url:'src/images/stages/1x1/Greatbay.jpg', name:'Greatbay'}, {url:'src/images/stages/1x1/IcicleMountain.jpg', name:'IcicleMountain'}],
+			answer: 'IcicleMountain',
+			hint: 'Ganz kalt...'
+		},
+		{
+			question_type: 'radio',
+			question:'Zu welchen Charakter gehört die Stage "Flat Zone"?', 
+			options: ['Ness','Mr. Game&Watch', 'Marth', 'Samus'], 
+			answer: 'Mr. Game&Watch', 
+			hint: 'Achtung, der kommt flach.' 
 		}
+		
 	];
 	
 	final_questions = [ 
