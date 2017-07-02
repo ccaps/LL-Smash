@@ -127,6 +127,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			options: ['Langsamer und stärker','Gar nicht','Schneller und schwächer', 'Größere Reichweite'], 
 			answer: 'Schneller und schwächer', 
 			hint: 'Können in der Regel nicht aufgeladen werden.'
+		},
+		{
+			question_type: 'controller',
+			question:'Führe einen Spotdodge aus.',
+			video: {
+				url: 'src/videos/controls/airdodge.mp4',
+				type: 'video/mp4',
+				alt: 'air dodge'
+			},
+			answer: ['down','r'],
+			hint: ''
+		},
+		{
+			question_type: 'controller',
+			question:'Führe einen Dash mit anschließender Dash Attack aus.',
+			video: {
+				url: 'src/videos/controls/dashing_and_dashattack.mp4',
+				type: 'video/mp4',
+				alt: 'dashing and dashattack'
+			},
+			answer: ['right','right', 'a'],
+			hint: ''
 		}
 		
 	];
