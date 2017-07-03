@@ -792,28 +792,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0neutral.mp4",
+						url: "https://www.youtube.com/embed/G3_qOJNvMvw",
 						alt: "Pikachu während Neutral Special"
 					},
 					description: "Pikachu schleudert einen Blitz, der Böden und Wände entlangschießt. In der Luft wird der Blitz diagonal nach unten gefeuert."
 				},
 				up: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0up.mp4",
+						url: "https://www.youtube.com/embed/Y_ek3oHs3kw",
 						alt: "Pikachu während Up Special"
 					},
 					description: "Pikachu springt schnell in zwei Richtungen. Die Richtungen musst Du während des Moves mit dem linken Stick eingeben."
 				},
 				down: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0down.mp4",
+						url: "https://www.youtube.com/embed/NfuoGOVk8b8",
 						alt: "Pikachu während Down Special"
 					},
 					description: "Pikachu beschwört eine Wolke, die einen Blitz auf es schießt. Der Blitz selbst trifft Gegner mehrmals. Gegner, die Pikachu währenddessen berühren erleiden höheren Schaden und Rückstoß."
 				},
 				slide: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0side.mp4",
+						url: "https://www.youtube.com/embed/iTrMYV9R-80",
 						alt: "Pikachu während Slide Special"
 					},
 					description: "Pikachu fliegt schnell seitlich und führt eine Kopfnuss aus. Je länger du auflädst, umso stärker und weiter wird der Move."
@@ -833,28 +833,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0neutral.mp4",
+						url: "https://www.youtube.com/embed/2Bbz2irtPNE",
 						alt: "Jigglypuff während Neutral Special"
 					},
 					description: "Jigglypuff rollt über den Boden. Dieser Move kann aufgeladen werden, um schneller zu sein und mehr Schaden zu verursachen. Dabei kann während dem Rollen die Richtung gewechselt werden. Sobald ein Gegner getroffen ist, stoppt der Move. Vorsicht: Wenn Du von der Stage rollst, bist Du wehrlos."
 				},
 				up: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0up.mp4",
+						url: "https://www.youtube.com/embed/MM7Nz3JGEvo",
 						alt: "Jigglypuff während Up Special"
 					},
 					description: "Jigglypuff fängt an zu singen. Gegner in seiner unmittelbaren Nähe schlafen ein, was eine sehr gute Möglichkeit ist, um seinen Down Special auszuführen."
 				},
 				down: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0down.mp4",
+						url: "https://www.youtube.com/embed/P4RHI3Wgv78",
 						alt: "Jigglypuff während Down Special"
 					},
 					description: "Jigglypuff schläft ein. Gegner die es dabei berühren erleiden sofort massiven Schaden und fliegen sehr früh von der Stage, teilweise bei 30%-40%. Allerdings ist es nach Einsatz des Moves sehr lange wehrlos, weshalb dieser Move ein großes Risiko mit sich bringt."
 				},
 				slide: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0side.mp4",
+						url: "https://www.youtube.com/embed/uYUaml10AXw",
 						alt: "Jigglypuff während Slide Special"
 					},
 					description: "Jigglypuff schlägt seitlich, was viel Schaden verursacht, vor allen an Schilden."
@@ -874,28 +874,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0neutral.mp4",
+						url: "https://www.youtube.com/embed/x1qxJvkSItg",
 						alt: "Mewtwo während Neutral Special"
 					},
 					description: "Mewtwo lädt einen Energieball auf. Das Aufladen kann durch Blocken oder Bewegung unterbrochen werden. Wirst du während dem Aufladen getroffen, so musst du wieder bei 0 anfangen. Ist der Schuss aufgeladen, so wird er durch einen erneuten Neutral Special abgefeuert und verursacht gewaltigen Schaden und Rückstoß."
 				},
 				up: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0up.mp4",
+						url: "https://www.youtube.com/embed/YgBCbMGoG7E",
 						alt: "Mewtwo während Up Special"
 					},
 					description: "Mewtwo teleportiert sich in die gedrückte Richtung. Während der Teleportation ist er vollkommen unverwundbar."
 				},
 				down: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0down.mp4",
+						url: "https://www.youtube.com/embed/RtrYkMShD1A",
 						alt: "Mewtwo während Down Special"
 					},
 					description: "Mewtwo schießt einen Strahl mit kurzer Reichweite aus seinen Augen, der Gegner betäubt, die ihn anschauen."
 				},
 				slide: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0side.mp4",
+						url: "https://www.youtube.com/embed/5sw8Kpc3CQ0",
 						alt: "Mewtwo während Slide Special"
 					},
 					description: "Mewtwo wirbelt einen getroffenen Gegner herum. Außerdem kann der Move Projektile reflektieren, Gegner erleiden allerdings keinen Schaden durch das reflektierte Projektil."
@@ -915,28 +915,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0neutral.mp4",
+						url: "https://www.youtube.com/embed/0e-3xDxd6u4",
 						alt: "Mr Game & Watch während Neutral Special"
 					},
 					description: "Mr Game & Watch bewirft seinen Gegner mit Würstchen aus einer Bratpfanne. Dabei verursacht die Pfanne selbst mehr Schaden und Rückstoß als die Projektile."
 				},
 				up: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0up.mp4",
+						url: "https://www.youtube.com/embed/Vb3pbStYODM",
 						alt: "Mr Game & Watch während Up Special"
 					},
 					description: "Mr Game & Watch wird durch ein Trampolin nach oben geschleudert."
 				},
 				down: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0down.mp4",
+						url: "https://www.youtube.com/embed/N-l22RaQ7_Y",
 						alt: "Mr Game & Watch während Down Special"
 					},
 					description: "Mr Game & Watch zieht einen Eimer mit dessen Hilfe er Energiegeschosse absorbieren kann. Ist der Eimer voll, so kann er durch den Down Special ausgeleert werden. Getroffene Gegner erleiden enormen Schaden und Rückstoß."
 				},
 				slide: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0side.mp4",
+						url: "https://www.youtube.com/embed/cSS_rxDSpz0",
 						alt: "Mr Game & Watch während Slide Special"
 					},
 					description: "Mr Game & Watch schlägt mit einem Hammer zu, während er eine Zahl anzeigt. Jede Zahl hat einen unterschiedlichen Effekt. Je höher die Zahl, umso stärker ist der Move. Eine 9 (höchste Zahl) eliminiert sofort den Stock des Gegners. Die Zahlen sind vollkommen zufällig."
@@ -956,28 +956,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0neutral.mp4",
+						url: "https://www.youtube.com/embed/rP40B0N-fwA",
 						alt: "Marth während Neutral Special"
 					},
 					description: "Marth lädt einen Schlag auf, solange die B-Taste gedrückt wird. Lässt Du los, so wird der Schlag ausgeführt. Je länger die Aufladung ist, desto stärker wird der Schlag."
 				},
 				up: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0up.mp4",
+						url: "https://www.youtube.com/embed/IotFZLXF5RY",
 						alt: "Marth während Up Special"
 					},
 					description: "Marth fliegt mit einem Schwertstreich gerade nach oben."
 				},
 				down: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0down.mp4",
+						url: "https://www.youtube.com/embed/DPAxB2glC80",
 						alt: "Marth während Down Special"
 					},
 					description: "Marth führt einen Konter aus. Wird er während dem Konter getroffen, so erleidet er keinen Schaden, sondern schlägt den Gegner zurück."
 				},
 				slide: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0side.mp4",
+						url: "https://www.youtube.com/embed/1PdEumV2Vmw",
 						alt: "Marth während Slide Special"
 					},
 					description: "Marth führt eine Kombination aus, indem Du den Move vier mal hintereinander im richtigen Rhythmus die B-Taste drückst. Die Kombo verändert sich, wenn du nach oben oder unten steuerst."
@@ -997,28 +997,28 @@ document.addEventListener('DOMContentLoaded', function(){
 			moves: {
 				neutral: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0neutral.mp4",
+						url: "https://www.youtube.com/embed/YshtEcZEM8g",
 						alt: "Roy lädt einen Schlag auf, solange die B-Taste gedrückt wird. Lässt Du los, so wird der Schlag ausgeführt. Je länger die Aufladung ist, desto stärker wird der Schlag. während Neutral Special"
 					},
 					description: "Roy lädt einen Schlag auf, solange die B-Taste gedrückt wird. Lässt Du los, so wird der Schlag ausgeführt. Je länger die Aufladung ist, desto stärker wird der Schlag. Bei maximaler Aufladung wird der Getroffene Gegner sofort durch eine große Explosion eliminiert."
 				},
 				up: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0up.mp4",
+						url: "https://www.youtube.com/embed/4YvnKaQnWzI",
 						alt: "Roy während Up Special"
 					},
 					description: "Roy fliegt mit einem Schwertstreich diagonal in einer Kurve nach oben."
 				},
 				down: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0down.mp4",
+						url: "https://www.youtube.com/embed/gvF8DZBlBqI",
 						alt: "Roy während Down Special"
 					},
 					description: "Marth führt einen Konter aus. Wird er während dem Konter getroffen, so erleidet er keinen Schaden, sondern schlägt den Gegner mit dem 1,5fachen des Schadens zurück."
 				},
 				slide: {
 					video: {
-						url: "https://www.youtube.com/embed/8R-Rh_RM-I0side.mp4",
+						url: "https://www.youtube.com/embed/2AWpdKvn2w0",
 						alt: "Roy während Slide Special"
 					},
 					description: "Roy führt eine Kombination aus, indem Du den Move vier mal hintereinander im richtigen Rhythmus die B-Taste drückst. Die Kombo verändert sich, wenn du nach oben oder unten steuerst."
