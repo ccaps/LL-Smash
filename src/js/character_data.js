@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Ein klassischer Allrounder",
 			image: {
-				url: "src/images/characters/modal/mario.jpg",
+				url: "src/images/characters/modal/cut/mario.jpg",
 				alt: "Mario",
 				title: "Mario"
 			},
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Eine stärkere Version von Mario.",
 			image: {
-				url: "src/images/characters/modal/dr_mario.jpg",
+				url: "src/images/characters/modal/cut/dr_mario.jpg",
 				alt: "Dr. Mario",
 				title: "Dr. Mario"
 			},
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Luigi ist generell sehr \"rutschig\". Das heißt, dass er sehr stark über den Boden gleitet nach einem Treffer und so leicht aus der Reichweite seiner Gegner kommt, was deren Kombos erschwert.",
 			image: {
-				url: "src/images/characters/modal/luigi.jpg",
+				url: "src/images/characters/modal/cut/luigi.jpg",
 				alt: "Luigi",
 				title: "Luigi"
 			},
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Schwer",
 			characteristics: "Bowser ist der größte und schwerste Charakter im Spiel. Er ist sehr langsam, aber teilt auch gewaltig aus.",
 			image: {
-				url: "src/images/characters/modal/bowser.jpg",
+				url: "src/images/characters/modal/cut/bowser.jpg",
 				alt: "Bowser",
 				title: "Bowser"
 			},
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Leicht",
 			characteristics: "Peach ist vor allem in der Luft sehr stark und mobil. Sie kann eine Zeit lang auf einer Höhe schweben, wenn die Sprungtaste nach einem Sprung gedrückt gehalten wird.",
 			image: {
-				url: "src/images/characters/modal/peach.jpg",
+				url: "src/images/characters/modal/cut/peach.jpg",
 				alt: "Peach",
 				title: "Peach"
 			},
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Yoshi verfügt über das stabilste Schild. Allerdings ist sein Up Special kein Rettungsmove. Um dies auszugleichen hat Yoshi den höchsten Doppelsprung des Spiels.",
 			image: {
-				url: "src/images/characters/modal/yoshi.jpg",
+				url: "src/images/characters/modal/cut/yoshi.jpg",
 				alt: "Yoshi",
 				title: "Yoshi"
 			},
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Schwer",
 			characteristics: "Donkey Kong ist der zweitschwerste Charakter, besitzt aber dennoch eine überraschende Mobilität. Drückst du nach dem Greifen den Stick nach vorne, so trägt DK seinen Gegner auf dem Rücken. Du kannst dich nun mit deinem Gegner bewegen, bevor du ihn wirfst.",
 			image: {
-				url: "src/images/characters/modal/dk.jpg",
+				url: "src/images/characters/modal/cut/dk.jpg",
 				alt: "DK",
 				title: "DK"
 			},
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Captain Falcon ist einer der beliebtesten Charaktere der Serie. Er ist der schnellste Charakter auf dem Boden und verfügt über eine hohe Killpower, vor allem durch das ikonische Knie (Forward Air)",
 			image: {
-				url: "src/images/characters/modal/c_falcon.jpg",
+				url: "src/images/characters/modal/cut/c_falcon.jpg",
 				alt: "Cpt Falcon",
 				title: "Cpt Falcon"
 			},
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Schwer",
 			characteristics: "Ganondorf ist sehr langsam, besitzt dafür aber einige der stärksten Attacken des Spiels, wie z.B. sein Down Air und Up Smash.",
 			image: {
-				url: "src/images/characters/modal/ganondorf.jpg",
+				url: "src/images/characters/modal/cut/ganondorf.jpg",
 				alt: "Ganondorf",
 				title: "Ganondorf"
 			},
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Falco hat den höchsten Sprung des Spiels und eine sehr hohe Mobilität. Außerdem kann Falco vernichtende Kombos mithilfe seines Down Airs durchführen.",
 			image: {
-				url: "src/images/characters/modal/falco.jpg",
+				url: "src/images/characters/modal/cut/falco.jpg",
 				alt: "Falco",
 				title: "Falco"
 			},
@@ -416,7 +416,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Fox ist ein extrem schneller Charakter, sowohl auf dem Boden als auch in der Luft, was es ihm ermöglicht, vernichtende Kombinationen durchzuführen.",
 			image: {
-				url: "src/images/characters/modal/fox.jpg",
+				url: "src/images/characters/modal/cut/fox.jpg",
 				alt: "Fox",
 				title: "Fox"
 			},
@@ -457,7 +457,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Ness verfügt über den stärksten Wurf des Spieles, seinen Back Throw. Abgesehen davon ist er besonders stark in der Luft, auch wenn sein Up B schwer zu benutzen ist.",
 			image: {
-				url: "src/images/characters/modal/ness.jpg",
+				url: "src/images/characters/modal/cut/ness.jpg",
 				alt: "Ness",
 				title: "Ness"
 			},
@@ -498,7 +498,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Die Ice Climbers sind 2 Charaktere in einem. Du steuerst \"Popo\", \"Nana\" führt deine Attacken mit Dir aus. Dabei kann \"Nana\" allerdings auch von der Stage gestoßen werden, was Dich erheblich schwächt. Sehr schwer zu spielen!",
 			image: {
-				url: "src/images/characters/modal/ice_climbers.jpg",
+				url: "src/images/characters/modal/cut/ice_climbers.jpg",
 				alt: "Ice Climbers",
 				title: "Ice Climbers"
 			},
@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Leicht",
 			characteristics: "Kirby ist durch seine geringe Größe schwer zu Treffen. Außerdem verfügt Kirby über 6 Sprünge und einen Rettungsmove, was es ihm ermöglicht, leicht zur Stage zurück zu kommen.",
 			image: {
-				url: "src/images/characters/modal/kirby.jpg",
+				url: "src/images/characters/modal/cut/kirby.jpg",
 				alt: "Kirby",
 				title: "Kirby"
 			},
@@ -580,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Schwer",
 			characteristics: "Samus ist sehr gut darin, Gegner durch Distanzangriffe auf Abstand zu halten. Obwohl sie ein schwerer Charakter ist, fällt sie sehr langsam, wodurch eine große horizontale Strecke überwunden werden kann.",
 			image: {
-				url: "src/images/characters/modal/samus.jpg",
+				url: "src/images/characters/modal/cut/samus.jpg",
 				alt: "Samus",
 				title: "Samus"
 			},
@@ -621,7 +621,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Zelda beinhaltet 2 Charaktere. Sie kann sich durch ihren Down Special in Sheik verwandeln, was ihr gesamtes Arsenal an Moves verändert.",
 			image: {
-				url: "src/images/characters/modal/zelda.jpg",
+				url: "src/images/characters/modal/cut/zelda.jpg",
 				alt: "Zelda",
 				title: "Zelda"
 			},
@@ -662,7 +662,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Link ist relativ langsam, verfügt aber dank seines Schwertes über eine große Reichweite. Außerdem kann Link 3 verschiedene Projektile verwenden, um Gegner von ihm fernzuhalten.",
 			image: {
-				url: "src/images/characters/modal/link.jpg",
+				url: "src/images/characters/modal/cut/link.jpg",
 				alt: "Link",
 				title: "Link"
 			},
@@ -703,7 +703,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Leicht",
 			characteristics: "Young Link ist eine kleinere und schnellere Version von Link, dessen Attacken dafür etwas schwächer sind.",
 			image: {
-				url: "src/images/characters/modal/young_link.jpg",
+				url: "src/images/characters/modal/cut/young_link.jpg",
 				alt: "Young Link",
 				title: "Young Link"
 			},
@@ -744,7 +744,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Leicht",
 			characteristics: "Pichu ist der kleinste und leichteste Charakter des Spiels und hat eine sehr kleine Range, ist aber überraschend stark für seine Größe.",
 			image: {
-				url: "src/images/characters/modal/pichu.png",
+				url: "src/images/characters/modal/cut/pichu.png",
 				alt: "Pichu",
 				title: "Pichu"
 			},
@@ -785,7 +785,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Leicht",
 			characteristics: "Pikachu ist ein kleiner schneller Charakter mit sehr guten Rettungsmöglichkeiten.",
 			image: {
-				url: "src/images/characters/modal/pikachu.jpg",
+				url: "src/images/characters/modal/cut/pikachu.jpg",
 				alt: "Pikachu",
 				title: "Pikachu"
 			},
@@ -826,7 +826,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Leicht",
 			characteristics: "Jigglypuff ist der langsamste Charakter am Boden, aber der schnellste in der Luft. Außerdem ist es einer der leichtesten Charaktere des Spiels. Jigglypuff verfügt über 6 Sprünge, besitzt aber keinen Rettungsmove. Bricht das Schild von Jigglypuff, so geht es sofort K.O.",
 			image: {
-				url: "src/images/characters/modal/jigglypuff.jpg",
+				url: "src/images/characters/modal/cut/jigglypuff.jpg",
 				alt: "Jigglypuff",
 				title: "Jigglypuff"
 			},
@@ -867,7 +867,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Mewtwo hat die längsten Rollen des Spiels und sehr starke Würfe.",
 			image: {
-				url: "src/images/characters/modal/mewtwo.png",
+				url: "src/images/characters/modal/cut/mewtwo.png",
 				alt: "Mewtwo",
 				title: "Mewtwo"
 			},
@@ -908,7 +908,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Leicht",
 			characteristics: "Mr. Game & Watch ist einer der leichtesten Charaktere des Spiels. Allerdings verfügt er über schnelle und starke Aerials, die gut für Kombos geeignet sind.",
 			image: {
-				url: "src/images/characters/modal/mr_game_and_watch.jpg",
+				url: "src/images/characters/modal/cut/mr_game_and_watch.jpg",
 				alt: "Mr Game and Watch",
 				title: "Mr Game & Watch"
 			},
@@ -949,7 +949,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Ein schneller, starker Charakter mit einer großen Reichweite. Alle Attacken von Marth werden sehr viel stärker, wenn Du genau mit der Schwertspitze triffst.",
 			image: {
-				url: "src/images/characters/modal/marth.jpg",
+				url: "src/images/characters/modal/cut/marth.jpg",
 				alt: "Marth",
 				title: "Marth"
 			},
@@ -990,7 +990,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			weight_category: "Medium",
 			characteristics: "Ein schneller, starker Charakter mit einer großen Reichweite. Vor allem am Boden sehr stark. Im Gegensatz zu Marth verursacht der Angriff von Roy mehr Schaden je näher der Gegner am Schwertgriff getroffen wird.",
 			image: {
-				url: "src/images/characters/modal/roy.jpg",
+				url: "src/images/characters/modal/cut/roy.jpg",
 				alt: "Roy",
 				title: "Roy"
 			},
