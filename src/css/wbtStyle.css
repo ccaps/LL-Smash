@@ -61,6 +61,85 @@ body{
 * {border:none;}
 
 
+
+
+/*BUTTONS*/
+
+.btn
+{
+	font-size: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.btn-primary
+{
+	background-image: none;
+	background-color: black;
+	border: 1px solid grey;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active
+{
+	background-color: white;
+	color: #222;
+	border: 1px solid grey;
+	text-shadow: none;
+}
+
+
+.btn-default
+{
+
+}
+
+
+/*
+PANEL STYLES
+ */
+
+.panel-heading
+{
+	background-color: #5f6873 !important;
+	background-image: none !important;
+	color: white !important;
+}
+
+.panel-heading:hover,
+.panel-heading:active,
+.panel-heading:focus
+{
+	background-color: white;
+	background-image: none;
+	color: black;
+}
+
+.panel-title
+{
+	font-size: 16px;
+	display: inline-block;
+}
+
+.panel-heading svg
+{
+	width: 14px;
+	padding-top:3px;
+	height: auto;
+	fill: white;
+	position: absolute;
+	right: 30px;
+	display:inline-block;
+}
+
+
+
+
+
+
+
+
 /*Cursor:Pointer*/
 .draggable, .snapTarget	{ cursor:pointer;  }
 
