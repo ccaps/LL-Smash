@@ -304,8 +304,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		{
 			question_type: 'controller',
 			question:'Führe einen air dodge aus.',
+			options: [['down', 'r'],['right', 'r'],['up', 'b'],['down', 'z']],
 			video: {
-				url: 'src/videos/controls/airdodge.mp4',
+				url: 'https://www.youtube.com/embed/iYO2EsOovWQ',
 				type: 'video/mp4',
 				alt: 'air dodge'
 			},
@@ -499,14 +500,34 @@ var QuizMod = (function () {
 		//create video container
 		var vidDiv = document.createElement('div');
 		vidDiv.id = "video_container";
-		var vid = document.createElement('video');
-		vid.setAttribute("controls","controls");
-		var vidSource = document.createElement('source');
-		vidSource.type = q.video.type;
-		vidSource.src = q.video.url;
-		vid.appendChild(vidSource);
+		var vid = document.createElement('iframe');
+		vid.setAttribute("src",  q.video.url); 
 		vidDiv.appendChild(vid);
 		oContainer.appendChild(vidDiv);
+		//
+		//create controller options container
+		var optContainer = document.createElement('div');
+		optContainer.id = "controller_options";
+		var span = document.createElement('span');
+		span.innerHTML = "Welche Kombination ist richtig?";
+		var ul = document.createElement('ul');
+		ul.id = "controller_options_ul";
+		for(var i=0; i<q.options.length; i++){
+			var li = document.createElement('li');
+			var oArray = q.options[i];
+			for(var e=0; e<oArray.length; e++){
+				var opt = document.createElement('img');
+				opt.src = "src/images/controller/"+oArray[e]+".png";
+				opt.className = "img-responsive img-inline";
+				opt.width = 30;
+				opt.alt = oArray[e];
+				li.appendChild(opt);
+			}
+			ul.appendChild(li);
+		}
+		optContainer.appendChild(span);
+		optContainer.appendChild(ul);
+		oContainer.appendChild(optContainer);
 		//
 		//create controller input container
 		var inputDiv = document.createElement('div');
