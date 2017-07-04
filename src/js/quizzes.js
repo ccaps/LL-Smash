@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			answer: ['x','up','b'],
 			hint: 'Das Ziel ist es, an Höhe zu gewinnen.'
 		},
-		/*{
+		{
 			question_type: 'controller',
 			question: 'In diesem Beispiel spielst Du Fox. Du hast es geschafft, Cpt. Falcon von der Stage zu befördern. Allerdings weißt Du auch, dass dieser versuchen wird, sich zu retten und nach dem Einsatz seines Up Specials entweder an der Kante hängt oder kurz wehrlos ist. Wie bestrafst Du seine Recovery?',
 			options: [['up','a'],['down','r'],['up','b'],['left','b']],
@@ -344,9 +344,9 @@ document.addEventListener('DOMContentLoaded', function(){
 				id: '3gVjtbOpVgo', //Pause´: 0:03 (vor dem Smash von Fox)
 				stopAtSecond: 3
 			},
-			answer: ['x','up','b'],
+			answer: ['up','b'],
 			hint: 'Dabei handelt es sich um eine starke Attacke.'
-		},*/
+		},
 		{
 			question_type: 'controller',
 			question: 'Als Cpt. Falcon schlägst Du Fox von der Stage. Wie verhinderst Du seine Rückkehr zur Stage?',
