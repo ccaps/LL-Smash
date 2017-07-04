@@ -519,7 +519,7 @@ var QuizMod = (function () {
 				var opt = document.createElement('img');
 				opt.src = "src/images/controller/"+oArray[e]+".png";
 				opt.className = "img-responsive img-inline";
-				opt.width = 30;
+				opt.width = 60;
 				opt.alt = oArray[e];
 				li.appendChild(opt);
 			}
