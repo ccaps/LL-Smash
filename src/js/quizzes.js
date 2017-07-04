@@ -854,18 +854,25 @@ var QuizMod = (function () {
 		}
 	};
 	
-	var createAlert = function(type){
+	var createAlert = function(type, msg){
+			if (typeof msg === 'undefined') { 
+				if(type == "wrong"){
+					msg = 'Leider Nein, wähle eine andere Antwort.';
+				}else if(type == "success"){
+					msg = 'Herzlichen Glückwunsch! Du hast dieses Quiz gemeistert =)';
+				} 
+			}
 			var alertDiv = document.createElement('div');
 			if(type == "wrong"){
 				alertDiv.id = "alert-div";
 				alertDiv.classList = "alert alert-danger";
-				alertDiv.innerHTML = "Leider Nein, wähle eine andere Antwort.";
+				alertDiv.innerHTML = msg;
 				if(currentQuestion.hint && currentQuestion.hint != ""){
 					alertDiv.innerHTML += " <b>Hinweis: " + currentQuestion.hint + "</b>";
 				}				
 			}else if(type == "success"){
 				alertDiv.classList = "alert alert-success";
-				alertDiv.innerHTML = "Herzlichen Glückwunsch! Du hast dieses Quiz gemeistert =)";
+				alertDiv.innerHTML = msg;
 			}
 
 			var buttonContainer = document.getElementById('button-container');
@@ -924,6 +931,7 @@ var QuizMod = (function () {
 		if(validateAnswer(currentQuestion)){
 			if(currentQuestion.question_type == "controller" && currentQuestion.video.stopAtSecond){
 				controller_question_solved = true;
+				createAlert("success", "Spitze! Das ist richtig =)");
 				yt.seekTo(currentQuestion.video.stopAtSecond);
 				var timeout = Math.round(yt.getDuration() - currentQuestion.video.stopAtSecond) * 1000;
 				yt.playVideo();
