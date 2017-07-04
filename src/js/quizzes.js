@@ -36,63 +36,63 @@ document.addEventListener('DOMContentLoaded', function(){
 	intro_questions = [ 
         {
 			question_type: 'radio', //radio, controller, dnd...
-			question:'Für welche Konsole erschien Super Smash Bros melee?', 
+			question: 'Für welche Konsole erschien Super Smash Bros melee?', 
 			options: ['SNES','Nintendo Switch','Nintendo Gamecube', 'Wii'], 
 			answer: 'Nintendo Gamecube', 
 			hint: ''
 		},
         {
 			question_type: 'radio', 
-			question:'Wann erschien Super Smash Bros melee?', 
+			question: 'Wann erschien Super Smash Bros melee?', 
 			options: [2015,2001,2003, 2007],
 			answer: 2001,
 			hint: 'In diesem Jahr geschah ein schlimmer Terroranschlag in New York'
 		},
         {
 			question_type: 'radio', 
-			question:'Wie heißt der Erfinder der Super Smash Bros Reihe?', 
+			question: 'Wie heißt der Erfinder der Super Smash Bros Reihe?', 
 			options: ['Masahiro Sakurai','Jacky Chan','Ip Man', 'Hideo Kojima'],
 			answer: 'Masahiro Sakurai',
 			hint: 'Er ist zwar ein Kämpfer, aber nicht wortwörtlich.'
 		},
         {
 			question_type: 'radio', 
-			question:'Wie viele Teile von Super Smash Bros gibt es insgesamt?', 
+			question: 'Wie viele Teile von Super Smash Bros gibt es insgesamt?', 
 			options: [1,2,3,4],
 			answer: 4,
 			hint: 'Smash erschien ab dem N64'
 		},
 		{
 			question_type: 'radio', 
-			question:'Welchem Genre ist SSBM zuzuordnen?', 
+			question: 'Welchem Genre ist SSBM zuzuordnen?', 
 			options: ['First Person Shooter','MMO','RPG', 'Fighting games'], 
 			answer: 'Fighting games', 
 			hint: 'Ähnlich Street Fighter.'
 		},
 		{
 			question_type: 'radio', 
-			question:'Wann verliert man in SSBM ein Leben?', 
+			question: 'Wann verliert man in SSBM ein Leben?', 
 			options: ['Wenn man den Bildschirm verlässt','Wenn der Lebensbalken leer ist','Wenn man keine Herzen mehr hat', 'Wenn man keine Munition mehr hat'], 
 			answer: 'Wenn man den Bildschirm verlässt', 
 			hint: 'Die Arena hat keine Abgrenzungen'
 		},
 		{
 			question_type: 'radio', 
-			question:'Auf welche Weise wird der erlittene Schaden der Charaktere in SSBM ausgedrückt?', 
+			question: 'Auf welche Weise wird der erlittene Schaden der Charaktere in SSBM ausgedrückt?', 
 			options: ['Lebensbalken', 'Herzen', 'Prozentanzeige', 'Gar nicht'], 
 			answer:  'Prozentanzeige',
 			hint: 'Einzigartig'
 		},
 		{
 			question_type: 'radio', 
-			question:'Was ist besser: 100% oder 0%?', 
+			question: 'Was ist besser: 100% oder 0%?', 
 			options: ['100%','0%'], 
 			answer: '0%',
 			hint: ''
 		},
 		{
 			question_type: 'radio', 
-			question:'Was drückt die Prozentzahl aus?', 
+			question: 'Was drückt die Prozentzahl aus?', 
 			options: ['Lebensdauer','Menge an Hit Points', 'Siegwahrscheinlichkeit', 'Multiplikator des Rückstoßes'], 
 			answer: 'Multiplikator des Rückstoßes',
 			hint: 'Denke daran, wie man ein Leben verliert.'
@@ -101,118 +101,154 @@ document.addEventListener('DOMContentLoaded', function(){
 	
 	basics_questions = [ 
 		{
-			question_type: 'radio', 
-			question:'Welcher Move schützt am besten davor, gegriffen zu werden?', 
+			question_type: 'radio',
+			question: 'Welcher Move schützt am besten davor, gegriffen zu werden?', 
 			options: ['Spotdodge','Rollen','Blocken', 'Springen'], 
-			answer: 'Spotdodge', 
-			hint: 'Eine stationäre Aktion'
+			answer: 'Spotdodge',
+			hint: 'Eine stationäre Aktion' 
 		},
 		{
-			question_type: 'radio', 
-			question:'Was kann nur aus dem Sprint heraus ausgeführt werden?', 
+			question_type: 'radio',
+			question: 'Was kann nur aus dem Sprint heraus ausgeführt werden?', 
 			options: ['Doublejump','Aerials','Dash Attack', 'Smash Attack'], 
-			answer: 'Dash Attack', 
-			hint: ''
-		},
-		{
-			question_type: 'radio', 
-			question:'Mit welchem Special gewinnen alle Charaktere außer Jigglypuff und Yoshi an Höhe?', 
-			options: ['Up Special','Side Special','Down Special', 'Neutral Special'], 
-			answer: 'Up Special', 
-			hint: 'Die Eingabe passt zur Funktion.'
-		},
-		{
-			question_type: 'radio', 
-			question:'Wie unterscheiden sich Tilts in der Regel von Smashes?', 
-			options: ['Langsamer und stärker','Gar nicht','Schneller und schwächer', 'Größere Reichweite'], 
-			answer: 'Schneller und schwächer', 
-			hint: 'Können in der Regel nicht aufgeladen werden.'
+			answer: 'Dash Attack',
+			hint: 'Was ist ein anderes Wort für einen kurzen Sprint?' 
 		},
 		{
 			question_type: 'controller',
-			question:'Führe einen Spotdodge aus.',
+			question: 'Führe einen Spotdodge aus.',
+			options: [['down', 'r'],['right', 'r'],['up', 'b'],['down', 'z']],
 			video: {
-				url: 'src/videos/controls/airdodge.mp4',
-				type: 'video/mp4',
-				alt: 'air dodge'
+				url: 'https://www.youtube.com/embed/iYO2EsOovWQ',
+				alt: 'Spotdodge'
 			},
 			answer: ['down','r'],
-			hint: ''
+			hint: 'Eine Option zur Verteidigung'
 		},
 		{
 			question_type: 'controller',
-			question:'Führe einen Dash mit anschließender Dash Attack aus.',
+			question: 'Führe eine Dashattack aus.',
+			options: [['right', 'a'],['up', 'r'],['right', 'right', 'a'],['right', 'right', 'b']],
 			video: {
-				url: 'src/videos/controls/dashing_and_dashattack.mp4',
-				type: 'video/mp4',
-				alt: 'dashing and dashattack'
+				url: 'https://www.youtube.com/embed/pWKz04292tI',
+				alt: 'Dashattack'
 			},
-			answer: ['right','right', 'a'],
-			hint: ''
+			answer: ['right','right','a'],
+			hint: 'Die doppelte Richtungstaste auf horizontaler Ebene repräsentiert einen Dash.'
+		},
+		{
+			question_type: 'controller',
+			question: 'Blocke einen Angriff.',
+			options: [['a'],['l'],['b'],['z']],
+			video: {
+				url: 'https://www.youtube.com/embed/3NM57opN5eI',
+				alt: 'Blocking'
+			},
+			answer: ['l'],
+			hint: 'Eine der Schultertasten.'
+		},
+		{
+			question_type: 'controller',
+			question: 'Führe einen Down Air aus.',
+			options: [['x','down','a'],['x','down','b'],['r','down','a'],['b','down','l']],
+			video: {
+				url: 'https://www.youtube.com/embed/ZmyFOKKCHAc',
+				alt: 'Aerials'
+			},
+			answer: ['x','down','a'],
+			hint: 'Springen liegt auf der X-Taste.'
+		},
+		{
+			question_type: 'controller',
+			question: 'Führe einen Jab aus.',
+			options: [['b','b','b'],['left','a'],['a','b','a'],['a','a','a']],
+			video: {
+				url: 'https://www.youtube.com/embed/R-w8MymJvOg',
+				alt: 'Jab'
+			},
+			answer: ['a','a','a'],
+			hint: 'Nur eine Taste benötigt.'
+		},
+		{
+			question_type: 'radio', 
+			question: 'Wie unterscheiden sich Tilts in der Regel von Smashes?', 
+			options: ['Langsamer und stärker','Gar nicht','Schneller und schwächer', 'Größere Reichweite'], 
+			answer: 'Schneller und schwächer', 
+			hint: 'Smashes können in der Regel nicht aufgeladen werden.'
+		},
+		{
+			question_type: 'controller',
+			question: 'Führe einen Up Tilt aus.',
+			options: [['up','b'],['up','a'],['r','a'],['up','z']],
+			video: {
+				url: 'https://www.youtube.com/embed/QGtPPtP4uD8',
+				alt: 'Tilts'
+			},
+			answer: ['up','a'],
+			hint: 'A steht für Angriff.'
 		}
-		
 	];
 	
 	characters_questions = [ 
 		{
 			question_type: 'radio', 
-			question:'Aus welchem Spiel sind Marth und Roy?', 
+			question: 'Aus welchem Spiel sind Marth und Roy?', 
 			options: ['Super Mario','Persona','Xenoblade Chronicles', 'Fire Emblem'], 
 			answer: 'Fire Emblem', 
 			hint: 'Klingt ziemlich hot.'
 		},
 		{
 			question_type: 'radio', 
-			question:'Was passiert, wenn Jigglypuffs Schild zerstört wird?', 
+			question: 'Was passiert, wenn Jigglypuffs Schild zerstört wird?', 
 			options: ['Gar nichts','Es geht sofort KO','Es wird betäubt', 'Es erleidet hohen Schaden'], 
 			answer: 'Es geht sofort KO', 
 			hint: 'Die schlechteste Möglichkeit.' 
 		},
 		{
 			question_type: 'multiple',
-			question:'Welche Charaktere verfügen über einen Konter?', 
+			question: 'Welche Charaktere verfügen über einen Konter?', 
 			options: ['Mario','Marth','Roy','Peach','Bowser'],
 			answer: ['Marth','Roy','Peach'], 
 			hint: 'Zwei davon tragen ein Schwert.' 
 		},
 		{
 			question_type: 'radio', 
-			question:'Aus welchem Spiel stammt Ness?', 
+			question: 'Aus welchem Spiel stammt Ness?', 
 			options: ['Fire Emblem','Earthbound',"Yoshi's Island", 'Super Mario Bros.'], 
 			answer: 'Earthbound', 
 			hint: 'Nicht aus dem Mario Universum.'
 		},
 		{
 			question_type: 'radio', 
-			question:'Was unterscheidet Zelda von allen anderen Charakteren?', 
+			question: 'Was unterscheidet Zelda von allen anderen Charakteren?', 
 			options: ['Einziger Charakter seiner Spielereihe','Zwei Charaktere in einem','Einziger weiblicher Charakter', 'Hat nur einen Sprung'], 
 			answer: 'Zwei Charaktere in einem',
 			hint: 'Zelda hat eine geheime Identität.' 
 		},
 		{
 			question_type: 'multiple', 
-			question:'Welche Charaktere haben keinen Rettungsmove als Up B?', 
+			question: 'Welche Charaktere haben keinen Rettungsmove als Up B?', 
 			options: ['Captain Falcon','Ganondorf','Mario','Yoshi','Jigglypuff'], 
 			answer: ['Yoshi','Jigglypuff'], 
 			hint: 'Ein Tier und ein Ball.' 
 		},
 		{
 			question_type: 'radio', 
-			question:'Was ist Peach’s besondere Eigenschaft in der Luft?',
+			question: 'Was ist Peach’s besondere Eigenschaft in der Luft?',
 			options: ['Sie kann auf konstanter Höhe schweben','Sie ist enorm schnell','Sie hat mehr als zwei Sprünge', 'Sie kann ihren Up Special mehrfach benutzen'], 
 			answer: 'Sie kann auf konstanter Höhe schweben', 
 			hint: 'Sie kommt einfach nicht wieder runter...' 
 		},
 		{
 			question_type: 'radio',
-			question:'Was unterscheidet Fox’s Laser von Falcos Laser?', 
+			question: 'Was unterscheidet Fox’s Laser von Falcos Laser?', 
 			options: ['Langsamer und schwächer','Schneller, schwächer, unterbricht Gegner nicht','Gar nichts', 'Langsamer und stärker'], 
 			answer: 'Schneller, schwächer, unterbricht Gegner nicht', 
 			hint: 'Ziemlich flink.' 
 		},
 		{
 			question_type: 'radio',
-			question:'Welcher ist der schwerste Charakter im Spiel?', 
+			question: 'Welcher ist der schwerste Charakter im Spiel?', 
 			options: ['Bowser','Ganondorf', 'Donkey Kong', 'Samus'], 
 			answer: 'Bowser', 
 			hint: 'Sehr scharfkantig.' 
@@ -222,63 +258,63 @@ document.addEventListener('DOMContentLoaded', function(){
 	stages_questions = [ 
 		{
 			question_type: 'choose', 
-			question:'Welche Stage bietet weder Plattformen noch Gefahren?',
+			question: 'Welche Stage bietet weder Plattformen noch Gefahren?',
 			options: [{url:'src/images/stages/1x1/battlefield.jpg', name:'battlefield'},{url:'src/images/stages/1x1/corneria.jpg', name:'corneria'},{url:'src/images/stages/1x1/Pokemonstadium.jpg', name:'pokemon'}, {url:'src/images/stages/1x1/Finaldestination.jpg', name:'Final Destination'}], 
 			answer: 'Final Destination', 
 			hint: 'Schau Dir die Bilder genau an.' 
 		},
 		{
 			question_type: 'multiple', 
-			question:'Auf welchen Stages befindet sich ein pustender Baum in der Mitte?', 
+			question: 'Auf welchen Stages befindet sich ein pustender Baum in der Mitte?', 
 			options: ['Corneria','Dreamland N64','Big Blue', 'Green Greens'],
 			answer: ['Dreamland N64','Green Greens'], 
 			hint: 'Aus dem Kirby Universum.' 
 		},
 		{
 			question_type: 'choose',
-			question:'Welche der gezeigten Stages ist legal?',
+			question: 'Welche der gezeigten Stages ist legal?',
 			options: [{url:'src/images/stages/1x1/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/1x1/corneria.jpg', name:'corneria'},{url:'src/images/stages/1x1/dreamland.png', name:'dreamland'}, {url:'src/images/stages/1x1/Greengreens.jpg', name:'greenGreens'}],
 			answer: 'dreamland',
 			hint: 'Eine der Kirby Stages.'
 		},
 		{
 			question_type: 'multiple',
-			question:'Was bezeichnet der Begriff "Legalität" im Bezug auf Stages?', 
+			question: 'Was bezeichnet der Begriff "Legalität" im Bezug auf Stages?', 
 			options: ['Es passieren auf der Stage keine Events','Im kompetitiven Spiel erlaubt', 'Die Stage ist vollkommen eben ohne Plattformen', 'Keine Umwelteinflüsse, die Schaden verursachen'], 
 			answer: ['Im kompetitiven Spiel erlaubt', 'Keine Umwelteinflüsse, die Schaden verursachen'], 
 			hint: 'Der Wettkampf muss fair bleiben.' 
 		},
 		{
 			question_type: 'choose',
-			question:'Welche der gezeigten Stages stammt aus der Metroid Reihe?',
+			question: 'Welche der gezeigten Stages stammt aus der Metroid Reihe?',
 			options: [{url:'src/images/stages/1x1/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/1x1/Fountainofdreams.jpg', name:'fountain'},{url:'src/images/stages/1x1/Finaldestination.jpg', name:'Finaldestination'}, {url:'src/images/stages/1x1/Fourside.png', name:'Fourside'}],
 			answer: 'brinstar',
 			hint: 'Sieht nach Säure aus.'
 		},
 		{
 			question_type: 'choose',
-			question:'Welche der gezeigten Stages wurde für Super Smash Bros. eingeführt und entstammt keiner anderen Videospielreihe?',
+			question: 'Welche der gezeigten Stages wurde für Super Smash Bros. eingeführt und entstammt keiner anderen Videospielreihe?',
 			options: [{url:'src/images/stages/1x1/Brinstardepths.jpg', name:'Brinstardepths'},{url:'src/images/stages/1x1/JungleJapes.jpg', name:'JungleJapes'},{url:'src/images/stages/1x1/battlefield.jpg', name:'battlefield'}, {url:'src/images/stages/1x1/Pokemonstadium.jpg', name:'Pokemonstadium'}],
 			answer: 'battlefield',
 			hint: 'Ziemlich dunkel hier.'
 		},
 		{
 			question_type: 'choose',
-			question:'Eine dieser Stages war schon in dem Super Smash Bros. Teil für N64 vorhanden. Welche?',
+			question: 'Eine dieser Stages war schon in dem Super Smash Bros. Teil für N64 vorhanden. Welche?',
 			options: [{url:'src/images/stages/1x1/dreamland.png', name:'dreamland'},{url:'src/images/stages/1x1/Yoshi\'sStory.png', name:'Yoshi\'sStory'},{url:'src/images/stages/1x1/Fourside.png', name:'Fourside'}, {url:'src/images/stages/1x1/Bigblue.jpg', name:'Bigblue'}],
 			answer: 'dreamland',
 			hint: 'Du bist vielleicht auf dem Holzweg.'
 		},
 		{
 			question_type: 'choose',
-			question:'Auf welcher Stage bewegt sich die Kamera ständig auf und ab?',
+			question: 'Auf welcher Stage bewegt sich die Kamera ständig auf und ab?',
 			options: [{url:'src/images/stages/1x1/Kongojungle.jpg', name:'Kongojungle'},{url:'src/images/stages/1x1/corneria.jpg', name:'corneria'},{url:'src/images/stages/1x1/Greatbay.jpg', name:'Greatbay'}, {url:'src/images/stages/1x1/IcicleMountain.jpg', name:'IcicleMountain'}],
 			answer: 'IcicleMountain',
 			hint: 'Ganz kalt...'
 		},
 		{
 			question_type: 'radio',
-			question:'Zu welchen Charakter gehört die Stage "Flat Zone"?', 
+			question: 'Zu welchen Charakter gehört die Stage "Flat Zone"?', 
 			options: ['Ness','Mr. Game&Watch', 'Marth', 'Samus'], 
 			answer: 'Mr. Game&Watch', 
 			hint: 'Achtung, der kommt flach.' 
@@ -287,31 +323,49 @@ document.addEventListener('DOMContentLoaded', function(){
 	];
 	
 	final_questions = [ 
-		/*{
-			question_type: 'choose',
-			question:'Welche der gezeigten Stages ist legal?',
-			options: [{url:'src/images/stages/brinstar.jpg', name:'brinstar'},{url:'src/images/stages/corneria.jpg', name:'corneria'},{url:'src/images/stages/dreamland.png', name:'dreamland'}],
-			answer: 'brinstar',
-			hint: ''
-		},
-		{
-			question_type: 'multiple',
-			question:'Welche dieser Stages sind legal?',
-			options: ['dreamland64', 'corneria', 'brinstar', 'Great Bay'],
-			answer: ['brinstar', 'Great Bay'],
-			hint: ''
-		},*/
 		{
 			question_type: 'controller',
-			question:'Führe einen air dodge aus.',
-			options: [['down', 'r'],['right', 'r'],['up', 'b'],['down', 'z']],
+			question: 'Du spielst Cpt. Falcon. Bei einem Angriff auf Fox verschätzt Du Dich und springst von der Stage. Wie kommst Du wieder zurück?',
+			options: [['x','left','a'],['x','up','b'],['r','up','b'],['up','a','a']],
 			video: {
-				url: 'https://www.youtube.com/embed/iYO2EsOovWQ',
-				type: 'video/mp4',
-				alt: 'air dodge'
+				url: 'https://www.youtube.com/embed/rFU4JfngEeE', //Pause: 0:02 (vor dem Sprung)
+				alt: 'Recovery Quiz'
 			},
-			answer: ['right','left','b'],
-			hint: ''
+			answer: ['x','up','b'],
+			hint: 'Das Ziel ist es, an Höhe zu gewinnen.'
+		},
+		{
+			question_type: 'controller',
+			question: 'In diesem Beispiel spielst Du Fox. Du hast es geschafft, Cpt. Falcon von der Stage zu befördern. Allerdings weißt Du auch, dass dieser versuchen wird, sich zu retten und nach dem Einsatz seines Up Specials entweder an der Kante hängt oder kurz wehrlos ist. Wie bestrafst Du seine Recovery?',
+			options: [['up','a'],['down','r'],['up','b'],['left','b']],
+			video: {
+				url: 'https://www.youtube.com/embed/3gVjtbOpVgo', //Pause´: 0:03 (vor dem Smash von Fox)
+				alt: 'Punishment Quiz'
+			},
+			answer: ['x','up','b'],
+			hint: 'Dabei handelt es sich um eine starke Attacke.'
+		},
+		{
+			question_type: 'controller',
+			question: 'Als Cpt. Falcon schlägst Du Fox von der Stage. Wie verhinderst Du seine Rückkehr zur Stage?',
+			options: [['right','down','right','a'],['x','x','left','b'],['left','r','down','b'],['left','x','right','a']],
+			video: {
+				url: 'https://www.youtube.com/embed/J0MkDdF1HOU', //Pause´: 0:03 (vor dem Sprung von Falcon)
+				alt: 'Edgeguard Quiz'
+			},
+			answer: ['left','x','right','a'],
+			hint: 'Von der Stage zu Fox zu springen ist ein guter Start.'
+		},
+		{
+			question_type: 'controller',
+			question: 'Du spielst Cpt. Falcon. Während Du blockst greift Fox unnachgiebig Dein Schild an, kommt aber nicht durch. Du vermutest, dass er es mit einem Griff versuchen wird, um Dein Schild zu umgehen. Was tust Du?',
+			options: [['right','b'],['x','a'],['down','b'],['down','r']],
+			video: {
+				url: 'https://www.youtube.com/embed/VmgUFyEkvYM', //Pause´: 0:01 (vor dem Spotdodge)
+				alt: 'Dodge Quiz'
+			},
+			answer: ['down','r'],
+			hint: 'Nur eine der Optionen nutzt eine Verteidigungstaste.'
 		}
 	];
 	
@@ -509,7 +563,7 @@ var QuizMod = (function () {
 		var optContainer = document.createElement('div');
 		optContainer.id = "controller_options";
 		var span = document.createElement('span');
-		span.innerHTML = "Welche Kombination ist richtig?";
+		span.innerHTML = "Führe den richtigen Move auf dem Controller aus";
 		var ul = document.createElement('ul');
 		ul.id = "controller_options_ul";
 		for(var i=0; i<q.options.length; i++){
