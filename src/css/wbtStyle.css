@@ -22,6 +22,7 @@ body{
 	padding-bottom: 40px;
 	padding-left: 0;
 	padding-right: 0;
+	margin-bottom: 150px;
 }
 
 /*MAIN NAV*/
@@ -80,7 +81,11 @@ body{
 
 
 /*footer*/
-.footer { margin-top:15px !important; }
+.footer {
+	margin-top: 30px !important;
+	padding-left: 0px;
+	padding-right: 0px;
+}
 /*Queries*/
 @media(max-width:768px){
 	
@@ -187,8 +192,42 @@ body{
 .banner_lets-smash
 {
 	width: 100%;
-	margin-bottom: 30px;
-	margin-top: -50px;
+	border-radius: 17px;
+	/*margin-bottom: 30px;*/
+	margin-top: -40px;
+}
+
+.text_lets-smash
+{
+	/*width: 60%;*/
+	color: #646465;
+	padding-left: 0;
+	padding-right: 0;
+	border-radius: 20px;
+	position: relative;
+	box-shadow: 10px 10px 5px #888888;
+	border: 3px solid #646465;
+}
+
+.text_lets-smash h3
+{
+	padding: 10px 20px;
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.text_lets-smash p
+{
+	padding: 10px 20px;
+	font-size: 16px;
+	margin-bottom: 10px
+}
+
+.content_lets-smash
+{
+	display: flex;
+	align-items: center;
 }
 
 /** Navigation Styling **/
