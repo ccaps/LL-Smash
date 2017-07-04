@@ -164,6 +164,7 @@ PANEL STYLES
 	display: flex;
 	flex-direction: column;
 	background-size: 100% auto;
+	border-radius: 15px;
 }
 
 .quiz_container h3
@@ -310,6 +311,7 @@ PANEL STYLES
 	background-repeat: no-repeat;
 	background-size: contain;
 	cursor: url(../others/Mouse2.cur), pointer;
+	border-radius: 15px;
 }
 .chars_overview{
 	width: 100%;
@@ -936,4 +938,39 @@ input[type="checkbox"]:checked+label
 
 #controller_options_ul{
 	list-style: url;
+}
+
+
+
+
+
+
+/*Seitenstyles */
+
+
+/*Startseite*/
+
+#welcome_h1
+{
+	text-align: center;
+}
+#welcome_h2
+{
+	text-align: center;
+}
+#welcome_img
+{
+	border-radius: 15px;
+}
+
+#welcome
+{
+	padding: 15px;
+	border: 3px solid grey;
+	border-radius: 15px;
+}
+
+#welcome p
+{
+	margin-bottom: 15px;
 }
