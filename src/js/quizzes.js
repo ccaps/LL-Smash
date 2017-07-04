@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	];
 	
 	final_questions = [ 
-		{
+		/*{
 			question_type: 'controller',
 			question: 'Du spielst Cpt. Falcon. Bei einem Angriff auf Fox verschätzt Du Dich und springst von der Stage. Wie kommst Du wieder zurück?',
 			options: [['x','left','a'],['x','up','b'],['r','up','b'],['up','a','a']],
@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			},
 			answer: ['left','x','right','a'],
 			hint: 'Von der Stage zu Fox zu springen ist ein guter Start.'
-		},
+		},*/
 		{
 			question_type: 'controller',
 			question: 'Du spielst Cpt. Falcon. Während Du blockst greift Fox unnachgiebig Dein Schild an, kommt aber nicht durch. Du vermutest, dass er es mit einem Griff versuchen wird, um Dein Schild zu umgehen. Was tust Du?',
