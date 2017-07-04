@@ -526,6 +526,8 @@ var QuizMod = (function () {
 		var bButton = document.createElement('img');
 		var xButton = document.createElement('img');
 		var yButton = document.createElement('img');
+		var lButton = document.createElement('img');
+		var rButton = document.createElement('img');
 		var joyStick = document.createElement('img');
 		var leftStick = document.createElement('div');
 		var rightStick = document.createElement('div');
@@ -536,12 +538,16 @@ var QuizMod = (function () {
 		bButton.src = "src/images/controller/b.png";
 		xButton.src = "src/images/controller/x.png";
 		yButton.src = "src/images/controller/y.png";
+		lButton.src = "src/images/controller/l.png";
+		rButton.src = "src/images/controller/r.png";
 		joyStick.src = "src/images/controller/n.png";
 		controller.className = "controller";
 		aButton.className = "key button button_a";
 		bButton.className = "key button button_b";
 		xButton.className = "key button button_x";
 		yButton.className = "key button button_y";
+		lButton.className = "key button button_l";
+		rButton.className = "key button button_r";
 		joyStick.className = "stick";
 		leftStick.className = "key stick__cta stick__cta--left";
 		rightStick.className = "key stick__cta stick__cta--right";
@@ -551,6 +557,8 @@ var QuizMod = (function () {
 		bButton.dataset.key = "b";
 		xButton.dataset.key = "x";
 		yButton.dataset.key = "y";
+		lButton.dataset.key = "l";
+		rButton.dataset.key = "r";
 		leftStick.dataset.key = "left";
 		rightStick.dataset.key = "right";
 		upStick.dataset.key = "up";
@@ -560,6 +568,8 @@ var QuizMod = (function () {
 		controllerDiv.appendChild(bButton);
 		controllerDiv.appendChild(xButton);
 		controllerDiv.appendChild(yButton);
+		controllerDiv.appendChild(lButton);
+		controllerDiv.appendChild(rButton);
 		controllerDiv.appendChild(joyStick);
 		controllerDiv.appendChild(leftStick);
 		controllerDiv.appendChild(rightStick);

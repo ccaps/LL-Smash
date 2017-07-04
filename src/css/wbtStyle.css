@@ -747,6 +747,23 @@ input[type="checkbox"]:checked+label
 	top: 105px;
 }
 
+/* Button L */
+.button_l
+{
+	width: 76px;
+	right: 298px;
+	top: 49px;
+	transform: rotate(-8deg);
+}
+
+/* Button R */
+.button_r
+{
+	width: 76px;
+	right: 24px;
+	top: 49px;
+	transform: rotate(11deg);
+}
 
 /* DISPLAY BUTTONS */
 .display__field
@@ -793,7 +810,15 @@ input[type="checkbox"]:checked+label
 	background-image: url(../images/controller/y.png);
 }
 
-.left_key, .right_key, .up_key, .down_key, .a_key, .b_key, .x_key, .y_key{
+.l_key{
+	background-image: url(../images/controller/l.png);
+}
+
+.r_key{
+	background-image: url(../images/controller/r.png);
+}
+
+.left_key, .right_key, .up_key, .down_key, .a_key, .b_key, .x_key, .y_key, .l_key, .r_key{
 	background-size:     contain;                
     background-repeat:   no-repeat;
     background-position: center center;  
