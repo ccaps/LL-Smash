@@ -119,8 +119,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			question: 'Führe einen Spotdodge aus.',
 			options: [['down', 'r'],['right', 'r'],['up', 'b'],['down', 'z']],
 			video: {
-				url: 'https://www.youtube.com/embed/iYO2EsOovWQ',
-				alt: 'Spotdodge'
+				alt: 'Spotdodge',
+				id: 'iYO2EsOovWQ'
 			},
 			answer: ['down','r'],
 			hint: 'Eine Option zur Verteidigung'
@@ -130,8 +130,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			question: 'Führe eine Dashattack aus.',
 			options: [['right', 'a'],['up', 'r'],['right', 'right', 'a'],['right', 'right', 'b']],
 			video: {
-				url: 'https://www.youtube.com/embed/pWKz04292tI',
-				alt: 'Dashattack'
+				alt: 'Dashattack',
+				id: 'pWKz04292tI'
 			},
 			answer: ['right','right','a'],
 			hint: 'Die doppelte Richtungstaste auf horizontaler Ebene repräsentiert einen Dash.'
@@ -141,8 +141,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			question: 'Blocke einen Angriff.',
 			options: [['a'],['l'],['b'],['z']],
 			video: {
-				url: 'https://www.youtube.com/embed/3NM57opN5eI',
-				alt: 'Blocking'
+				alt: 'Blocking',
+				id: '3NM57opN5eI'
 			},
 			answer: ['l'],
 			hint: 'Eine der Schultertasten.'
@@ -152,8 +152,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			question: 'Führe einen Down Air aus.',
 			options: [['x','down','a'],['x','down','b'],['r','down','a'],['b','down','l']],
 			video: {
-				url: 'https://www.youtube.com/embed/ZmyFOKKCHAc',
-				alt: 'Aerials'
+				alt: 'Aerials',
+				id: 'ZmyFOKKCHAc'
 			},
 			answer: ['x','down','a'],
 			hint: 'Springen liegt auf der X-Taste.'
@@ -163,8 +163,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			question: 'Führe einen Jab aus.',
 			options: [['b','b','b'],['left','a'],['a','b','a'],['a','a','a']],
 			video: {
-				url: 'https://www.youtube.com/embed/R-w8MymJvOg',
-				alt: 'Jab'
+				alt: 'Jab',
+				id: 'R-w8MymJvOg'
 			},
 			answer: ['a','a','a'],
 			hint: 'Nur eine Taste benötigt.'
@@ -181,8 +181,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			question: 'Führe einen Up Tilt aus.',
 			options: [['up','b'],['up','a'],['r','a'],['up','z']],
 			video: {
-				url: 'https://www.youtube.com/embed/QGtPPtP4uD8',
-				alt: 'Tilts'
+				alt: 'Tilts',
+				id: 'QGtPPtP4uD8'
 			},
 			answer: ['up','a'],
 			hint: 'A steht für Angriff.'
@@ -323,46 +323,50 @@ document.addEventListener('DOMContentLoaded', function(){
 	];
 	
 	final_questions = [ 
-		/*{
+		{
 			question_type: 'controller',
 			question: 'Du spielst Cpt. Falcon. Bei einem Angriff auf Fox verschätzt Du Dich und springst von der Stage. Wie kommst Du wieder zurück?',
 			options: [['x','left','a'],['x','up','b'],['r','up','b'],['up','a','a']],
 			video: {
-				url: 'https://www.youtube.com/embed/rFU4JfngEeE', //Pause: 0:02 (vor dem Sprung)
-				alt: 'Recovery Quiz'
+				alt: 'Recovery Quiz',
+				id: 'rFU4JfngEeE', //Pause: 0:02 (vor dem Sprung),
+				stopAtSecond: 2
 			},
 			answer: ['x','up','b'],
 			hint: 'Das Ziel ist es, an Höhe zu gewinnen.'
 		},
-		{
+		/*{
 			question_type: 'controller',
 			question: 'In diesem Beispiel spielst Du Fox. Du hast es geschafft, Cpt. Falcon von der Stage zu befördern. Allerdings weißt Du auch, dass dieser versuchen wird, sich zu retten und nach dem Einsatz seines Up Specials entweder an der Kante hängt oder kurz wehrlos ist. Wie bestrafst Du seine Recovery?',
 			options: [['up','a'],['down','r'],['up','b'],['left','b']],
 			video: {
-				url: 'https://www.youtube.com/embed/3gVjtbOpVgo', //Pause´: 0:03 (vor dem Smash von Fox)
-				alt: 'Punishment Quiz'
+				alt: 'Punishment Quiz',
+				id: '3gVjtbOpVgo', //Pause´: 0:03 (vor dem Smash von Fox)
+				stopAtSecond: 3
 			},
 			answer: ['x','up','b'],
 			hint: 'Dabei handelt es sich um eine starke Attacke.'
-		},
+		},*/
 		{
 			question_type: 'controller',
 			question: 'Als Cpt. Falcon schlägst Du Fox von der Stage. Wie verhinderst Du seine Rückkehr zur Stage?',
 			options: [['right','down','right','a'],['x','x','left','b'],['left','r','down','b'],['left','x','right','a']],
 			video: {
-				url: 'https://www.youtube.com/embed/J0MkDdF1HOU', //Pause´: 0:03 (vor dem Sprung von Falcon)
-				alt: 'Edgeguard Quiz'
+				alt: 'Edgeguard Quiz',
+				id: 'J0MkDdF1HOU', //Pause´: 0:03 (vor dem Sprung von Falcon)
+				stopAtSecond: 4
 			},
 			answer: ['left','x','right','a'],
 			hint: 'Von der Stage zu Fox zu springen ist ein guter Start.'
-		},*/
+		},
 		{
 			question_type: 'controller',
 			question: 'Du spielst Cpt. Falcon. Während Du blockst greift Fox unnachgiebig Dein Schild an, kommt aber nicht durch. Du vermutest, dass er es mit einem Griff versuchen wird, um Dein Schild zu umgehen. Was tust Du?',
 			options: [['right','b'],['x','a'],['down','b'],['down','r']],
 			video: {
-				url: 'https://www.youtube.com/embed/VmgUFyEkvYM', //Pause´: 0:01 (vor dem Spotdodge)
-				alt: 'Dodge Quiz'
+				alt: 'Dodge Quiz',
+				id: 'VmgUFyEkvYM', //Pause´: 0:01 (vor dem Spotdodge)
+				stopAtSecond: 1
 			},
 			answer: ['down','r'],
 			hint: 'Nur eine der Optionen nutzt eine Verteidigungstaste.'
@@ -417,6 +421,8 @@ var QuizMod = (function () {
 	var questions = [];
 	var questionAmount, tries = 0;
 	var quizID, qDiv, oContainer, currentQuestion;
+	var yt = null; //youtube player
+	var controller_question_solved = false;
 
 	//functions
 	/**
@@ -549,13 +555,14 @@ var QuizMod = (function () {
 	};
 
 	var createQuestionController = function(q){ //function to create question of type controller
+		controller_question_solved = false;
 		//create html
 		createQuestionStructure(q);	
 		//create video container
 		var vidDiv = document.createElement('div');
 		vidDiv.id = "video_container";
-		var vid = document.createElement('iframe');
-		vid.setAttribute("src",  q.video.url); 
+		var vid = document.createElement('div');
+		vid.id = "quiz_video";
 		vidDiv.appendChild(vid);
 		oContainer.appendChild(vidDiv);
 		//
@@ -653,7 +660,52 @@ var QuizMod = (function () {
 		oContainer.appendChild(controllerDiv);
 		//
 		appendAndResetContainers();
-
+		
+		//youtube player
+		if(yt != null) {
+			yt = null;
+		}
+		
+		yt = new YT.Player('quiz_video', {
+			videoId: q.video.id,
+		    playerVars: { 
+				'autoplay': 0,
+				'controls': 0, 
+				'rel' : 0
+		    },
+			events: {
+				'onReady': onPlayerReady,
+				'onStateChange': onStateChange
+			}
+        });
+		
+		function onStateChange(e){
+			if(currentQuestion.video.stopAtSecond){
+				if (e.data === YT.PlayerState.PLAYING && !controller_question_solved) {
+					
+						refresh_interval_id = setInterval(function () {
+							stopAt = currentQuestion.video.stopAtSecond;
+							var current_time = extround(yt.getCurrentTime(), 10);
+							if(current_time >= stopAt){
+								if(current_time > stopAt)yt.seekTo(stopAt);
+								yt.pauseVideo();
+							}
+						}, 100);
+					
+				 } else if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) {
+					 clearInterval(refresh_interval_id);
+				}
+			}
+			function extround(zahl,n_stelle) {
+				zahl = (Math.round(zahl * n_stelle) / n_stelle);
+				return zahl;
+			}
+		}
+		function onPlayerReady(e){
+			console.log("Player ready");
+			yt.playVideo();
+		}
+		//
 		var keys = document.getElementsByClassName('key');
 		for(var i=0; i<keys.length; i++){
 			keys[i].addEventListener('click', function(){
@@ -870,12 +922,23 @@ var QuizMod = (function () {
 	
 	var nextQuestion = function(){
 		if(validateAnswer(currentQuestion)){
+			if(currentQuestion.question_type == "controller" && currentQuestion.video.stopAtSecond){
+				controller_question_solved = true;
+				yt.seekTo(currentQuestion.video.stopAtSecond);
+				var timeout = Math.round(yt.getDuration() - currentQuestion.video.stopAtSecond) * 1000;
+				yt.playVideo();
+				setTimeout(function(){nextOrFinish();}, timeout);
+			}else{
+				nextOrFinish();
+			}
+		}
+		function nextOrFinish(){
 			if(questions.length > 0){ //there are still questions remaining
 				var q = pickQuestion(); //randomly pick a question 
 				createQuestion(q);
 			}else{
 				finishQuiz();
-			}
+			}			
 		}
 	};
 	

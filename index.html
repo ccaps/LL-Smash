@@ -293,9 +293,15 @@
 		Du hast einen neuen Fortschritt erzielt.
 	</div>
 	<!-- -->
+	<script src="http://www.youtube.com/player_api"></script> <!-- Youtube API -->
 	<script>
 		document.addEventListener('DOMContentLoaded', function(){
 		
+		//youtube API
+        window.onYouTubeIframeAPIReady = function() { 
+			console.log("Youtube API ready");
+        };	
+
 		//hide advanced section
 		var advancedSection = $('li').has('a:contains("Advanced")').hide();
 		
