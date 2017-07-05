@@ -296,11 +296,8 @@ PANEL STYLES
 }
 
 /* Stage Images */
-#stage-modal-image{
-	width: 30%;
-	float: left;
-	margin-bottom: 10px;	
-	
+#stage-modal-image, #character-modal-image{
+	margin-bottom: 20px;	
 }
 
 .no-gutters {
