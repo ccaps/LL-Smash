@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		},
         {
 			question_type: 'radio', 
-			question: 'Wann erschien Super Smash Bros melee?', 
+			question: 'Wann erschien Super Smash Bros Melee?', 
 			options: [2015,2001,2003, 2007],
 			answer: 2001,
 			hint: 'In diesem Jahr geschah ein schlimmer Terroranschlag in New York'
@@ -344,7 +344,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				id: '3gVjtbOpVgo', //Pause´: 0:03 (vor dem Smash von Fox)
 				stopAtSecond: 3
 			},
-			answer: ['up','b'],
+			answer: ['up','a'],
 			hint: 'Dabei handelt es sich um eine starke Attacke.'
 		},
 		{
