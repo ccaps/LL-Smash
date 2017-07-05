@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		{
 			question_type: 'controller',
 			question: 'Führe eine Dashattack aus.',
-			options: [['right', 'a'],['up', 'r'],['right', 'right', 'a'],['right', 'right', 'b']],
+			options: [['right', 'a', 'b'],['up', 'r', 'a'],['right', 'right', 'a'],['right', 'right', 'b']],
 			video: {
 				alt: 'Dashattack',
 				id: 'pWKz04292tI'
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		{
 			question_type: 'controller',
 			question: 'Führe einen Jab aus.',
-			options: [['b','b','b'],['left','a'],['a','b','a'],['a','a','a']],
+			options: [['b','b','b'],['left','a','a'],['a','b','a'],['a','a','a']],
 			video: {
 				alt: 'Jab',
 				id: 'R-w8MymJvOg'
