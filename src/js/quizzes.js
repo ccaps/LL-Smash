@@ -569,7 +569,7 @@ var QuizMod = (function () {
 		//create video container
 		var vidDiv = document.createElement('div');
 		vidDiv.id = "video_container";
-		vidDiv.className = "col-md-6";
+		vidDiv.className = "col-md-7";
 		var responsiveDiv = document.createElement('div');
 		responsiveDiv.className = "embed-responsive embed-responsive-16by9";
 		var vid = document.createElement('div');
@@ -581,7 +581,7 @@ var QuizMod = (function () {
 		//create controller options container
 		var optContainer = document.createElement('div');
 		optContainer.id = "controller_options";
-		optContainer.className = "col-md-6";
+		optContainer.className = "col-md-5";
 		var span = document.createElement('span');
 		span.innerHTML = "Führe den richtigen Move auf dem Controller aus";
 		span.id = "controller_options_span";
