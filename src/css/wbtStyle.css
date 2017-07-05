@@ -931,3 +931,13 @@ input[type="checkbox"]:checked+label
 @media(min-width:1200px){
 
 }
+
+
+
+/*LEGEND*/
+
+.legend-btn-image
+{
+	max-width: 45px;
+	max-height: 45px;
+}
