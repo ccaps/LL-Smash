@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			video: {
 				alt: 'Recovery Quiz',
 				id: 'rFU4JfngEeE', //Pause: 0:02 (vor dem Sprung),
-				stopAtSecond: 2
+				stopAtSecond: 2.5
 			},
 			answer: ['x','up','b'],
 			hint: 'Das Ziel ist es, an Höhe zu gewinnen.'
@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			video: {
 				alt: 'Punishment Quiz',
 				id: '3gVjtbOpVgo', //Pause´: 0:03 (vor dem Smash von Fox)
-				stopAtSecond: 3
+				stopAtSecond: 3.4
 			},
 			answer: ['up','a'],
 			hint: 'Dabei handelt es sich um eine starke Attacke.'
@@ -366,7 +366,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			video: {
 				alt: 'Dodge Quiz',
 				id: 'VmgUFyEkvYM', //Pause´: 0:01 (vor dem Spotdodge)
-				stopAtSecond: 1
+				stopAtSecond: 1.3
 			},
 			answer: ['down','r'],
 			hint: 'Nur eine der Optionen nutzt eine Verteidigungstaste.'
