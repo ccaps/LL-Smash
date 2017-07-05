@@ -295,6 +295,14 @@ PANEL STYLES
 	text-align: center;
 }
 
+/* Stage Images */
+#stage-modal-image{
+	width: 30%;
+	float: left;
+	margin-bottom: 10px;	
+	
+}
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;

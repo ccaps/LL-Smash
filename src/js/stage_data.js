@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Beende den Target Test mit jedem Charakter.",
 			description: "Eine Stage mit drei Plattformen in einem Dreieck angeordnet. Der Baum in der Mitte pustet gelegentlich Wind, der dich auf der Stage verschiebt.",
 			image: {
-				url: "src/images/stages/dreamland.png",
+				url: "src/images/stages/1x1/dreamland.png",
 				alt: "Dreamland",
 				title: "Dreamland"
 			}
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "All-Star Modus beenden.",
 			description: "Eine Stage mit drei Plattformen in einem Dreieck angeordnet, ohne sonstige Gefahren.",
 			image: {
-				url: "src/images/stages/battlefield.jpg",
+				url: "src/images/stages/1x1/battlefield.jpg",
 				alt: "Battlefield",
 				title: "Battlefield"
 			}
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Beende Event 51.",
 			description: "Eine flache Stage ohne jegliche Gefahren.",
 			image: {
-				url: "src/images/stages/Finaldestination.jpg",
+				url: "src/images/stages/1x1/Finaldestination.jpg",
 				alt: "Final Destination",
 				title: "Final Destination"
 			}
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Eine Stage mit drei Plattformen in einem Dreieck angeordnet. Die unteren beiden Plattformen bewegen sich langsam auf und ab.",
 			image: {
-				url: "src/images/stages/Fountainofdreams.jpg",
+				url: "src/images/stages/1x1/Fountainofdreams.jpg",
 				alt: "Fountain of Dreams",
 				title: "Fountain of Dreams"
 			}
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Diese Stage verläuft 5 Transformationen mit unterschiedlichen Layouts, die sich an den Pokémontypen Gras, Feuer, Wasser und Stein orientieren. Das Standardlayout besteht aus einer flachen Stage mit 2 Plattformen",
 			image: {
-				url: "src/images/stages/Pokemonstadium.jpg",
+				url: "src/images/stages/1x1/Pokemonstadium.jpg",
 				alt: "Pokémon Stadium",
 				title: "Pokémon Stadium"
 			}
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Eine Stage mit drei Plattformen in einem Dreieck angeordnet. Eine Wolke kreist unter der Stage, auf der man landen kann. Außerdem fliegen gelegentlich Shy Guys über der Stage, die geschlagen werden können.",
 			image: {
-				url: "src/images/stages/Yoshi'sStory.png",
+				url: "src/images/stages/1x1/Yoshi'sStory.png",
 				alt: "Yoshi's Story",
 				title: "Yoshi's Story"
 			}
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Spiele 150 VS Kämpfe.",
 			description: "Unter der Stage fahren sehr schnell Fahrzeuge. Fällst Du von der Stage erleidest Du Schaden durch diese. Die Stage an sich ist dabei ständig in Bewegung, es gibt auch Passagen, in denen nichts unter der Stage ist.",
 			image: {
-				url: "src/images/stages/Bigblue.jpg",
+				url: "src/images/stages/1x1/Bigblue.jpg",
 				alt: "Big Blue",
 				title: "Big Blue"
 			}
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Die Stage besteht aus sich verändernden Felsstücken. Manchmal steigt Säure auf, die bei Berührung sehr viel Schaden und Rückstoß verursacht.",
 			image: {
-				url: "src/images/stages/brinstar.jpg",
+				url: "src/images/stages/1x1/brinstar.jpg",
 				alt: "Brinstar",
 				title: "Brinstar"
 			}
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Spiele 50 VS Kämpfe.",
 			description: "Die Stage ist ein riesiger unregelmäßig geformter Stein. Hinter der Stage ist ein großes Monster, das die Stage alle paar Sekunden rotiert.",
 			image: {
-				url: "src/images/stages/Brinstardepths.jpg",
+				url: "src/images/stages/1x1/Brinstardepths.jpg",
 				alt: "Brinstar Depths",
 				title: "Brinstar Depths"
 			}
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Der Kampf findet auf einem Raumschiff statt. Gelegentlich fliegen Raumschiffe knapp über der Stage und schießen Laserstrahlen auf die Spieler. Die Raumschiffe können auch als Plattformen benutzt werden.",
 			image: {
-				url: "src/images/stages/corneria.jpg",
+				url: "src/images/stages/1x1/corneria.jpg",
 				alt: "Corneria",
 				title: "Corneria"
 			}
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Beende den Klassik Modus mit Mr. Game & Watch.",
 			description: "Die Stage besteht aus einem 2D Bildschirm, auf dem mehrere Linien zu sehen sind, die als Plattformen dienen. Auch die Charaktere sind 2D. Auf der Stage treten verschiedene Events, wie z.B. Feuerwehrmänner auf.",
 			image: {
-				url: "src/images/stages/Flatzone.jpg",
+				url: "src/images/stages/1x1/Flatzone.jpg",
 				alt: "Flatzone",
 				title: "Flatzone"
 			}
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Spiele 100 VS Kämpfe.",
 			description: "Die Stage besteht aus mehreren Hochhausdächern zwischen denen Lücken sind. Ein Kran bewegt eine Plattform. Außerdem erscheint gelegentlich ein UFO, welches als rutschige Plattform dient.",
 			image: {
-				url: "src/images/stages/Fourside.png",
+				url: "src/images/stages/1x1/Fourside.png",
 				alt: "Fourside",
 				title: "Fourside"
 			}
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Diese Stage besteht aus Plattformen, die direkt über Wasser sind. Eine Schildkröte, die als Plattform dient, versinkt im Wasser und taucht wieder auf. Außerdem fliegt Tingle auf einem Ballon, auf dem auch Spieler stehen können, über der Stage. Bei Berührung verursacht er geringen Schaden.",
 			image: {
-				url: "src/images/stages/Greatbay.jpg",
+				url: "src/images/stages/1x1/Greatbay.jpg",
 				alt: "Great Bay",
 				title: "Great Bay"
 			}
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Spiele 20 Matches als Kirby.",
 			description: "Die Stage besteht aus drei Plattformen. In der Mitte steht ein Baum, der gelegentlich Wind in eine Richtung pustet. Zwischen den Plattformen befinden sich zerstörbare Blöcke.",
 			image: {
-				url: "src/images/stages/Greengreens.jpg",
+				url: "src/images/stages/1x1/Greengreens.jpg",
 				alt: "Green Greens",
 				title: "Green Greens"
 			}
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Diese Stage bewegt sich ständig auf und ab. Spieler müssen darauf auchten, nicht den Bildschirm zu verlassen, während sie über die Plattformen navigieren. Viele Plattformen sind vereist und dadurch rutschig. Auf der Stage gibt es außerdem mehrere zerstörbare Eisblöcke.",
 			image: {
-				url: "src/images/stages/IcicleMountain.jpg",
+				url: "src/images/stages/1x1/IcicleMountain.jpg",
 				alt: "Icicle Mountain",
 				title: "Icicle Mountain"
 			}
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Eine Stage mit drei Plattformen auf einer Ebene. Über der mittleren Plattform befindet sich noch eine kleinere weitere Plattform. Unter der Stage bewegt sich ein schneller Fluss, der Spieler leicht aus dem Bildschirm trägt.",
 			image: {
-				url: "src/images/stages/JungleJapes.jpg",
+				url: "src/images/stages/1x1/JungleJapes.jpg",
 				alt: "Jungle Japes",
 				title: "Jungle Japes"
 			}
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			unlock: "Von Anfang an verfügbar.",
 			description: "Bei dieser Stage handelt es sich um ein Floß mit mehreren Plattformen. Unter der Stage befindet sich ein Fass. Fällt ein Spieler in dieses, so kann er durch einen Knopfdruck in die Richtung geschossen werden, in die die Öffnung des Fasses zeigt. Außerdem gibt es hier kleine Krokodile, die bei Berührung Schaden und Rückstoß verursachen.",
 			image: {
-				url: "src/images/stages/Kongojungle.jpg",
+				url: "src/images/stages/1x1/Kongojungle.jpg",
 				alt: "Kongo Jungle",
 				title: "Kongo Jungle"
 			}
