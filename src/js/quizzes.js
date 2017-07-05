@@ -452,7 +452,6 @@ var QuizMod = (function () {
 		var qSpan =  document.createElement('span');
 		var progressSpan = document.createElement('span');
 		qSpan.innerHTML = q.question;
-		progressSpan.style.float = "right";
 		progressSpan.id = "quiz-progress";
 		var progress = questionAmount - questions.length;
 		progressSpan.innerHTML = progress + "/" + questionAmount;
@@ -463,9 +462,10 @@ var QuizMod = (function () {
 		qContainer.appendChild(qSpan);
 		qContainer.appendChild(progressSpan);
 		qDiv.appendChild(qContainer);
+		qDiv.appendChild(document.createElement('hr'));
 		oContainer = document.createElement('div');
-		oContainer.appendChild(document.createElement('hr'));
 		oContainer.id = "options-container";
+		oContainer.className = "container-fluid";
 		qDiv.appendChild(oContainer);
 		var bContainer = document.createElement('div');
 		bContainer.id = "button-container";
@@ -489,7 +489,12 @@ var QuizMod = (function () {
 				enableNextQuestionButton();
 			}else if(t && t.className && t.className === "choose-option"){ //choose option is clicked
 				enableNextQuestionButton();
-			}else if(t && t.classList.contains('key')){ //controller key is clicked
+			}
+		});
+		
+		bContainer.addEventListener("click", function(e) {
+			t = e.target;
+			if(t && t.classList.contains('key')){ //controller key is clicked
 				enableNextQuestionButton();
 			}
 		});
@@ -511,7 +516,7 @@ var QuizMod = (function () {
 	
 	var appendAndResetContainers = function(){
 		var mDiv = document.getElementById('quiz-container');
-	    oContainer.appendChild(document.createElement('hr'));
+	    qDiv.insertBefore(document.createElement('hr'), oContainer.nextSibling);
 		mDiv.appendChild(qDiv);
 		oContainer = null;
 		qDiv = null;		
@@ -558,9 +563,13 @@ var QuizMod = (function () {
 		controller_question_solved = false;
 		//create html
 		createQuestionStructure(q);	
+		var row = document.createElement('div');
+		row.className = "row";
+		oContainer.appendChild(row);
 		//create video container
 		var vidDiv = document.createElement('div');
 		vidDiv.id = "video_container";
+		vidDiv.className = "col-md-6";
 		var vid = document.createElement('div');
 		vid.id = "quiz_video";
 		vidDiv.appendChild(vid);
@@ -569,8 +578,10 @@ var QuizMod = (function () {
 		//create controller options container
 		var optContainer = document.createElement('div');
 		optContainer.id = "controller_options";
+		optContainer.className = "col-md-6";
 		var span = document.createElement('span');
 		span.innerHTML = "Führe den richtigen Move auf dem Controller aus";
+		span.id = "controller_options_span";
 		var ul = document.createElement('ul');
 		ul.id = "controller_options_ul";
 		for(var i=0; i<q.options.length; i++){
@@ -579,8 +590,8 @@ var QuizMod = (function () {
 			for(var e=0; e<oArray.length; e++){
 				var opt = document.createElement('img');
 				opt.src = "src/images/controller/"+oArray[e]+".png";
-				opt.className = "img-responsive img-inline";
-				opt.width = 60;
+				opt.className = "img-inline";
+				opt.width = 40;
 				opt.alt = oArray[e];
 				li.appendChild(opt);
 			}
@@ -593,6 +604,7 @@ var QuizMod = (function () {
 		//create controller input container
 		var inputDiv = document.createElement('div');
 		inputDiv.id = "input_container";
+		inputDiv.className = "col-md-12";
 		for(var i=0; i<q.answer.length; i++){
 			var inputField = document.createElement('div');
 			inputField.className = "display__field";
@@ -657,7 +669,7 @@ var QuizMod = (function () {
 		controllerDiv.appendChild(rightStick);
 		controllerDiv.appendChild(upStick);
 		controllerDiv.appendChild(downStick);
-		oContainer.appendChild(controllerDiv);
+		oContainer.nextSibling.appendChild(controllerDiv);
 		//
 		appendAndResetContainers();
 		
@@ -703,7 +715,7 @@ var QuizMod = (function () {
 		}
 		function onPlayerReady(e){
 			console.log("Player ready");
-			yt.playVideo();
+			setTimeout(function(){yt.playVideo();}, 1500);
 		}
 		//
 		var keys = document.getElementsByClassName('key');
@@ -903,7 +915,10 @@ var QuizMod = (function () {
 	
 	var finishQuiz = function(){
 		var bContainer = document.getElementById('button-container');
-		bContainer.removeChild(bContainer.childNodes[0]); //clear button-container
+		//clear button-container
+		while (bContainer.firstChild) {
+			bContainer.removeChild(bContainer.firstChild);
+		}
 		var oContainer = document.getElementById('options-container');
 		var qContainer = document.getElementById('question-container');
 		//oContainer.parentNode.removeChild(oContainer);

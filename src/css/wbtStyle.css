@@ -3,13 +3,6 @@
 	font-family: smashFont;
 	src: url(../fonts/smash.ttf);
 }
-/*
-Font-Ideen:
-Source Sans Pro
-*/
-/*body{
-	background-color: #F7F7F7;
-}*/
 
 /*BODY*/
 body{
@@ -40,7 +33,6 @@ p
 	border-radius: 20px 20px 0 0;
 }
 
-
 .smashFont{
 		font-family: smashFont;
 		font-weight: bold;
@@ -64,9 +56,6 @@ p
 
 .clear { clear:both; }
 * {border:none;}
-
-
-
 
 /*BUTTONS*/
 
@@ -94,12 +83,10 @@ p
 	text-shadow: none;
 }
 
-
 .btn-default
 {
 
 }
-
 
 /*
 PANEL STYLES
@@ -138,9 +125,6 @@ PANEL STYLES
 	display:inline-block;
 }
 
-
-
-
 /* Accordion
  */
 
@@ -151,11 +135,7 @@ PANEL STYLES
 	font-size: 16px;
 }
 
-
-
-
 /* QUIZ PAGES */
-
 
 .quiz_container
 {
@@ -188,7 +168,6 @@ PANEL STYLES
 	margin: 0 auto;
 	margin-top: 10px;
 }
-
 
 /*backgrounds*/
 .einleitung_quiz_container
@@ -241,10 +220,6 @@ PANEL STYLES
 			url(../images/abschluss_background.jpg);
 }
 
-
-
-
-
 /*Cursor:Pointer*/
 .draggable, .snapTarget	{ cursor:pointer;  }
 
@@ -262,29 +237,12 @@ PANEL STYLES
 .solutions > ul > li div:last-child { border:#666 solid 1px;  background-color:#CEE3D0; }
 .draggable { padding:8px; border:1px solid #006; max-width:280px; z-index:1; background-color:#AAA; min-height:50px; margin-bottom:8px; }
 
-
-
 /*footer*/
 .footer {
 	margin-top: 30px !important;
 	padding-left: 0px;
 	padding-right: 0px;
 }
-/*Queries*/
-@media(max-width:768px){
-	
-	}
-	
-@media(min-width:768px){
-	
-	}
-@media(min-width:992px){
-
-}
-@media(min-width:1200px){
-
-}
-
 
 /*
 	control image settings
@@ -369,9 +327,6 @@ PANEL STYLES
 	-webkit-filter: grayscale(100%) blur(5px); /* Safari 6.0 - 9.0 */
 	filter: grayscale(100%) blur(5px);
 }
-
-
-
 
 /** LEts smash **/
 .banner_lets-smash
@@ -513,10 +468,6 @@ PANEL STYLES
 	color: black;
 }
 
-
-
-
-
 /* header styles */
 .image-bg-fluid-height,
 .image-bg-fixed-height {
@@ -578,25 +529,34 @@ input[type=checkbox]
 
 #quiz-container {
 	padding: 0;
-	min-height: 500px;
 }
-
 
 #question-container
 {
-	font-size: 20px;
-	padding-top: 10px;
+	font-size: 18px;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+#question-container :first-child{
+	width: 90%;
+	display: inline-block;
+}
+
+#quiz-progress{
+	width: 10%;
+	text-align: right;
+	position: absolute;
+	top: 0;
 }
 
 #options-container
 {
 	padding-left: 15px;
 	padding-right: 15px;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
-	/*display: flex;*/
+	min-height: 350px; 
 }
 
 #options-container input[type="radio"],
@@ -618,7 +578,6 @@ input[type=checkbox]
 	border-radius: 10px;
 	margin-right: 20px;
 	margin-top: 20px;
-	/*flex: 1;*/
 }
 
 #options-container .radioImage:hover
@@ -640,9 +599,7 @@ input[type="checkbox"]:checked+label
 #button-container
 {
 	height: 40px;
-	position: absolute;
 	width: 100%;
-	bottom: -20px;
 }
 
 #next-question
@@ -671,20 +628,11 @@ input[type="checkbox"]:checked+label
 	height: 40px;
 }
 
-#alert-div
+#alert-div, .alert-success
 {
-	font-size: 16px;
-	position: absolute;
+	font-size: 18px;
 	width: 98%;
 	bottom: 0;
-	margin-bottom: 28px;
-	margin-left: 1%;
-}
-
-.alert-success{
-	position: absolute;
-	bottom: 20px;
-	width: 98%;
 	margin-left: 1%;
 }
 
@@ -692,12 +640,7 @@ input[type="checkbox"]:checked+label
 	width: auto;
 }
 
-
-
-
 /* CONTROLLER */
-
-
 #controller_container,
 #input_container,
 #video_container
@@ -707,8 +650,7 @@ input[type="checkbox"]:checked+label
 
 #video_container
 {
-	width: 50%;
-	display: inline-block;
+
 }
 
 #video_container iframe{
@@ -717,23 +659,33 @@ input[type="checkbox"]:checked+label
 }
 
 #controller_options{
-	width: 50%;
-	display: inline-block;
+
+}
+
+#controller_options_span{
+	display: block;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#controller_options_ul{
+	list-style: url;
+	text-align: left;
 }
 
 #controller_container
 {
+	height: 0;
 	position: relative;
 	width: 400px;
-	height: 0;
-	margin: 0 auto;
-	z-index: 10;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 #controller_container img
 {
 	border-radius: 0;
-	margin-right: 0;
 }
 
 #controller_container img:hover
@@ -745,9 +697,8 @@ input[type="checkbox"]:checked+label
 {
 	position: relative;
 	width: 100%;
-	margin-top: 41px;
+	bottom: 0;
 }
-
 
 /* universal button class */
 .button
@@ -761,14 +712,13 @@ input[type="checkbox"]:checked+label
 	filter: brightness(80%);
 }
 
-
 /* Stick */
 .stick
 {
 	position: absolute;
 	width: 48px;
 	right: 297px;
-	top: 183px;
+	top: 142px;
 }
 
 .stick:active
@@ -782,8 +732,8 @@ input[type="checkbox"]:checked+label
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	right: 313px;
-	top: 198px;
+	right: 316px;
+	top: 160px;
 	border: 3px solid white;
 	opacity: 0.5;
 	border-radius: 80px;
@@ -822,22 +772,20 @@ input[type="checkbox"]:checked+label
 	transform: translateY(40px);
 }
 
-
-
 /* Button A */
 .button_a
 {
 	width: 49px;
 	right: 55px;
-	top: 181px;
+	top: 139px;
 }
 
 /* Button B */
 .button_b
 {
-	width: 28px;
-	right: 111px;
-	top: 214px;
+	width: 29px;
+	right: 110px;
+	top: 172px;
 }
 
 /* Button X */
@@ -845,7 +793,7 @@ input[type="checkbox"]:checked+label
 {
 	width: 31px;
 	right: 20px;
-	top: 174px;
+	top: 132px;
 }
 
 /* Button Y */
@@ -853,7 +801,7 @@ input[type="checkbox"]:checked+label
 {
 	width: 47px;
 	right: 68px;
-	top: 146px;
+	top: 105px;
 }
 
 /* Button L */
@@ -861,10 +809,10 @@ input[type="checkbox"]:checked+label
 {
 	width: 76px;
 	right: 298px;
-	top: 90px;
-    -ms-transform: rotate(-8deg); /* IE 9 */
-    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
-	transform: rotate(-8deg);
+	top: 46px;
+    -ms-transform: rotate(-9deg); /* IE 9 */
+    -webkit-transform: rotate(-9deg); /* Chrome, Safari, Opera */
+	transform: rotate(-9deg);
 }
 
 /* Button R */
@@ -872,10 +820,10 @@ input[type="checkbox"]:checked+label
 {
 	width: 76px;
 	right: 24px;
-	top: 90px;
-    -ms-transform: rotate(11deg); /* IE 9 */
-    -webkit-transform: rotate(11deg); /* Chrome, Safari, Opera */
-	transform: rotate(11deg);
+	top: 48px;
+    -ms-transform: rotate(12deg); /* IE 9 */
+    -webkit-transform: rotate(12deg); /* Chrome, Safari, Opera */
+	transform: rotate(12deg);
 }
 
 /* DISPLAY BUTTONS */
@@ -936,15 +884,6 @@ input[type="checkbox"]:checked+label
     background-position: center center;  
 }
 
-#controller_options_ul{
-	list-style: url;
-}
-
-
-
-
-
-
 /*Seitenstyles */
 
 
@@ -973,4 +912,19 @@ input[type="checkbox"]:checked+label
 #welcome p
 {
 	margin-bottom: 15px;
+}
+
+/*Queries*/
+@media(max-width:768px){
+	
+	}
+	
+@media(min-width:768px){
+	
+	}
+@media(min-width:992px){
+
+}
+@media(min-width:1200px){
+
 }
