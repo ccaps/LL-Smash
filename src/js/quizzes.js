@@ -570,9 +570,12 @@ var QuizMod = (function () {
 		var vidDiv = document.createElement('div');
 		vidDiv.id = "video_container";
 		vidDiv.className = "col-md-6";
+		var responsiveDiv = document.createElement('div');
+		responsiveDiv.className = "embed-responsive embed-responsive-16by9";
 		var vid = document.createElement('div');
 		vid.id = "quiz_video";
-		vidDiv.appendChild(vid);
+		responsiveDiv.appendChild(vid);
+		vidDiv.appendChild(responsiveDiv);
 		oContainer.appendChild(vidDiv);
 		//
 		//create controller options container

@@ -654,8 +654,7 @@ input[type="checkbox"]:checked+label
 }
 
 #video_container iframe{
-	width: 450px;
-	height: 275px;
+
 }
 
 #controller_options{
