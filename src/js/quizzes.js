@@ -878,8 +878,8 @@ var QuizMod = (function () {
 				} 
 			}
 			var alertDiv = document.createElement('div');
+			alertDiv.id = "alert-div";
 			if(type == "wrong"){
-				alertDiv.id = "alert-div";
 				alertDiv.classList = "alert alert-danger";
 				alertDiv.innerHTML = msg;
 				if(currentQuestion.hint && currentQuestion.hint != ""){
